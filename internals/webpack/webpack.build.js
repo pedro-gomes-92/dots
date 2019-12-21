@@ -1,6 +1,6 @@
 const isValid = _env => {
   const env = `${_env}`.toLowerCase();
-  const allowedEnvs = ['dev', 'stage', 'prod'];
+  const allowedEnvs = ['dev', 'prod'];
 
   if (!allowedEnvs.includes(env)) {
     const messages = [

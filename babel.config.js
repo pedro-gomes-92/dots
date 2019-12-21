@@ -23,9 +23,6 @@ module.exports = {
     ],
   ],
   env: {
-    stage: {
-      plugins: ['babel-plugin-typescript-to-proptypes'],
-    },
     dev: {
       plugins: ['babel-plugin-typescript-to-proptypes'],
     },

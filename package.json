@@ -25,7 +25,6 @@
     "clean:docs": "npx rimraf ./docs/assets",
     "build": "npx webpack --config ./internals/webpack/webpack.build.js",
     "build:prod": "npx cross-env NODE_ENV=prod npm run build",
-    "build:stage": "npx cross-env NODE_ENV=stage npm run build",
     "build:dev": "npx cross-env NODE_ENV=dev npm run build -- --colors --progress",
     "build:types": "npx tsc",
     "postbuild:hook": "npm run pack && npm run build:types",
