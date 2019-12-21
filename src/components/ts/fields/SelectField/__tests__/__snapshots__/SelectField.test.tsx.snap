@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Given <SelectField /> When initializes And uses children Then should match the snapshot 1`] = `
+<div>
+  <div
+    class="field is-select"
+  >
+    <div
+      class="field-body"
+    >
+      <div
+        class="control"
+      >
+        <div
+          class="select"
+        >
+          <select
+            class="input"
+          >
+            <option
+              class="select-option"
+            >
+              Testing 1
+            </option>
+            <option
+              class="select-option"
+            >
+              Testing 2
+            </option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Given <SelectField /> When initializes Then should match the snapshot 1`] = `
+<div>
+  <div
+    class="field is-select"
+  >
+    <div
+      class="field-body"
+    >
+      <div
+        class="control"
+      >
+        <div
+          class="select"
+        >
+          <select
+            class="input"
+          >
+            <option
+              class="select-option"
+            >
+              Testing
+            </option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

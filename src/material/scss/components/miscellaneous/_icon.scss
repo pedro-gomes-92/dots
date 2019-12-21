@@ -1,0 +1,67 @@
+/*
+ * icon.scss
+ *
+ * All styling applied to the icon component
+ *
+ * Index
+ * - Icon
+ *    - Font
+ */
+
+@function icon-size($size) {
+  @return factor($size, $icon-size-factor);
+}
+
+.icon {
+  width: auto;
+  height: auto;
+  vertical-align: top;
+
+  // Font
+  &-font {
+    @extend .#{$icon-family};
+    font-size: icon-size(1rem);
+
+    &.is {
+      &-1 {
+        font-size: icon-size($size-1);
+      }
+      &-2 {
+        font-size: icon-size($size-2);
+      }
+      &-3 {
+        font-size: icon-size($size-3);
+      }
+      &-4 {
+        font-size: icon-size($size-4);
+      }
+      &-5 {
+        font-size: icon-size($size-5);
+      }
+      &-6 {
+        font-size: icon-size($size-6);
+      }
+      &-7 {
+        font-size: icon-size($size-7);
+      }
+      &-small {
+        font-size: icon-size($size-small);
+      }
+      &-normal {
+        font-size: icon-size($size-normal);
+      }
+      &-medium {
+        font-size: icon-size($size-medium);
+      }
+      &-large {
+        font-size: icon-size($size-large);
+      }
+    }
+
+    @each $name in $icons {
+      &-#{$name} {
+        @include icon($name);
+      }
+    }
+  }
+}

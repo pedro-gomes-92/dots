@@ -1,0 +1,26 @@
+/*
+ * text.scss
+ *
+ * All styling applied to all text components
+ *
+ * Index
+ * - Text
+ *    - Sizes
+ *    - Bold
+ */
+.text {
+  white-space: pre-wrap;
+
+  &.is {
+    // Sizes
+    @each $name, $size in $text-sizes {
+      &-#{$name} {
+        font-size: $size;
+      }
+    }
+
+    &-bold {
+      font-weight: bold;
+    }
+  }
+}

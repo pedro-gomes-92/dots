@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Given <TableRow /> When initializes And uses children Then should match the snapshot 1`] = `
+<div>
+  <table>
+    <tbody>
+      <tr
+        class="table-row"
+      >
+        <td
+          class="table-cell"
+        >
+          <span
+            class="text"
+          >
+            a
+          </span>
+        </td>
+        <td
+          class="table-cell"
+        >
+          <span
+            class="text"
+          >
+            b
+          </span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`Given <TableRow /> When initializes Then should match the snapshot 1`] = `
+<div>
+  <table>
+    <tbody>
+      <tr
+        class="table-row"
+      >
+        <td
+          class="table-cell"
+        >
+          <span
+            class="text"
+          >
+            a
+          </span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;

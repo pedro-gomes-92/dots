@@ -1,0 +1,311 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Given <Pagination /> When initializes And uses range Then should match the snapshot 1`] = `
+<div>
+  <nav
+    aria-label="pagination"
+    class="pagination is-centered"
+    role="navigation"
+  >
+    <button
+      class="is-disabled button pagination-previous"
+      disabled=""
+    >
+      <span
+        class="icon"
+      >
+        <i
+          class="icon-font icon-font-chevron-left-outline"
+        />
+      </span>
+    </button>
+    <button
+      class="button pagination-next"
+    >
+      <span
+        class="icon"
+      >
+        <i
+          class="icon-font icon-font-chevron-right-outline"
+        />
+      </span>
+    </button>
+    <ul
+      class="list pagination-list"
+    >
+      <li
+        class="list-item"
+      >
+        <button
+          class="button is-text pagination-link is-current"
+        >
+          <span
+            class="text"
+          >
+            1
+          </span>
+        </button>
+      </li>
+      <li
+        class="list-item"
+      >
+        <button
+          class="button is-text pagination-link"
+        >
+          <span
+            class="text"
+          >
+            2
+          </span>
+        </button>
+      </li>
+      <li
+        class="list-item"
+      >
+        <button
+          class="button is-text pagination-link"
+        >
+          <span
+            class="text"
+          >
+            3
+          </span>
+        </button>
+      </li>
+      <li
+        class="list-item"
+      >
+        <button
+          class="button is-text pagination-link"
+        >
+          <span
+            class="text"
+          >
+            4
+          </span>
+        </button>
+      </li>
+      <li
+        class="list-item"
+      >
+        <button
+          class="button is-text pagination-link"
+        >
+          <span
+            class="text"
+          >
+            5
+          </span>
+        </button>
+      </li>
+      <li
+        class="list-item"
+      >
+        <button
+          class="button is-text pagination-link"
+        >
+          <span
+            class="text"
+          >
+            6
+          </span>
+        </button>
+      </li>
+      <li
+        class="list-item"
+      >
+        <button
+          class="button is-text pagination-link"
+        >
+          <span
+            class="text"
+          >
+            7
+          </span>
+        </button>
+      </li>
+      <li
+        class="list-item"
+      >
+        <button
+          class="button is-text pagination-link"
+        >
+          <span
+            class="text"
+          >
+            ...
+          </span>
+        </button>
+      </li>
+      <li
+        class="list-item"
+      >
+        <button
+          class="button is-text pagination-link"
+        >
+          <span
+            class="text"
+          >
+            20
+          </span>
+        </button>
+      </li>
+    </ul>
+  </nav>
+</div>
+`;
+
+exports[`Given <Pagination /> When initializes Then should match the snapshot 1`] = `
+<div>
+  <nav
+    aria-label="pagination"
+    class="pagination is-centered"
+    role="navigation"
+  >
+    <button
+      class="is-disabled button pagination-previous"
+      disabled=""
+    >
+      <span
+        class="icon"
+      >
+        <i
+          class="icon-font icon-font-chevron-left-outline"
+        />
+      </span>
+    </button>
+    <button
+      class="button pagination-next"
+    >
+      <span
+        class="icon"
+      >
+        <i
+          class="icon-font icon-font-chevron-right-outline"
+        />
+      </span>
+    </button>
+    <ul
+      class="list pagination-list"
+    >
+      <li
+        class="list-item"
+      >
+        <button
+          class="button is-text pagination-link is-current"
+        >
+          <span
+            class="text"
+          >
+            1
+          </span>
+        </button>
+      </li>
+      <li
+        class="list-item"
+      >
+        <button
+          class="button is-text pagination-link"
+        >
+          <span
+            class="text"
+          >
+            2
+          </span>
+        </button>
+      </li>
+      <li
+        class="list-item"
+      >
+        <button
+          class="button is-text pagination-link"
+        >
+          <span
+            class="text"
+          >
+            3
+          </span>
+        </button>
+      </li>
+      <li
+        class="list-item"
+      >
+        <button
+          class="button is-text pagination-link"
+        >
+          <span
+            class="text"
+          >
+            4
+          </span>
+        </button>
+      </li>
+      <li
+        class="list-item"
+      >
+        <button
+          class="button is-text pagination-link"
+        >
+          <span
+            class="text"
+          >
+            5
+          </span>
+        </button>
+      </li>
+      <li
+        class="list-item"
+      >
+        <button
+          class="button is-text pagination-link"
+        >
+          <span
+            class="text"
+          >
+            6
+          </span>
+        </button>
+      </li>
+      <li
+        class="list-item"
+      >
+        <button
+          class="button is-text pagination-link"
+        >
+          <span
+            class="text"
+          >
+            7
+          </span>
+        </button>
+      </li>
+      <li
+        class="list-item"
+      >
+        <button
+          class="button is-text pagination-link"
+        >
+          <span
+            class="text"
+          >
+            ...
+          </span>
+        </button>
+      </li>
+      <li
+        class="list-item"
+      >
+        <button
+          class="button is-text pagination-link"
+        >
+          <span
+            class="text"
+          >
+            20
+          </span>
+        </button>
+      </li>
+    </ul>
+  </nav>
+</div>
+`;

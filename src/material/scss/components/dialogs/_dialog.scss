@@ -1,0 +1,18 @@
+/**
+ * dialog.scss
+ *
+ * All styling applied to the dialog components
+ *
+ * Index
+ * - Dialog
+ *    - Close
+ */
+
+.dialog {
+  // Close
+  &-close {
+    position: fixed;
+    right: 1em;
+    top: 1em;
+  }
+}

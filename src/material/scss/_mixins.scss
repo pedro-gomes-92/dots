@@ -1,0 +1,196 @@
+/*
+ * mixins.scss
+ *
+ * All available mixins and functions to use.
+ *
+ * Index
+ * - Calculation
+ * - Color
+ * - Iconography
+ * - Animation
+ * - Position
+ * - Layout
+ * - Device
+ * - Gap
+ * - Alignment
+ */
+
+// Calculation
+@function factor($value, $percent) {
+  $number: $percent / 100%;
+  @return $value + ($value * $number);
+}
+
+// Color
+@function color-intensity($color, $type, $intensity) {
+  @return call($type, $color, $intensity * $color-intensity-factor);
+}
+
+// Iconograpy
+@mixin icon($name) {
+  @extend .#{$icon-family}-#{$name};
+}
+
+// Animation
+@mixin animation($name) {
+  animation-name: unquote($name);
+}
+
+// Position
+@mixin position($x: left, $y: top, $isInner: true) {
+  position: absolute;
+
+  $relativeHorizontal: -100% -50% 0;
+  $relativeVertical: -100% -50% 0;
+
+  @if ($isInner) {
+    $relativeHorizontal: 0 -50% -100%;
+    $relativeVertical: 0 -50% -100%;
+  }
+
+  @if ($x==left) {
+    left: 0;
+
+    @if ($y==top) {
+      top: 0;
+      transform: translate(nth($relativeHorizontal, 1), nth($relativeVertical, 1));
+    } @else if ($y==middle) {
+      top: 50%;
+      transform: translate(nth($relativeHorizontal, 1), nth($relativeVertical, 2));
+    } @else if ($y==bottom) {
+      top: 100%;
+      transform: translate(nth($relativeHorizontal, 1), nth($relativeVertical, 3));
+    }
+  }
+
+  @if ($x==center) {
+    left: 50%;
+
+    @if ($y==top) {
+      top: 0;
+      transform: translate(nth($relativeHorizontal, 2), nth($relativeVertical, 1));
+    } @else if ($y==middle) {
+      top: 50%;
+      transform: translate(nth($relativeHorizontal, 2), nth($relativeVertical, 2));
+    } @else if ($y==bottom) {
+      top: 100%;
+      transform: translate(nth($relativeHorizontal, 2), nth($relativeVertical, 3));
+    }
+  }
+
+  @if ($x==right) {
+    left: 100%;
+
+    @if ($y==top) {
+      top: 0;
+      transform: translate(nth($relativeHorizontal, 3), nth($relativeVertical, 1));
+    } @else if ($y==middle) {
+      top: 50%;
+      transform: translate(nth($relativeHorizontal, 3), nth($relativeVertical, 2));
+    } @else if ($y==bottom) {
+      top: 100%;
+      transform: translate(nth($relativeHorizontal, 3), nth($relativeVertical, 3));
+    }
+  }
+}
+
+// Layout
+@mixin flex-remaining {
+  @include flex-min-size(0%);
+}
+
+@mixin flex-full {
+  @include flex-size(100%);
+}
+
+@mixin flex-size($args) {
+  flex: 0 0 $args;
+}
+
+@mixin flex-min-size($args: auto) {
+  flex: 1 0 $args;
+}
+
+@mixin flex-max-size($args: 100%) {
+  flex: 0 1 $args;
+}
+
+@mixin flex-auto {
+  @include flex-max-size(auto);
+}
+
+// Device
+@mixin media($size: $breakpoint-mobile, $isMax: false) {
+  @if ($isMax) {
+    @media screen and (max-width: $size) {
+      @content;
+    }
+  } @else {
+    @media screen and (min-width: $size+1) {
+      @content;
+    }
+  }
+}
+
+@mixin screen($device: 'mobile', $isMax: false) {
+  @include media(map-get($breakpoints, $device), $isMax) {
+    @content;
+  }
+}
+
+// Gap
+@mixin gap($horizontal, $vertical, $wrapping: false) {
+  $gap-vertical: $vertical * $gap;
+  $gap-horizontal: $horizontal * $gap;
+
+  @if ($wrapping) {
+    $gap-vertical: $gap-vertical/2;
+    $gap-horizontal: $gap-horizontal/2;
+    margin: (-$gap-vertical) (-$gap-horizontal);
+
+    > * {
+      padding: $gap-vertical $gap-horizontal;
+    }
+  } @else {
+    > :not(:last-child) {
+      margin-right: $gap-horizontal;
+      margin-bottom: $gap-vertical;
+    }
+  }
+}
+
+@mixin gap-screen($horizontal, $vertical, $device, $wrapping: false) {
+  @include screen($device) {
+    @include gap($horizontal, $vertical, $wrapping);
+  }
+}
+
+// Alignment
+
+@mixin align-text($alignment) {
+  @if ($alignment== 'start') {
+    text-align: left;
+  } @else if ($alignment== 'center') {
+    text-align: center;
+  } @else {
+    text-align: right;
+  }
+}
+
+@mixin align-container($alignment) {
+  @if ($alignment== 'start') {
+    margin: 0 0 auto 0;
+  } @else if ($alignment== 'center') {
+    margin: auto 0 auto 0;
+  } @else {
+    margin: auto 0 0 0;
+  }
+}
+
+@mixin align($alignment, $isText: false) {
+  @if ($isText) {
+    @include align-text($alignment);
+  } @else {
+    @include align-container($alignment);
+  }
+}

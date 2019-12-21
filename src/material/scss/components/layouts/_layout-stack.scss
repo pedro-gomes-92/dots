@@ -1,0 +1,28 @@
+/*
+ * layout-stack.scss
+ *
+ * All styling applied to the layout stack component
+ *
+ * Index
+ * - Layout Stack
+ * - Stack
+ *    - Size
+ */
+
+.stack {
+  &.is {
+    // Size
+    &-small {
+      height: $container-size-small;
+    }
+    &-normal {
+      height: $container-size-normal;
+    }
+    &-medium {
+      height: $container-size-medium;
+    }
+    &-large {
+      height: $container-size-large;
+    }
+  }
+}

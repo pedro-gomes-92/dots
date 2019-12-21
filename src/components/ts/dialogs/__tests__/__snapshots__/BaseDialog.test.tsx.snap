@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Given <BaseDialog /> When initializes And uses onClose Then should match the snapshot 1`] = `
+<div>
+  <div
+    class="is-hidden dialog"
+  >
+    <div
+      class="layout is-0 layout-center"
+    >
+      <div
+        class="layout-item"
+      >
+        <div
+          class="overlay"
+        />
+      </div>
+    </div>
+    <button
+      class="is-large button is-text dialog-close"
+    >
+      <span
+        class="icon"
+      >
+        <i
+          class="is-large icon-font icon-font-close-outline"
+        />
+      </span>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Given <BaseDialog /> When initializes Then should match the snapshot 1`] = `
+<div>
+  <div
+    class="dialog"
+  >
+    <div
+      class="layout is-0 layout-center"
+    >
+      <div
+        class="layout-item"
+      >
+        <div
+          class="overlay"
+        />
+      </div>
+    </div>
+    <button
+      class="is-large button is-text dialog-close"
+    >
+      <span
+        class="icon"
+      >
+        <i
+          class="is-large icon-font icon-font-close-outline"
+        />
+      </span>
+    </button>
+  </div>
+</div>
+`;

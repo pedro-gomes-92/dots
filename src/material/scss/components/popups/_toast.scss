@@ -1,0 +1,63 @@
+/*
+ * toast.scss
+ *
+ * All styling applied to the toast component
+ *
+ * Index
+ * - Toast
+ *    - Position
+ */
+
+.toast-container {
+  // Position
+  &.has-position {
+    margin: 0;
+    &-left {
+      &-top,
+      &-middle,
+      &-bottom {
+        margin-left: $toast-offset;
+      }
+
+      &-top {
+        margin-top: $toast-offset;
+      }
+
+      &-bottom {
+        margin-top: -$toast-offset;
+      }
+    }
+
+    &-center {
+      &-top,
+      &-bottom,
+      &-middle {
+        @include align('center', true);
+      }
+
+      &-top {
+        margin-top: $toast-offset;
+      }
+
+      &-bottom {
+        margin-top: -$toast-offset;
+      }
+    }
+
+    &-right {
+      &-top,
+      &-bottom,
+      &-middle {
+        margin-left: -$toast-offset;
+      }
+
+      &-top {
+        margin-top: $toast-offset;
+      }
+
+      &-bottom {
+        margin-top: -$toast-offset;
+      }
+    }
+  }
+}

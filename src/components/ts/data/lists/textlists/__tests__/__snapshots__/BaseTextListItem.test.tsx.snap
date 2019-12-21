@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Given <BaseTextListItem /> When initializes And uses secondaryText Then should match the snapshot 1`] = `
+<div>
+  <li
+    class="list-item"
+  >
+    <div
+      class="layout is-2 columns has-alignment-center is-mobile"
+    >
+      <div
+        class="layout-item column"
+      >
+        <span
+          class="text is-primary"
+        >
+          Testing
+        </span>
+      </div>
+      <div
+        class="is-auto layout-item column"
+      >
+        <span
+          class="text is-secondary"
+        >
+          Secondary Testing
+        </span>
+      </div>
+    </div>
+  </li>
+</div>
+`;
+
+exports[`Given <BaseTextListItem /> When initializes And uses text Then should match the snapshot 1`] = `
+<div>
+  <li
+    class="list-item"
+  >
+    <div
+      class="layout is-2 columns has-alignment-center is-mobile"
+    >
+      <div
+        class="layout-item column"
+      >
+        <span
+          class="text is-primary"
+        >
+          Testing 2
+        </span>
+      </div>
+    </div>
+  </li>
+</div>
+`;
+
+exports[`Given <BaseTextListItem /> When initializes Then should match the snapshot 1`] = `
+<div>
+  <li
+    class="list-item"
+  >
+    <div
+      class="layout is-2 columns has-alignment-center is-mobile"
+    >
+      <div
+        class="layout-item column"
+      >
+        <span
+          class="text is-primary"
+        >
+          Testing
+        </span>
+      </div>
+    </div>
+  </li>
+</div>
+`;

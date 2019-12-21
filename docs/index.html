@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dots</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="Dots is an easy to use front end library" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-defaults.css" />
+    <link rel="stylesheet" href="./assets/docs.css" />
+  </head>
+
+  <body>
+    <div id="app"></div>
+    <script>
+      window.$docsify = {
+        name: 'Dots',
+        basePath: '/pages/',
+        coverpage: true,
+        onlyCover: true,
+        loadSidebar: true,
+        sidebarManual: true,
+        subMaxLevel: 0,
+        alias: {
+          '/.*/_sidebar.md': '/_sidebar.md',
+        },
+        switcherNav: {
+          root: '.sidebar',
+        },
+        markdown: {
+          smartypants: true,
+        },
+      };
+    </script>
+    <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify-tabs@1"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify-themeable@0"></script>
+    <script src="./assets/docs.js"></script>
+  </body>
+</html>

@@ -1,0 +1,197 @@
+/**
+ * vendor.scss
+ *
+ * All changes made for the vendor variables.
+ *
+ * Index
+ * - Bulma
+ *    - Colors
+ *    - Typography
+ *    - Animation
+ *    - Breakpoint
+ *    - Icon
+ *    - Table
+ *    - Pagination
+ *    - Card
+ *    - Modal
+ *    - Notification
+ *    - NavBar
+ *    - Layout
+ *    - List
+ * - Bulma Calendar
+ *    - Colors
+ *    - Borders
+ * - Chartist
+ *    - Name
+ *    - Style
+ * - Eva Icons
+ */
+
+// Bulma
+
+// Colors
+$primary: $color-primary;
+$primary-inverted: $color-primary-inverted;
+
+$info: $color-info;
+$info-inverted: $color-info-inverted;
+$success: $color-success;
+$success-inverted: $color-success-inverted;
+$warning: $color-warning;
+$warning-inverted: $color-warning-inverted;
+$danger: $color-danger;
+$danger-inverted: $color-danger-inverted;
+
+$colors: mergeColorMaps(
+  $colors,
+  (
+    'primary': (
+      $primary,
+      $primary-inverted,
+    ),
+    'info': (
+      $info,
+      $info-inverted,
+    ),
+    'success': (
+      $success,
+      $success-inverted,
+    ),
+    'warning': (
+      $warning,
+      $warning-inverted,
+    ),
+    'danger': (
+      $danger,
+      $danger-inverted,
+    ),
+  )
+);
+
+// Typography
+$family-primary: $text-family;
+$family-secondary: $text-family;
+$size-1: $text-size-1;
+$size-2: $text-size-2;
+$size-3: $text-size-3;
+$size-4: $text-size-4;
+$size-5: $text-size-5;
+$size-6: $text-size-6;
+$size-7: $text-size-7;
+
+// Animation
+$speed: $animation-duration-normal;
+
+// Breakpoint
+$tablet: $breakpoint-tablet;
+$desktop: $breakpoint-desktop;
+$widescreen: $breakpoint-widescreen;
+$fullhd: $breakpoint-fullhd;
+
+// Icon
+$icon-dimensions: $size-normal;
+$icon-dimensions-small: $size-small;
+$icon-dimensions-medium: $size-medium;
+$icon-dimensions-large: $size-large;
+
+// Table
+$table-background-color: transparent !default;
+$table-cell-padding: 1rem !default;
+$table-head-cell-border-width: 0 !default;
+$table-body-background-color: lighten($color-background, 2 * $color-intensity-factor) !default;
+$table-row-hover-background-color: lighten($color-background, $color-intensity-factor) !default;
+
+// Pagination
+$pagination-margin: -0.5em !default;
+$pagination-item-margin: 0.5em !default;
+$pagination-current-background-color: transparent !default;
+$pagination-current-border-color: transparent !default;
+$pagination-current-color: $color-primary !default;
+$pagination-ellipsis-color: $color-background-inverted !default;
+
+// Card
+$card-header-shadow: none !default;
+$card-content-padding: $card-gap 0 $card-gap 0 !default;
+
+// Modal
+$modal-background-background-color: $overlay-color-background !default;
+
+// Notification
+$notification-padding: 1.25rem !default;
+
+// NavBar
+$navbar-z: 'auto';
+
+// Layout
+$gap: 8px;
+$column-gap: 0;
+
+// List
+$list-background-color: transparent !default;
+$list-item-border: none !default;
+$list-shadow: none !default;
+$list-radius: 0 !default;
+
+// Bulma Calendar
+
+// Colors
+$calendar-selection-background-color: $color-primary;
+$calendar-days-background-color: transparent;
+$calendar-selection-days-color: $grey-light;
+$calendar-date-color: $text;
+$calendar-date-hover-background-color: $white;
+$calendar-range-background-color: $color-primary;
+
+// Borders
+$calendar-border: none;
+$calendar-date-hover-border: 0.1rem solid $color-primary;
+$calendar-date-hover-border: 0.1rem solid $color-primary;
+$calendar-today-border: none;
+
+// Chartist
+
+// Name
+$ct-class-chart: chart;
+$ct-class-chart-line: chart-linechart;
+$ct-class-chart-bar: chart-barchart;
+$ct-class-horizontal-bars: is-bars-horizontal;
+$ct-class-chart-pie: chart-piechart;
+$ct-class-chart-donut: chart-donutchart;
+$ct-class-label: chart-label;
+$ct-class-series: chart-series;
+$ct-class-line: chart-line;
+$ct-class-point: chart-point;
+$ct-class-area: chart-area;
+$ct-class-bar: chart-bar;
+$ct-class-slice-pie: chart-pie;
+$ct-class-slice-donut: chart-donut;
+$ct-class-slice-donut-solid: chart-donut-solid;
+$ct-class-grid: chart-grid;
+$ct-class-grid-background: has-grid-background;
+$ct-class-vertical: is-vertical;
+$ct-class-horizontal: is-horizontal;
+$ct-class-start: is-start;
+$ct-class-end: is-end;
+
+// Style
+$ct-text-color: $color-background-inverted;
+$ct-series-colors: (
+  $color-primary,
+  color-intensity($color-primary, lighten, 1),
+  color-intensity($color-primary, lighten, 2),
+  color-intensity($color-primary, lighten, 3),
+  color-intensity($color-primary, lighten, 4),
+  color-intensity($color-primary, lighten, 5),
+  color-intensity($color-primary, lighten, 6),
+  color-intensity($color-primary, lighten, 7),
+  color-intensity($color-primary, lighten, 8),
+  color-intensity($color-primary, lighten, 9),
+  color-intensity($color-primary, lighten, 10),
+  color-intensity($color-primary, lighten, 11),
+  color-intensity($color-primary, lighten, 12),
+  color-intensity($color-primary, lighten, 13),
+  color-intensity($color-primary, lighten, 14)
+);
+
+// Eva Icons
+$eva-icons-font-path: '~eva-icons/style/fonts';

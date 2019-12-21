@@ -1,0 +1,41 @@
+/*
+ * layout-border.scss
+ *
+ * All styling applied to the layout border component
+ *
+ * Index
+ * - Layout Border
+ *    - Border
+ *    - Scrollable
+ */
+
+.layout {
+  &-border {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    // Border
+    .border {
+      &.is {
+        &-north {
+          order: 0;
+        }
+        &-center {
+          order: 1;
+          @include flex-remaining;
+        }
+        &-south {
+          order: 2;
+        }
+      }
+    }
+
+    // Scrollable
+    &.is-scrollable {
+      > .border.is-center {
+        overflow-y: auto;
+      }
+    }
+  }
+}

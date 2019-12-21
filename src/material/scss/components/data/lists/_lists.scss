@@ -1,0 +1,16 @@
+/**
+ * lists.scss
+ *
+ * All styling applied to the list components
+ *
+ * Index
+ * - List
+ *    - Item
+ */
+
+.list {
+  // Item
+  &-item {
+    padding: $list-item-padding;
+  }
+}

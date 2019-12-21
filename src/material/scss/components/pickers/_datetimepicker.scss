@@ -1,0 +1,91 @@
+/*
+ * picker.scss
+ *
+ * All styling applied to the datetimepicker component
+ *
+ * Index
+ * - DateTimePicker
+ *    - Bulma
+ *    - Size
+ */
+
+.picker.is-datetime {
+  min-width: 100%;
+
+  // Bulma
+  .datetimepicker {
+    padding: 0.5rem;
+    max-width: none;
+
+    @each $name, $pair in $colors {
+      &.is-#{$name} {
+        $color: nth($pair, 1);
+
+        .datepicker-body .datepicker-dates .datepicker-days .datepicker-date {
+          &.datepicker-range {
+            &.datepicker-range-end,
+            &.datepicker-range-start {
+              .date-item {
+                color: $color !important; // FIX: Color when clicked on today (with a ranged value)
+                border-color: $color !important; // FIX: Color when clicked on today (with a ranged value)
+                background-color: nth(map-get($colors, 'white'), 1);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .datetimepicker-header {
+      margin-bottom: 0.5rem;
+    }
+
+    .datepicker-body {
+      .datepicker-weekdays {
+        flex-wrap: unset;
+
+        .datepicker-date {
+          width: 2.2rem; // WARN: This value should always be synched with the day
+          padding: 0;
+          @include align('center', true);
+        }
+      }
+
+      .datepicker-dates .datepicker-days .datepicker-date {
+        &.datepicker-range {
+          &.datepicker-range-end,
+          &.datepicker-range-start {
+            .date-item {
+              color: $color-primary !important; // FIX: Color when clicked on today (with a ranged value)
+              border-color: $color-primary !important; // FIX: Color when clicked on today (with a ranged value)
+            }
+          }
+        }
+      }
+    }
+
+    .datetimepicker-footer {
+      margin-top: 0.5rem;
+      justify-content: flex-end;
+    }
+  }
+
+  &.is {
+    // Size
+    &-full {
+      width: 100%;
+    }
+    &-small {
+      width: $container-size-small;
+    }
+    &-normal {
+      width: $container-size-normal;
+    }
+    &-medium {
+      width: $container-size-medium;
+    }
+    &-large {
+      width: $container-size-large;
+    }
+  }
+}

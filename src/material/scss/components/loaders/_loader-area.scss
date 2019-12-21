@@ -1,0 +1,22 @@
+/*
+ * loader-area.scss
+ *
+ * All styling applied to the loader area component
+ *
+ * Index
+ * - Loader Area
+ *    - Overlay
+ */
+
+.loaders.is-area {
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+
+  // Overlay
+  &.has-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}

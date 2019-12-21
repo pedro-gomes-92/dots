@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Given <SelectItem /> When initializes And uses value Then should match the snapshot 1`] = `
+<div>
+  <option
+    class="select-option"
+    value="ts"
+  >
+    Testing
+  </option>
+</div>
+`;
+
+exports[`Given <SelectItem /> When initializes Then should match the snapshot 1`] = `
+<div>
+  <option
+    class="select-option"
+  >
+    Testing
+  </option>
+</div>
+`;

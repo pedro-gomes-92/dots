@@ -1,0 +1,19 @@
+/*
+ * overlay.scss
+ *
+ * All styling applied to the overlay component
+ *
+ * Index
+ * - Overlay
+ */
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
+  background-color: $overlay-color-background;
+  opacity: $overlay-opacity;
+}

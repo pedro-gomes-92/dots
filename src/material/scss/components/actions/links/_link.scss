@@ -1,0 +1,22 @@
+/*
+ * link.scss
+ *
+ * All styling applied to the link components
+ *
+ * Index
+ * - Link
+ */
+
+.link {
+  display: block;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  .text {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

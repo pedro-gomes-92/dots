@@ -1,0 +1,22 @@
+/*
+ * layout.scss
+ *
+ * All styling applied to the layout components
+ *
+ * Index
+ * - Layout
+ *    - Gap
+ */
+
+.layout {
+  position: relative;
+
+  &.is {
+    // Gap
+    @for $i from 1 through 12 {
+      &-#{$i} {
+        @include gap(0, $i);
+      }
+    }
+  }
+}

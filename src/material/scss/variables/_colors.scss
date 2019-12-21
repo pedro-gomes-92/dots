@@ -1,0 +1,51 @@
+/**
+ * colors.scss
+ *
+ * All available colors as variables.
+ *
+ * Index
+ * - Base
+ * - Theme
+ * - States
+ */
+
+// Base
+
+$color-flamingo: #fc6053 !default;
+$color-jelly: #18a3a5 !default;
+$color-shark: #364047 !default;
+$color-pampa: #f5f4f1 !default;
+$color-apple: #7ed321 !default;
+$color-gold: #f5e31c !default;
+$color-mango: #f5ab30 !default;
+$color-cherry: #e42d1e !default;
+
+// Theme
+$color-primary: $color-flamingo !default;
+$color-primary-inverted: $color-pampa !default;
+$color-secondary: $color-jelly !default;
+$color-secondary-inverted: $color-pampa !default;
+$color-background: $color-pampa !default;
+$color-background-inverted: $color-shark !default;
+$color-intensity-factor: 2% !default;
+
+// States
+$color-info: $cyan !default;
+$color-info-inverted: findColorInvert($color-info) !default;
+$color-success: $green !default;
+$color-success-inverted: findColorInvert($color-success) !default;
+$color-warning: $yellow !default;
+$color-warning-inverted: findColorInvert($color-warning) !default;
+$color-danger: $red !default;
+$color-danger-inverted: findColorInvert($color-danger) !default;
+
+$custom-colors: (
+  'secondary': (
+    $color-secondary,
+    $color-secondary-inverted,
+  ),
+  'background': (
+    $color-background,
+    $color-background-inverted,
+  ),
+);

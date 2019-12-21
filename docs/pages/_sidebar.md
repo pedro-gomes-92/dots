@@ -1,0 +1,10 @@
+- **![Plug](https://icongr.am/octicons/plug.svg?color=808080&size=20)Getting Started**
+- [Installation](/getting-started/installation/)
+- **![Note](https://icongr.am/octicons/note.svg?color=808080&size=20)Guidelines**
+- [Layouts](/guidelines/layouts/)
+- **![Tools](https://icongr.am/octicons/tools.svg?color=808080&size=20)Usage**
+- [Elements](/usage/elements/)
+- [Components](#)
+  - [Button](/usage/components/button/)
+- **![Package](https://icongr.am/octicons/package.svg?color=808080&size=20)Resources**
+- [![GitHub](https://icongram.jgog.in/simple/github.svg?size=16)GitHub](https://github.com/pedro-gomes-92/dots)

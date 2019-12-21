@@ -1,0 +1,24 @@
+/*
+ * field.scss
+ *
+ * All styling applied to the field component
+ *
+ * Index
+ * - Field
+ *   - Body
+ *   - Label
+ */
+
+.field {
+  // Body
+  &-body {
+    .control {
+      flex: 1;
+    }
+  }
+
+  // Label
+  &-label {
+    margin: 0;
+  }
+}

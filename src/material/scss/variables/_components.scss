@@ -1,0 +1,62 @@
+/**
+ * components.scss
+ *
+ * These are the variables for all components.
+ *
+ * Index
+ * - Tooltip
+ * - Toast
+ * - Container
+ *    - Size
+ *    - Card
+ * - Dialog
+ *    - Modal
+ * - Layout
+ * - Overlay
+ * - List
+ */
+
+// Tooltip
+$tooltip-offset: 0.5em !default;
+$tooltip-background-color: $color-background-inverted !default;
+$tooltip-color: $color-background !default;
+
+// Toast
+$toast-offset: 0.5em !default;
+$toast-lifetime: 2s !default;
+
+// Table
+$table-cell-spacing: 0 0.6em !default;
+
+// Containers
+
+// Size
+$container-size-small: 15rem !default;
+$container-size-normal: 20rem !default;
+$container-size-medium: 30rem !default;
+$container-size-large: 40rem !default;
+
+// Card
+$card-gap: 0.75em !default;
+$card-padding: $card-gap !default;
+$card-header-padding: 0 0 $card-gap 0 !default;
+$card-footer-padding: $card-gap 0 0 0 !default;
+
+// Dialog
+
+// Modal
+$modal-gap: 1.5em !default;
+$modal-padding: $modal-gap !default;
+$modal-header-padding: 0 0 $modal-gap 0 !default;
+$modal-content-padding: $modal-gap 0 $modal-gap 0 !default;
+$modal-footer-padding: $modal-gap 0 0 0 !default;
+
+// Layout
+$layout-flex-active-device: 'mobile' !default;
+
+// Overlay
+$overlay-color-background: darken($color-background, 75%) !default;
+$overlay-opacity: 0.25 !default;
+
+// List
+$list-item-padding: 0.5em 0 !default;

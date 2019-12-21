@@ -1,0 +1,31 @@
+/*
+ * loader.scss
+ *
+ * All styling applied to the loader components
+ *
+ * Index
+ * - Loaders
+ *    - Animation
+ */
+
+$animation-duration-factor: 100%;
+
+.loaders {
+  .icon {
+    // Animation
+    &.is-animated {
+      &-slow {
+        animation-duration: factor($animation-duration-slow, $animation-duration-factor);
+      }
+      &-normal {
+        animation-duration: factor($animation-duration-normal, $animation-duration-factor);
+      }
+      &-medium {
+        animation-duration: factor($animation-duration-medium, $animation-duration-factor);
+      }
+      &-fast {
+        animation-duration: factor($animation-duration-fast, $animation-duration-factor);
+      }
+    }
+  }
+}

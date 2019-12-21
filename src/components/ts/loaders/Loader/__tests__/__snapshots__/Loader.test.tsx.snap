@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Given <Loader /> When initializes Then should match the snapshot 1`] = `
+<div>
+  <div
+    class="loaders is-loader"
+  >
+    <span
+      class="is-animated is-animated-rotateRight is-animated-slow is-animated-infinite icon is-loader is-relative"
+    >
+      <i
+        class="icon-font icon-font-loader-outline"
+      />
+    </span>
+  </div>
+</div>
+`;

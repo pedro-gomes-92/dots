@@ -1,0 +1,30 @@
+/*
+ * containers.scss
+ *
+ * All styling applied to the container components
+ *
+ * Index
+ * - Containers
+ *    - Size
+ */
+
+.containers {
+  &.is {
+    // Size
+    &-full {
+      height: 100%;
+    }
+    &-small {
+      width: $container-size-small;
+    }
+    &-normal {
+      width: $container-size-normal;
+    }
+    &-medium {
+      width: $container-size-medium;
+    }
+    &-large {
+      width: $container-size-large;
+    }
+  }
+}

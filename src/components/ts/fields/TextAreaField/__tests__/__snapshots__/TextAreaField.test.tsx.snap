@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Given <TextAreaField /> When initializes Then should match the snapshot 1`] = `
+<div>
+  <div
+    class="field is-textarea"
+  >
+    <div
+      class="field-body"
+    >
+      <div
+        class="control"
+      >
+        <textarea
+          class="input textarea"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,513 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Given <CalculationList /> When initializes And uses labels And uses values Then should match the snapshot 1`] = `
+<div>
+  <ul
+    class="list list-calculation"
+  >
+    <li
+      class="list-item list-calculation-item"
+    >
+      <div
+        class="layout is-2 columns has-alignment-center is-mobile"
+      >
+        <div
+          class="layout-item column"
+        >
+          <span
+            class="text is-primary"
+          >
+            Test 1
+          </span>
+        </div>
+        <div
+          class="is-auto layout-item column"
+        >
+          <span
+            class="text is-secondary"
+          >
+            1
+          </span>
+        </div>
+      </div>
+    </li>
+    <li
+      class="list-item list-calculation-item"
+    >
+      <div
+        class="layout is-2 columns has-alignment-center is-mobile"
+      >
+        <div
+          class="layout-item column"
+        >
+          <span
+            class="text is-primary"
+          >
+            Test 2
+          </span>
+        </div>
+        <div
+          class="is-auto layout-item column"
+        >
+          <span
+            class="text is-secondary"
+          >
+            2
+          </span>
+        </div>
+      </div>
+    </li>
+    <li
+      class="list-divider"
+    >
+      <div
+        class="divider is-divider-horizontal"
+      />
+    </li>
+    <li
+      class="list-item list-calculation-item list-calculation-result"
+    >
+      <div
+        class="layout is-2 columns has-alignment-center is-mobile"
+      >
+        <div
+          class="layout-item column"
+        >
+          <span
+            class="text is-primary"
+          >
+            Result
+          </span>
+        </div>
+        <div
+          class="is-auto layout-item column"
+        >
+          <span
+            class="text is-secondary"
+          >
+            3
+          </span>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Given <CalculationList /> When initializes And uses labels Then should match the snapshot 1`] = `
+<div>
+  <ul
+    class="list list-calculation"
+  >
+    <li
+      class="list-item list-calculation-item"
+    >
+      <div
+        class="layout is-2 columns has-alignment-center is-mobile"
+      >
+        <div
+          class="layout-item column"
+        >
+          <span
+            class="text is-primary"
+          >
+            Test 1
+          </span>
+        </div>
+        <div
+          class="is-auto layout-item column"
+        >
+          <span
+            class="text is-secondary"
+          >
+            0
+          </span>
+        </div>
+      </div>
+    </li>
+    <li
+      class="list-item list-calculation-item"
+    >
+      <div
+        class="layout is-2 columns has-alignment-center is-mobile"
+      >
+        <div
+          class="layout-item column"
+        >
+          <span
+            class="text is-primary"
+          >
+            Test 2
+          </span>
+        </div>
+        <div
+          class="is-auto layout-item column"
+        >
+          <span
+            class="text is-secondary"
+          >
+            0
+          </span>
+        </div>
+      </div>
+    </li>
+    <li
+      class="list-divider"
+    >
+      <div
+        class="divider is-divider-horizontal"
+      />
+    </li>
+    <li
+      class="list-item list-calculation-item list-calculation-result"
+    >
+      <div
+        class="layout is-2 columns has-alignment-center is-mobile"
+      >
+        <div
+          class="layout-item column"
+        >
+          <span
+            class="text is-primary"
+          >
+            Result
+          </span>
+        </div>
+        <div
+          class="is-auto layout-item column"
+        >
+          <span
+            class="text is-secondary"
+          >
+            0
+          </span>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Given <CalculationList /> When initializes And uses onFormat Then should match the snapshot 1`] = `
+<div>
+  <ul
+    class="list list-calculation"
+  >
+    <li
+      class="list-item list-calculation-item"
+    >
+      <div
+        class="layout is-2 columns has-alignment-center is-mobile"
+      >
+        <div
+          class="layout-item column"
+        >
+          <span
+            class="text is-primary"
+          >
+            Test 1
+          </span>
+        </div>
+        <div
+          class="is-auto layout-item column"
+        >
+          <span
+            class="text is-secondary"
+          >
+            €1.00
+          </span>
+        </div>
+      </div>
+    </li>
+    <li
+      class="list-item list-calculation-item"
+    >
+      <div
+        class="layout is-2 columns has-alignment-center is-mobile"
+      >
+        <div
+          class="layout-item column"
+        >
+          <span
+            class="text is-primary"
+          >
+            Test 2
+          </span>
+        </div>
+        <div
+          class="is-auto layout-item column"
+        >
+          <span
+            class="text is-secondary"
+          >
+            €2.00
+          </span>
+        </div>
+      </div>
+    </li>
+    <li
+      class="list-divider"
+    >
+      <div
+        class="divider is-divider-horizontal"
+      />
+    </li>
+    <li
+      class="list-item list-calculation-item list-calculation-result"
+    >
+      <div
+        class="layout is-2 columns has-alignment-center is-mobile"
+      >
+        <div
+          class="layout-item column"
+        >
+          <span
+            class="text is-primary"
+          >
+            Result
+          </span>
+        </div>
+        <div
+          class="is-auto layout-item column"
+        >
+          <span
+            class="text is-secondary"
+          >
+            €3.00
+          </span>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Given <CalculationList /> When initializes And uses resultLabel Then should match the snapshot 1`] = `
+<div>
+  <ul
+    class="list list-calculation"
+  >
+    <li
+      class="list-item list-calculation-item"
+    >
+      <div
+        class="layout is-2 columns has-alignment-center is-mobile"
+      >
+        <div
+          class="layout-item column"
+        >
+          <span
+            class="text is-primary"
+          >
+            Test 1
+          </span>
+        </div>
+        <div
+          class="is-auto layout-item column"
+        >
+          <span
+            class="text is-secondary"
+          >
+            1
+          </span>
+        </div>
+      </div>
+    </li>
+    <li
+      class="list-item list-calculation-item"
+    >
+      <div
+        class="layout is-2 columns has-alignment-center is-mobile"
+      >
+        <div
+          class="layout-item column"
+        >
+          <span
+            class="text is-primary"
+          >
+            Test 2
+          </span>
+        </div>
+        <div
+          class="is-auto layout-item column"
+        >
+          <span
+            class="text is-secondary"
+          >
+            2
+          </span>
+        </div>
+      </div>
+    </li>
+    <li
+      class="list-divider"
+    >
+      <div
+        class="divider is-divider-horizontal"
+      />
+    </li>
+    <li
+      class="list-item list-calculation-item list-calculation-result"
+    >
+      <div
+        class="layout is-2 columns has-alignment-center is-mobile"
+      >
+        <div
+          class="layout-item column"
+        >
+          <span
+            class="text is-primary"
+          >
+            New balance
+          </span>
+        </div>
+        <div
+          class="is-auto layout-item column"
+        >
+          <span
+            class="text is-secondary"
+          >
+            3
+          </span>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Given <CalculationList /> When initializes And uses values Then should match the snapshot 1`] = `
+<div>
+  <ul
+    class="list list-calculation"
+  >
+    <li
+      class="list-item list-calculation-item"
+    >
+      <div
+        class="layout is-2 columns has-alignment-center is-mobile"
+      >
+        <div
+          class="layout-item column"
+        >
+          <span
+            class="text is-primary"
+          >
+            Test
+          </span>
+        </div>
+        <div
+          class="is-auto layout-item column"
+        >
+          <span
+            class="text is-secondary"
+          >
+            1
+          </span>
+        </div>
+      </div>
+    </li>
+    <li
+      class="list-divider"
+    >
+      <div
+        class="divider is-divider-horizontal"
+      />
+    </li>
+    <li
+      class="list-item list-calculation-item list-calculation-result"
+    >
+      <div
+        class="layout is-2 columns has-alignment-center is-mobile"
+      >
+        <div
+          class="layout-item column"
+        >
+          <span
+            class="text is-primary"
+          >
+            Result
+          </span>
+        </div>
+        <div
+          class="is-auto layout-item column"
+        >
+          <span
+            class="text is-secondary"
+          >
+            1
+          </span>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Given <CalculationList /> When initializes Then should match the snapshot 1`] = `
+<div>
+  <ul
+    class="list list-calculation"
+  >
+    <li
+      class="list-item list-calculation-item"
+    >
+      <div
+        class="layout is-2 columns has-alignment-center is-mobile"
+      >
+        <div
+          class="layout-item column"
+        >
+          <span
+            class="text is-primary"
+          >
+            Test
+          </span>
+        </div>
+        <div
+          class="is-auto layout-item column"
+        >
+          <span
+            class="text is-secondary"
+          >
+            0
+          </span>
+        </div>
+      </div>
+    </li>
+    <li
+      class="list-divider"
+    >
+      <div
+        class="divider is-divider-horizontal"
+      />
+    </li>
+    <li
+      class="list-item list-calculation-item list-calculation-result"
+    >
+      <div
+        class="layout is-2 columns has-alignment-center is-mobile"
+      >
+        <div
+          class="layout-item column"
+        >
+          <span
+            class="text is-primary"
+          >
+            Result
+          </span>
+        </div>
+        <div
+          class="is-auto layout-item column"
+        >
+          <span
+            class="text is-secondary"
+          >
+            0
+          </span>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+`;

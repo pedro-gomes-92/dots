@@ -1,0 +1,135 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Given <BaseInput /> When initializes And uses isReadOnly Then should match the snapshot 1`] = `
+<div>
+  <input
+    class="input is-readonly"
+    readonly=""
+  />
+</div>
+`;
+
+exports[`Given <BaseInput /> When initializes And uses model Then should match the snapshot 1`] = `
+<div>
+  <input
+    class="input"
+    name="email"
+  />
+</div>
+`;
+
+exports[`Given <BaseInput /> When initializes And uses placeHolder Then should match the snapshot 1`] = `
+<div>
+  <input
+    class="input"
+    placeholder="Testing"
+  />
+</div>
+`;
+
+exports[`Given <BaseInput /> When initializes And uses type="checkbox" Then should match the snapshot 1`] = `
+<div>
+  <input
+    class="input"
+    type="checkbox"
+  />
+</div>
+`;
+
+exports[`Given <BaseInput /> When initializes And uses type="date" Then should match the snapshot 1`] = `
+<div>
+  <input
+    class="input"
+    type="date"
+  />
+</div>
+`;
+
+exports[`Given <BaseInput /> When initializes And uses type="datetime" Then should match the snapshot 1`] = `
+<div>
+  <input
+    class="input"
+    type="datetime"
+  />
+</div>
+`;
+
+exports[`Given <BaseInput /> When initializes And uses type="email" Then should match the snapshot 1`] = `
+<div>
+  <input
+    class="input"
+    type="email"
+  />
+</div>
+`;
+
+exports[`Given <BaseInput /> When initializes And uses type="file" Then should match the snapshot 1`] = `
+<div>
+  <input
+    class="input"
+    type="file"
+  />
+</div>
+`;
+
+exports[`Given <BaseInput /> When initializes And uses type="hidden" Then should match the snapshot 1`] = `
+<div>
+  <input
+    class="input"
+    type="hidden"
+  />
+</div>
+`;
+
+exports[`Given <BaseInput /> When initializes And uses type="password" Then should match the snapshot 1`] = `
+<div>
+  <input
+    class="input"
+    type="password"
+  />
+</div>
+`;
+
+exports[`Given <BaseInput /> When initializes And uses type="radio" Then should match the snapshot 1`] = `
+<div>
+  <input
+    class="input"
+    type="radio"
+  />
+</div>
+`;
+
+exports[`Given <BaseInput /> When initializes And uses type="seach" Then should match the snapshot 1`] = `
+<div>
+  <input
+    class="input"
+    type="search"
+  />
+</div>
+`;
+
+exports[`Given <BaseInput /> When initializes And uses type="time" Then should match the snapshot 1`] = `
+<div>
+  <input
+    class="input"
+    type="time"
+  />
+</div>
+`;
+
+exports[`Given <BaseInput /> When initializes And uses value Then should match the snapshot 1`] = `
+<div>
+  <input
+    class="input"
+    value="Testing"
+  />
+</div>
+`;
+
+exports[`Given <BaseInput /> When initializes Then should match the snapshot 1`] = `
+<div>
+  <input
+    class="input"
+  />
+</div>
+`;

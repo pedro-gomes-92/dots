@@ -1,0 +1,42 @@
+/**
+ * animations.scss
+ *
+ * All available animation class helpers that can be added on any element
+ *
+ * Index
+ * - Animation
+ *    - Infinite
+ *    - Duration
+ *    - Name
+ */
+
+.is-animated {
+  animation-duration: $animation-duration-normal;
+  animation-timing-function: $animation-timing;
+  animation-fill-mode: forwards;
+
+  // Infinite
+  &-infinite {
+    animation-iteration-count: infinite;
+  }
+
+  // Duration
+  &-slow {
+    animation-duration: $animation-duration-slow;
+  }
+
+  &-medium {
+    animation-duration: $animation-duration-medium;
+  }
+
+  &-fast {
+    animation-duration: $animation-duration-fast;
+  }
+
+  @each $name in $animations {
+    // Name
+    &-#{$name} {
+      @include animation($name);
+    }
+  }
+}

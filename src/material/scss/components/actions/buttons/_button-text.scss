@@ -1,0 +1,20 @@
+/*
+ * button.scss
+ *
+ * All styling applied to the text button component
+ *
+ * Index
+ * - Button Text
+ */
+
+.button.is-text {
+  text-decoration: none;
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: transparent;
+  }
+  &:focus {
+    box-shadow: none;
+  }
+}

@@ -1,0 +1,38 @@
+/*
+ * layout-center.scss
+ *
+ * All styling applied to the layout center component
+ *
+ * Index
+ * - Layout Center
+ *    - Center
+ *    - Alignment
+ */
+
+.layout {
+  &-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+    // Center
+    > .layout-item {
+      padding: 1rem;
+    }
+
+    // Alignment
+    &.is-center {
+      &-vertical {
+        justify-content: stretch;
+        > .layout-item {
+          @include flex-remaining;
+        }
+      }
+      &-horizontal {
+        align-items: stretch;
+      }
+    }
+  }
+}

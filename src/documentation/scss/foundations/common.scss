@@ -1,0 +1,23 @@
+[data-page='README.md'] .app-nav {
+  display: none;
+}
+
+.sidebar-nav {
+  flex: 1;
+  overflow: hidden auto;
+}
+
+.sidebar .app-name {
+  border-bottom: 1px solid;
+  margin: 0;
+}
+
+.sidebar-nav li {
+  >a {
+    width: 100%;
+  }
+
+  &.collapse>a {
+    border-width: 0;
+  }
+}

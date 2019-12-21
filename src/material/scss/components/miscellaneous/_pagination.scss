@@ -1,0 +1,47 @@
+/*
+ * pagination.scss
+ *
+ * All styling applied to the pagination component
+ *
+ * Index
+ * - Pagination
+ *    - List
+ *    - Item
+ */
+
+.pagination {
+  justify-content: center;
+
+  // List
+  &-list {
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+    border-radius: 0;
+
+    @include flex-auto;
+
+    > .list-item {
+      border: none;
+      padding: 0;
+    }
+  }
+
+  // Item
+  &-link {
+    &.is-current {
+      font-weight: bold;
+      &:hover,
+      &:active,
+      &:focus {
+        color: $pagination-current-color;
+      }
+      &:hover {
+        border-color: $pagination-hover-border-color;
+      }
+      &:focus {
+        border-color: $pagination-focus-border-color;
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Given <PaginationNext /> When initializes Then should match the snapshot 1`] = `
+<div>
+  <button
+    class="button pagination-next"
+  >
+    <span
+      class="icon"
+    >
+      <i
+        class="icon-font icon-font-chevron-right-outline"
+      />
+    </span>
+  </button>
+</div>
+`;

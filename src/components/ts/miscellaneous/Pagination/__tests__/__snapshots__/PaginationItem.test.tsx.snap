@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Given <PaginationItem /> When initializes Then should match the snapshot 1`] = `
+<div>
+  <button
+    class="button is-text pagination-link"
+  >
+    <span
+      class="text"
+    >
+      1
+    </span>
+  </button>
+</div>
+`;

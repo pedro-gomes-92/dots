@@ -1,0 +1,86 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Given <AreaLoader /> When initializes And uses hasOverlay Then should match the snapshot 1`] = `
+<div>
+  <div
+    class="loaders is-area has-overlay"
+  >
+    <div
+      class="layout is-0 layout-center"
+    >
+      <div
+        class="layout-item"
+      >
+        <div
+          class="overlay"
+        />
+        <div
+          class="layout is-0 layout-stack"
+        >
+          <div
+            class="layout-item stack has-alignment-horizontal-center"
+          >
+            <span
+              class="is-animated is-animated-rotateRight is-animated-slow is-animated-infinite icon is-loader is-relative"
+            >
+              <i
+                class="icon-font icon-font-loader-outline"
+              />
+            </span>
+          </div>
+          <div
+            class="layout-item stack"
+          >
+            <span
+              class="text"
+            >
+              Loading
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Given <AreaLoader /> When initializes Then should match the snapshot 1`] = `
+<div>
+  <div
+    class="loaders is-area"
+  >
+    <div
+      class="layout is-0 layout-center"
+    >
+      <div
+        class="layout-item"
+      >
+        <div
+          class="layout is-0 layout-stack"
+        >
+          <div
+            class="layout-item stack has-alignment-horizontal-center"
+          >
+            <span
+              class="is-animated is-animated-rotateRight is-animated-slow is-animated-infinite icon is-loader is-relative"
+            >
+              <i
+                class="icon-font icon-font-loader-outline"
+              />
+            </span>
+          </div>
+          <div
+            class="layout-item stack"
+          >
+            <span
+              class="text"
+            >
+              Loading
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

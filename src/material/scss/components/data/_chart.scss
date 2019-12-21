@@ -1,0 +1,18 @@
+/**
+ * chart.scss
+ *
+ * All styling applied to the chart component
+ *
+ * Index
+ * - Chart
+ */
+
+.chart {
+  .tooltip {
+    position: fixed;
+
+    &.has-position-center-top {
+      transform: translate(-50%, -100%);
+    }
+  }
+}

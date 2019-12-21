@@ -1,0 +1,23 @@
+/**
+ * breakpoints.scss
+ *
+ * All available breakpoints as variables.
+ *
+ * Index
+ * - Device
+ */
+
+// Device
+$breakpoint-mobile: 480px !default;
+$breakpoint-tablet: 768px !default;
+$breakpoint-desktop: 960px !default;
+$breakpoint-widescreen: 1152px !default;
+$breakpoint-fullhd: 1344px !default;
+
+$breakpoints: (
+  'mobile': $breakpoint-mobile,
+  'tablet': $breakpoint-tablet,
+  'desktop': $breakpoint-desktop,
+  'widescreen': $breakpoint-widescreen,
+  'fullhd': $breakpoint-fullhd,
+);

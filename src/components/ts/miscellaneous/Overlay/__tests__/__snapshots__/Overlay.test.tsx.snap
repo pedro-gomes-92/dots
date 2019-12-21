@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Given <Overlay /> When initializes Then should match the snapshot 1`] = `
+<div>
+  <div
+    class="overlay"
+  />
+</div>
+`;

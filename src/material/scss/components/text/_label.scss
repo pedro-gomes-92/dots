@@ -1,0 +1,13 @@
+/*
+ * label.scss
+ *
+ * All styling applied to the label component
+ *
+ * Index
+ * - Label
+ */
+
+.label {
+  @include align('start', true);
+  padding: 0;
+}

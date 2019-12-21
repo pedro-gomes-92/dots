@@ -1,0 +1,29 @@
+/*
+ * card.scss
+ *
+ * All styling applied to the card component
+ *
+ * Index
+ * - Card
+ *    - Header
+ *    - Footer
+ */
+
+.card {
+  padding: $card-padding;
+
+  // Header
+  &-header {
+    display: block;
+    padding: $card-header-padding;
+  }
+
+  // Footer
+  &-footer {
+    display: block;
+    padding: $card-footer-padding;
+    &-action {
+      @include align('end', true);
+    }
+  }
+}

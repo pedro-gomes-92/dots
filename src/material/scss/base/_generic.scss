@@ -1,0 +1,41 @@
+/**
+ * generic.scss
+ *
+ * All styling applied to the generic components (e.g. body)
+ * Normally this is used to override the default/browser's styling
+ *
+ * Index
+ * - All
+ * - Html
+ * - Body
+ */
+
+// All
+* {
+  &,
+  &::after,
+  &::before {
+    box-sizing: border-box;
+  }
+}
+
+// Html
+html {
+  font-size: $text-size;
+  font-family: $text-family;
+  @include screen('tablet') {
+    font-size: factor($text-size, $text-size-factor);
+  }
+  @include screen('desktop') {
+    font-size: factor($text-size, 2 * $text-size-factor);
+  }
+}
+
+// Body
+body {
+  background-color: $color-background;
+  color: $color-background-inverted;
+
+  padding: 0;
+  margin: 0;
+}

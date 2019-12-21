@@ -1,0 +1,103 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Given <BaseField /> When initializes And uses children Then should match the snapshot 1`] = `
+<div>
+  <div
+    class="field"
+  >
+    <div
+      class="field-body"
+    >
+      <div
+        class="control"
+      >
+        <input
+          class="input is-text"
+          type="text"
+        />
+        <input
+          class="input is-date"
+          type="date"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Given <BaseField /> When initializes And uses hint Then should match the snapshot 1`] = `
+<div>
+  <div
+    class="field"
+  >
+    <div
+      class="field-body"
+    >
+      <div
+        class="control"
+      >
+        <input
+          class="input is-text"
+          type="text"
+        />
+      </div>
+    </div>
+    <p
+      class="text paragraph help"
+    >
+      Testing
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Given <BaseField /> When initializes And uses label Then should match the snapshot 1`] = `
+<div>
+  <div
+    class="field"
+  >
+    <div
+      class="field-label"
+    >
+      <label
+        class="text label"
+      >
+        Testing
+      </label>
+    </div>
+    <div
+      class="field-body"
+    >
+      <div
+        class="control"
+      >
+        <input
+          class="input is-text"
+          type="text"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Given <BaseField /> When initializes Then should match the snapshot 1`] = `
+<div>
+  <div
+    class="field"
+  >
+    <div
+      class="field-body"
+    >
+      <div
+        class="control"
+      >
+        <input
+          class="input is-text"
+          type="text"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;

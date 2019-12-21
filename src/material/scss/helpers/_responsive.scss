@@ -1,0 +1,66 @@
+/**
+ * responsive.scss
+ *
+ * All available responsive class helpers that can be added on any element.
+ *
+ * Index
+ * - Position
+ * - Alignment
+ */
+
+/**
+ * Position
+ */
+
+$positionsHorizontal: left, center, right;
+$positionsVertical: top, middle, bottom;
+
+.has-position {
+  @each $positionHorizontal in $positionsHorizontal {
+    @each $positionVertical in $positionsVertical {
+      &-#{$positionHorizontal}-#{$positionVertical} {
+        @include position($positionHorizontal, $positionVertical, false);
+      }
+    }
+  }
+}
+
+.is-inner-position.has-position {
+  @each $positionHorizontal in $positionsHorizontal {
+    @each $positionVertical in $positionsVertical {
+      &-#{$positionHorizontal}-#{$positionVertical} {
+        @include position($positionHorizontal, $positionVertical, true);
+      }
+    }
+  }
+}
+
+/**
+ * Alignment
+ */
+
+.has-alignment {
+  &-horizontal {
+    &-start {
+      @include align('start', true);
+    }
+    &-center {
+      @include align('center', true);
+    }
+    &-end {
+      @include align('end', true);
+    }
+  }
+
+  &-vertical {
+    &-start {
+      vertical-align: text-top;
+    }
+    &-center {
+      vertical-align: middle;
+    }
+    &-end {
+      vertical-align: text-bottom;
+    }
+  }
+}

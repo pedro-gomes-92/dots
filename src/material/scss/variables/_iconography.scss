@@ -1,0 +1,20 @@
+/**
+ * iconography.scss
+ *
+ * These are the variables for iconography.
+ *
+ * Index
+ * - Family
+ * - Size
+ * - List
+ */
+
+// Family
+$icon-family: 'eva' !default;
+
+// Size
+$icon-size-factor: 50% !default;
+
+// List
+$icons: 'info' 'alert-circle' 'info-outline' 'question-mark-circle-outline' 'chevron-left-outline'
+  'chevron-right-outline' 'arrow-back-outline' 'loader-outline' 'close-outline' !default;

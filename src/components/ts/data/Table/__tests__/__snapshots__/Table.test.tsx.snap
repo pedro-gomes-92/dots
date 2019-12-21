@@ -1,0 +1,350 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Given <Table /> When initializes And uses different lengths for values Then should match the snapshot 1`] = `
+<div>
+  <table
+    class="table is-hoverable"
+  >
+    <tbody
+      class="table-body"
+    >
+      <tr
+        class="table-row"
+      >
+        <td
+          class="table-cell"
+        >
+          <span
+            class="text"
+          >
+            d
+          </span>
+        </td>
+        <td
+          class="table-cell"
+        >
+          <span
+            class="text"
+          >
+            e
+          </span>
+        </td>
+        <td
+          class="table-cell"
+        >
+          <span
+            class="text"
+          >
+            f
+          </span>
+        </td>
+      </tr>
+      <tr
+        class="table-row"
+      >
+        <td
+          class="table-cell"
+        >
+          <span
+            class="text"
+          >
+            a
+          </span>
+        </td>
+        <td
+          class="table-cell"
+        >
+          <span
+            class="text"
+          >
+            b
+          </span>
+        </td>
+        <td
+          class="table-cell"
+        >
+          <span
+            class="text"
+          />
+        </td>
+      </tr>
+      <tr
+        class="table-row"
+      >
+        <td
+          class="table-cell"
+        >
+          <span
+            class="text"
+          >
+            c
+          </span>
+        </td>
+        <td
+          class="table-cell"
+        >
+          <span
+            class="text"
+          />
+        </td>
+        <td
+          class="table-cell"
+        >
+          <span
+            class="text"
+          />
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`Given <Table /> When initializes And uses labels And uses different lengths for values Then should match the snapshot 1`] = `
+<div>
+  <table
+    class="table is-hoverable"
+  >
+    <thead
+      class="table-header"
+    >
+      <tr
+        class="table-row"
+      >
+        <td
+          class="table-cell"
+        >
+          <span
+            class="text"
+          >
+            test 1
+          </span>
+        </td>
+        <td
+          class="table-cell"
+        >
+          <span
+            class="text"
+          >
+            test 2
+          </span>
+        </td>
+      </tr>
+    </thead>
+    <tbody
+      class="table-body"
+    >
+      <tr
+        class="table-row"
+      >
+        <td
+          class="table-cell"
+        >
+          <span
+            class="text"
+          >
+            a
+          </span>
+        </td>
+        <td
+          class="table-cell"
+        >
+          <span
+            class="text"
+          >
+            b
+          </span>
+        </td>
+      </tr>
+      <tr
+        class="table-row"
+      >
+        <td
+          class="table-cell"
+        >
+          <span
+            class="text"
+          >
+            c
+          </span>
+        </td>
+        <td
+          class="table-cell"
+        >
+          <span
+            class="text"
+          />
+        </td>
+      </tr>
+      <tr
+        class="table-row"
+      >
+        <td
+          class="table-cell"
+        >
+          <span
+            class="text"
+          >
+            d
+          </span>
+        </td>
+        <td
+          class="table-cell"
+        >
+          <span
+            class="text"
+          >
+            e
+          </span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`Given <Table /> When initializes And uses labels Then should match the snapshot 1`] = `
+<div>
+  <table
+    class="table is-hoverable"
+  >
+    <thead
+      class="table-header"
+    >
+      <tr
+        class="table-row"
+      >
+        <td
+          class="table-cell"
+        >
+          <span
+            class="text"
+          >
+            test 1
+          </span>
+        </td>
+        <td
+          class="table-cell"
+        >
+          <span
+            class="text"
+          >
+            test 2
+          </span>
+        </td>
+        <td
+          class="table-cell"
+        >
+          <span
+            class="text"
+          >
+            test 3
+          </span>
+        </td>
+      </tr>
+    </thead>
+    <tbody
+      class="table-body"
+    >
+      <tr
+        class="table-row"
+      >
+        <td
+          class="table-cell"
+        >
+          <span
+            class="text"
+          />
+        </td>
+        <td
+          class="table-cell"
+        >
+          <span
+            class="text"
+          />
+        </td>
+        <td
+          class="table-cell"
+        >
+          <span
+            class="text"
+          />
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`Given <Table /> When initializes And uses values Then should match the snapshot 1`] = `
+<div>
+  <table
+    class="table is-hoverable"
+  >
+    <tbody
+      class="table-body"
+    >
+      <tr
+        class="table-row"
+      >
+        <td
+          class="table-cell"
+        >
+          <span
+            class="text"
+          >
+            a
+          </span>
+        </td>
+        <td
+          class="table-cell"
+        >
+          <span
+            class="text"
+          >
+            b
+          </span>
+        </td>
+      </tr>
+      <tr
+        class="table-row"
+      >
+        <td
+          class="table-cell"
+        >
+          <span
+            class="text"
+          >
+            c
+          </span>
+        </td>
+        <td
+          class="table-cell"
+        >
+          <span
+            class="text"
+          >
+            d
+          </span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`Given <Table /> When initializes Then should match the snapshot 1`] = `
+<div>
+  <table
+    class="table is-hoverable"
+  >
+    <tbody
+      class="table-body"
+    >
+      <tr
+        class="table-row"
+      />
+    </tbody>
+  </table>
+</div>
+`;

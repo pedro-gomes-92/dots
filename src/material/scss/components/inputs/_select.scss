@@ -1,0 +1,16 @@
+/*
+ * select.scss
+ *
+ * All styling applied to the select component
+ *
+ * Index
+ * - Select
+ */
+
+.select {
+  width: 100%;
+
+  > select {
+    width: 100%;
+  }
+}

@@ -1,0 +1,27 @@
+/*
+ * table.scss
+ *
+ * All styling applied to the table component
+ *
+ * Index
+ * - Table
+ *   - Size
+ *   - Cell
+ */
+
+.table {
+  border-collapse: separate;
+  border-spacing: $table-cell-spacing;
+
+  &.is {
+    // Size
+    &-full {
+      width: 100%;
+    }
+  }
+
+  // Cell
+  &-cell {
+    border: none;
+  }
+}

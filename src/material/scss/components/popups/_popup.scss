@@ -1,0 +1,22 @@
+/*
+ * popup.scss
+ *
+ * All styling applied to the popup components
+ *
+ * Index
+ * - Popup
+ *    - Visibility
+ *    - Animation
+ */
+
+.popup {
+  position: absolute;
+  opacity: 0;
+
+  &.is {
+    // Visibility
+    &-hidden {
+      display: initial !important; // HACK: Bulma is adding !important
+    }
+  }
+}

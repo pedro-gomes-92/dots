@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "./",
+    "declaration": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "jsx": "preserve",
+    "lib": ["dom", "dom.iterable", "esnext", "scripthost"],
+    "locale": "en",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "emitDeclarationOnly": true,
+    "noImplicitAny": false,
+    "noResolve": false,
+    "outDir": "dist/@types/",
+    "paths": {
+      "@dots/core": ["./src/core/index.ts"],
+      "@dots/components": ["./src/components/index.ts"]
+    },
+    "removeComments": true,
+    "skipLibCheck": true,
+    "strictNullChecks": false,
+    "sourceMap": false,
+    "strict": true,
+    "target": "es6",
+    "typeRoots": ["node_modules/@types", "./src/core/typings", "./src/components/typings"]
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
+}

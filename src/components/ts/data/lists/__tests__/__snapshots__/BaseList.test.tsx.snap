@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Given <BaseList /> When initializes And uses children Then should match the snapshot 1`] = `
+<div>
+  <ul
+    class="list"
+  >
+    <li
+      class="list-item"
+    >
+      <span
+        class="text"
+      >
+        Testing
+      </span>
+    </li>
+    <li
+      class="list-item"
+    >
+      <span
+        class="text"
+      >
+        Testing 2
+      </span>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Given <BaseList /> When initializes Then should match the snapshot 1`] = `
+<div>
+  <ul
+    class="list"
+  >
+    <li
+      class="list-item"
+    >
+      <span
+        class="text"
+      >
+        Testing
+      </span>
+    </li>
+  </ul>
+</div>
+`;

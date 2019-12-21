@@ -1,0 +1,36 @@
+/* Fix - Themable */
+.sidebar-nav {
+
+  a:hover {
+    color: var(--sidebar-nav-link-color--hover);
+  }
+
+  li>a[href^="#/"]:not([href*="?id="]):not(:only-child) {
+    color: inherit;
+
+    &:hover {
+      color: var(--sidebar-nav-link-color--hover);
+    }
+  }
+
+  ul>li>strong>img {
+    margin-right: .5em;
+    margin-top: -0.25em;
+    vertical-align: middle;
+  }
+}
+
+.sidebar nav {
+  a:hover {
+    color: var(--sidebar-nav-link-color--hover);
+  }
+}
+
+/* Fix - Pagination */
+.content .pagination-item:not(:last-child) a {
+
+  .pagination-item-label,
+  .pagination-item-title {
+    transition: opacity var(--duration-fast);
+  }
+}

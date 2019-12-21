@@ -1,0 +1,87 @@
+/*
+ * layout-column.scss
+ *
+ * All styling applied to the layout column component
+ *
+ * Index
+ * - Layout Column
+ *    - Reverted
+ *    - Alignment
+ * - Column
+ *    - Size
+ *    - Alignment
+ */
+
+@mixin gap-column {
+  &.is {
+    @for $i from 1 through 12 {
+      &-#{$i} {
+        @include gap($i, $i, true);
+        > * {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+.layout {
+  &.columns {
+    flex-direction: row;
+
+    .is-mobile {
+      @include gap-column;
+    }
+
+    @include screen($layout-flex-active-device) {
+      @include gap-column;
+    }
+
+    &.is {
+      // Reverted
+      &-reverted {
+        flex-direction: row-reverse;
+      }
+    }
+
+    // Alignment
+    &.has-alignment {
+      &-start {
+        align-items: flex-start;
+      }
+
+      &-center {
+        align-items: center;
+      }
+
+      &-end {
+        align-items: flex-end;
+      }
+    }
+  }
+}
+
+.column {
+  &.is {
+    // Size
+    &-auto {
+      flex: none;
+      width: auto;
+    }
+  }
+
+  // Alignment
+  &.has-alignment {
+    &-start {
+      align-self: flex-start;
+    }
+
+    &-center {
+      align-self: center;
+    }
+
+    &-end {
+      align-self: flex-end;
+    }
+  }
+}

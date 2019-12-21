@@ -1,0 +1,42 @@
+/**
+ * modal.scss
+ *
+ * All styling applied to the modal component
+ *
+ * Index
+ * - Modal
+ *    - Header
+ *      - Close
+ *    - Content
+ *    - Footer
+ */
+
+.modal {
+  display: block;
+
+  &-card {
+    padding: $modal-padding;
+  }
+
+  // Header
+  &-header {
+    padding: $modal-header-padding;
+
+    // Close
+    .dialog-close {
+      position: initial;
+      top: auto;
+      right: auto;
+    }
+  }
+
+  // Content
+  .card-content {
+    padding: $modal-content-padding;
+  }
+
+  // Footer
+  &-footer {
+    padding: $modal-footer-padding;
+  }
+}

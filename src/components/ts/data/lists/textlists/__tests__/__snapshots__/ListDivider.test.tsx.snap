@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Given <ListDivider /> When initializes Then should match the snapshot 1`] = `
+<div>
+  <li
+    class="list-divider"
+  >
+    <div
+      class="divider is-divider-horizontal"
+    />
+  </li>
+</div>
+`;
