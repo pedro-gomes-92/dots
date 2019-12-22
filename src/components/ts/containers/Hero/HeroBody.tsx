@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from 'react';
 import classnames from 'classnames';
-import { BaseContainerProps, BaseContainer } from '../../containers/BaseContainer';
+import { BaseContainerProps, BaseContainer } from '../BaseContainer';
 import { CenterLayout } from '../../layouts';
 
 export interface HeroBodyProps extends BaseContainerProps {}

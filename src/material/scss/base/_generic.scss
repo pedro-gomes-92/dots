@@ -21,6 +21,7 @@
 
 // Html
 html {
+  height: 100%;
   font-size: $text-size;
   font-family: $text-family;
   @include screen('tablet') {
@@ -33,6 +34,7 @@ html {
 
 // Body
 body {
+  height: 100%;
   background-color: $color-background;
   color: $color-background-inverted;
 
