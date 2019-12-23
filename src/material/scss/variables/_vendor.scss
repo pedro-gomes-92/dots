@@ -12,6 +12,7 @@
  *    - Icon
  *    - Table
  *    - Pagination
+ *    - Section
  *    - Card
  *    - Modal
  *    - Notification
@@ -108,6 +109,9 @@ $pagination-current-background-color: transparent !default;
 $pagination-current-border-color: transparent !default;
 $pagination-current-color: $color-primary !default;
 $pagination-ellipsis-color: $color-background-inverted !default;
+
+// Section
+$section-padding: 3rem $containers-padding-horizontal !default;
 
 // Card
 $card-header-shadow: none !default;

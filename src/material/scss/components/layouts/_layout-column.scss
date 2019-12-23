@@ -12,29 +12,33 @@
  *    - Alignment
  */
 
-@mixin gap-column {
-  &.is {
-    @for $i from 1 through 12 {
-      &-#{$i} {
-        @include gap($i, $i, true);
-        > * {
-          margin: 0;
-        }
-      }
-    }
-  }
-}
-
 .layout {
   &.columns {
     flex-direction: row;
 
-    .is-mobile {
-      @include gap-column;
+    &.is-mobile {
+      &.is {
+        @for $i from 1 through 12 {
+          &-#{$i} {
+            @include gap($i, 0);
+          }
+        }
+      }
     }
 
     @include screen($layout-flex-active-device) {
-      @include gap-column;
+      &:not(.is-mobile) {
+        &.is {
+          @for $i from 1 through 12 {
+            &-#{$i} {
+              @include gap($i, $i, true);
+              > * {
+                margin: 0;
+              }
+            }
+          }
+        }
+      }
     }
 
     &.is {

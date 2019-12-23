@@ -12,8 +12,11 @@
  * - Dialog
  *    - Modal
  * - Layout
- * - Overlay
- * - List
+ * - Miscellaneous
+ *    - NavBar
+ *    - Overlay
+ * - Data
+ *    - List
  */
 
 // Tooltip
@@ -54,9 +57,16 @@ $modal-footer-padding: $modal-gap 0 0 0 !default;
 // Layout
 $layout-flex-active-device: 'mobile' !default;
 
+// Miscellaneous
+
+// NavBar
+$navbar-padding: 0 $containers-padding-horizontal !default;
+
 // Overlay
 $overlay-color-background: darken($color-background, 75%) !default;
 $overlay-opacity: 0.25 !default;
+
+// Data
 
 // List
 $list-item-padding: 0.5em 0 !default;
