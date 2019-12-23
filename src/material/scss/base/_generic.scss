@@ -24,11 +24,16 @@ html {
   height: 100%;
   font-size: $text-size;
   font-family: $text-family;
+  text-align: center;
+
   @include screen('tablet') {
     font-size: factor($text-size, $text-size-factor);
   }
   @include screen('desktop') {
     font-size: factor($text-size, 2 * $text-size-factor);
+  }
+  @include screen($layout-flex-active-device) {
+    text-align: left;
   }
 }
 
