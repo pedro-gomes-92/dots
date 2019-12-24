@@ -9,7 +9,7 @@ exports[`Given <CalculationList /> When initializes And uses labels And uses val
       class="list-item list-calculation-item"
     >
       <div
-        class="layout is-2 columns has-alignment-center is-mobile"
+        class="layout is-2 is-mobile columns has-alignment-center"
       >
         <div
           class="layout-item column"
@@ -35,7 +35,7 @@ exports[`Given <CalculationList /> When initializes And uses labels And uses val
       class="list-item list-calculation-item"
     >
       <div
-        class="layout is-2 columns has-alignment-center is-mobile"
+        class="layout is-2 is-mobile columns has-alignment-center"
       >
         <div
           class="layout-item column"
@@ -68,7 +68,7 @@ exports[`Given <CalculationList /> When initializes And uses labels And uses val
       class="list-item list-calculation-item list-calculation-result"
     >
       <div
-        class="layout is-2 columns has-alignment-center is-mobile"
+        class="layout is-2 is-mobile columns has-alignment-center"
       >
         <div
           class="layout-item column"
@@ -103,7 +103,7 @@ exports[`Given <CalculationList /> When initializes And uses labels Then should 
       class="list-item list-calculation-item"
     >
       <div
-        class="layout is-2 columns has-alignment-center is-mobile"
+        class="layout is-2 is-mobile columns has-alignment-center"
       >
         <div
           class="layout-item column"
@@ -129,7 +129,7 @@ exports[`Given <CalculationList /> When initializes And uses labels Then should 
       class="list-item list-calculation-item"
     >
       <div
-        class="layout is-2 columns has-alignment-center is-mobile"
+        class="layout is-2 is-mobile columns has-alignment-center"
       >
         <div
           class="layout-item column"
@@ -162,7 +162,7 @@ exports[`Given <CalculationList /> When initializes And uses labels Then should 
       class="list-item list-calculation-item list-calculation-result"
     >
       <div
-        class="layout is-2 columns has-alignment-center is-mobile"
+        class="layout is-2 is-mobile columns has-alignment-center"
       >
         <div
           class="layout-item column"
@@ -197,7 +197,7 @@ exports[`Given <CalculationList /> When initializes And uses onFormat Then shoul
       class="list-item list-calculation-item"
     >
       <div
-        class="layout is-2 columns has-alignment-center is-mobile"
+        class="layout is-2 is-mobile columns has-alignment-center"
       >
         <div
           class="layout-item column"
@@ -223,7 +223,7 @@ exports[`Given <CalculationList /> When initializes And uses onFormat Then shoul
       class="list-item list-calculation-item"
     >
       <div
-        class="layout is-2 columns has-alignment-center is-mobile"
+        class="layout is-2 is-mobile columns has-alignment-center"
       >
         <div
           class="layout-item column"
@@ -256,7 +256,7 @@ exports[`Given <CalculationList /> When initializes And uses onFormat Then shoul
       class="list-item list-calculation-item list-calculation-result"
     >
       <div
-        class="layout is-2 columns has-alignment-center is-mobile"
+        class="layout is-2 is-mobile columns has-alignment-center"
       >
         <div
           class="layout-item column"
@@ -291,7 +291,7 @@ exports[`Given <CalculationList /> When initializes And uses resultLabel Then sh
       class="list-item list-calculation-item"
     >
       <div
-        class="layout is-2 columns has-alignment-center is-mobile"
+        class="layout is-2 is-mobile columns has-alignment-center"
       >
         <div
           class="layout-item column"
@@ -317,7 +317,7 @@ exports[`Given <CalculationList /> When initializes And uses resultLabel Then sh
       class="list-item list-calculation-item"
     >
       <div
-        class="layout is-2 columns has-alignment-center is-mobile"
+        class="layout is-2 is-mobile columns has-alignment-center"
       >
         <div
           class="layout-item column"
@@ -350,7 +350,7 @@ exports[`Given <CalculationList /> When initializes And uses resultLabel Then sh
       class="list-item list-calculation-item list-calculation-result"
     >
       <div
-        class="layout is-2 columns has-alignment-center is-mobile"
+        class="layout is-2 is-mobile columns has-alignment-center"
       >
         <div
           class="layout-item column"
@@ -385,7 +385,7 @@ exports[`Given <CalculationList /> When initializes And uses values Then should 
       class="list-item list-calculation-item"
     >
       <div
-        class="layout is-2 columns has-alignment-center is-mobile"
+        class="layout is-2 is-mobile columns has-alignment-center"
       >
         <div
           class="layout-item column"
@@ -418,7 +418,7 @@ exports[`Given <CalculationList /> When initializes And uses values Then should 
       class="list-item list-calculation-item list-calculation-result"
     >
       <div
-        class="layout is-2 columns has-alignment-center is-mobile"
+        class="layout is-2 is-mobile columns has-alignment-center"
       >
         <div
           class="layout-item column"
@@ -453,7 +453,7 @@ exports[`Given <CalculationList /> When initializes Then should match the snapsh
       class="list-item list-calculation-item"
     >
       <div
-        class="layout is-2 columns has-alignment-center is-mobile"
+        class="layout is-2 is-mobile columns has-alignment-center"
       >
         <div
           class="layout-item column"
@@ -486,7 +486,7 @@ exports[`Given <CalculationList /> When initializes Then should match the snapsh
       class="list-item list-calculation-item list-calculation-result"
     >
       <div
-        class="layout is-2 columns has-alignment-center is-mobile"
+        class="layout is-2 is-mobile columns has-alignment-center"
       >
         <div
           class="layout-item column"

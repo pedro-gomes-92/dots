@@ -16,5 +16,5 @@ export const IconLoader: FunctionComponent<IconLoaderProps> = ({
 
 IconLoader.defaultProps = {
   animations: { rotateRight: { duration: 'slow', isInfinite: true } },
-  name: 'loader-outline',
+  name: 'loader',
 };

@@ -7,7 +7,6 @@ import { Children } from '../../typings';
 export interface ColumnLayoutProps extends BaseLayoutProps {
   children: Children<typeof ColumnItem>;
   align?: Align;
-  isMobileActive?: boolean;
   isWrapping?: boolean;
   isReverted?: boolean;
 }
@@ -16,7 +15,6 @@ export const ColumnLayout: FunctionComponent<ColumnLayoutProps> = ({
   className,
   children,
   align,
-  isMobileActive,
   isWrapping,
   isReverted,
   ...rest
@@ -25,7 +23,6 @@ export const ColumnLayout: FunctionComponent<ColumnLayoutProps> = ({
     className={classnames(
       'columns',
       align ? `has-alignment-${align}` : '',
-      { 'is-mobile': isMobileActive },
       { 'is-multiline': isWrapping },
       { 'is-reverted': isReverted },
       className,
@@ -39,5 +36,4 @@ export const ColumnLayout: FunctionComponent<ColumnLayoutProps> = ({
 ColumnLayout.defaultProps = {
   isWrapping: false,
   isReverted: false,
-  isMobileActive: false,
 };

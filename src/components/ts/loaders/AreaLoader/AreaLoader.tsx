@@ -41,7 +41,7 @@ export const AreaLoader: FunctionComponent<AreaLoaderProps> = ({
       <CenterLayout>
         {hasOverlay && <Overlay onClick={handleOutsideClick} />}
         <StackLayout>
-          <StackItem className="has-alignment-horizontal-center">
+          <StackItem alignText="center">
             <IconLoader name={icon} size={sizeIcon} />
           </StackItem>
           <StackItem>

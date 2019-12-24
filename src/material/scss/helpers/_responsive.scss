@@ -5,7 +5,6 @@
  *
  * Index
  * - Position
- * - Alignment
  */
 
 /**
@@ -31,36 +30,6 @@ $positionsVertical: top, middle, bottom;
       &-#{$positionHorizontal}-#{$positionVertical} {
         @include position($positionHorizontal, $positionVertical, true);
       }
-    }
-  }
-}
-
-/**
- * Alignment
- */
-
-.has-alignment {
-  &-horizontal {
-    &-start {
-      @include align('start', true);
-    }
-    &-center {
-      @include align('center', true);
-    }
-    &-end {
-      @include align('end', true);
-    }
-  }
-
-  &-vertical {
-    &-start {
-      vertical-align: text-top;
-    }
-    &-center {
-      vertical-align: middle;
-    }
-    &-end {
-      vertical-align: text-bottom;
     }
   }
 }

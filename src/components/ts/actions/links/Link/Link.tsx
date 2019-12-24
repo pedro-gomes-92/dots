@@ -1,5 +1,4 @@
 import React, { FunctionComponent } from 'react';
-import classnames from 'classnames';
 import { BaseLinkProps, BaseLink } from '../BaseLink';
 import { Text } from '../../../text';
 import { Icon } from '../../../miscellaneous';
@@ -8,7 +7,6 @@ export interface LinkProps extends Omit<BaseLinkProps, 'children'> {
   text?: string;
   icon?: string;
   iconAlign?: IconAlign;
-  align?: Align;
   size?: FontSize;
 }
 
@@ -16,8 +14,6 @@ export const Link: FunctionComponent<LinkProps> = ({
   text,
   icon,
   iconAlign,
-  align,
-  className,
   size,
   ...rest
 }: LinkProps): JSX.Element => {
@@ -41,14 +37,9 @@ export const Link: FunctionComponent<LinkProps> = ({
       );
     }
   }
-  return (
-    <BaseLink className={classnames(`has-alignment-horizontal-${align}`, className)} {...rest}>
-      {content}
-    </BaseLink>
-  );
+  return <BaseLink {...rest}>{content}</BaseLink>;
 };
 
 Link.defaultProps = {
   iconAlign: 'start',
-  align: 'start',
 };

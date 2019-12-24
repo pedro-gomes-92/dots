@@ -28,7 +28,8 @@
 
 // Iconograpy
 @mixin icon($name) {
-  @extend .#{$icon-family}-#{$name};
+  $value: map-get($icons, $name);
+  @extend .#{$icon-family}-#{$value};
 }
 
 // Animation
@@ -95,6 +96,18 @@
 }
 
 // Layout
+@mixin layout-activate {
+  &.is-mobile {
+    @content;
+  }
+
+  &:not(.is-mobile) {
+    @include screen($device-responsive-active) {
+      @content;
+    }
+  }
+}
+
 @mixin flex-remaining {
   @include flex-min-size(0%);
 }

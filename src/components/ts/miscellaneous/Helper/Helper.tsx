@@ -46,6 +46,6 @@ export const Helper: FunctionComponent<HelperProps> = ({
 };
 
 Helper.defaultProps = {
-  icon: 'question-mark-circle-outline',
+  icon: 'helper',
   animations: { fadeIn: { duration: 'fast' }, fadeOut: { duration: 'fast' } },
 };

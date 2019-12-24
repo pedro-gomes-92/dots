@@ -6,7 +6,7 @@ exports[`Given <BaseTextListItem /> When initializes And uses secondaryText Then
     class="list-item"
   >
     <div
-      class="layout is-2 columns has-alignment-center is-mobile"
+      class="layout is-2 is-mobile columns has-alignment-center"
     >
       <div
         class="layout-item column"
@@ -37,7 +37,7 @@ exports[`Given <BaseTextListItem /> When initializes And uses text Then should m
     class="list-item"
   >
     <div
-      class="layout is-2 columns has-alignment-center is-mobile"
+      class="layout is-2 is-mobile columns has-alignment-center"
     >
       <div
         class="layout-item column"
@@ -59,7 +59,7 @@ exports[`Given <BaseTextListItem /> When initializes Then should match the snaps
     class="list-item"
   >
     <div
-      class="layout is-2 columns has-alignment-center is-mobile"
+      class="layout is-2 is-mobile columns has-alignment-center"
     >
       <div
         class="layout-item column"

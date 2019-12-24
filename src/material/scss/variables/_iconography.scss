@@ -16,5 +16,51 @@ $icon-family: 'eva' !default;
 $icon-size-factor: 50% !default;
 
 // List
-$icons: 'info' 'alert-circle' 'info-outline' 'question-mark-circle-outline' 'chevron-left-outline'
-  'chevron-right-outline' 'arrow-back-outline' 'loader-outline' 'close-outline' !default;
+$icon-list-states: (
+  info: 'info-outline',
+  warning: 'alert-circle-outline',
+  danger: 'close-circle-outline',
+  success: 'checkmark-circle-2-outline',
+) !default;
+
+$icon-list-arrows: (
+  left: 'chevron-left-outline',
+  right: 'chevron-right-outline',
+  up: 'chevron-up-outline',
+  down: 'chevron-down-outline',
+) !default;
+
+$icon-list-media: (
+  linkedin: 'linkedin',
+  facebook: 'facebook',
+  github: 'github',
+) !default;
+
+$icon-list-contacts: (
+  home: 'home',
+  email: 'email',
+  phone: 'phone',
+) !default;
+
+$icon-list-components: (
+  loader: 'loader-outline',
+  close: 'close-outline',
+  helper: 'question-mark-circle-outline',
+) !default;
+
+$icon-list-miscellaneous: (
+  heart: 'heart',
+) !default;
+
+$icon-list-custom: () !default;
+
+$icons: map-merge(
+  map-merge(
+    map-merge(
+      map-merge(map-merge(map-merge($icon-list-states, $icon-list-arrows), $icon-list-components), $icon-list-media),
+      $icon-list-contacts
+    ),
+    $icon-list-miscellaneous
+  ),
+  $icon-list-custom
+);

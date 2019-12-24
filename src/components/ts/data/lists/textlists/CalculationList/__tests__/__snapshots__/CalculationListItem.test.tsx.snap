@@ -6,7 +6,7 @@ exports[`Given <CalculationListItem /> When initializes Then should match the sn
     class="list-item list-calculation-item"
   >
     <div
-      class="layout is-2 columns has-alignment-center is-mobile"
+      class="layout is-2 is-mobile columns has-alignment-center"
     >
       <div
         class="layout-item column"

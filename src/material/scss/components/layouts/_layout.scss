@@ -6,6 +6,9 @@
  * Index
  * - Layout
  *    - Gap
+ *    - Alignment
+ * - Item
+ *    - Text Alignment
  */
 
 .layout {
@@ -16,6 +19,27 @@
     @for $i from 1 through 12 {
       &-#{$i} {
         @include gap(0, $i);
+      }
+    }
+  }
+}
+
+.layout-item {
+  @include align(center, true);
+
+  @include layout-activate {
+    text-align: inherit;
+
+    &.has-text-alignment {
+      // Text Alignment
+      &-start {
+        @include align(start, true);
+      }
+      &-center {
+        @include align(center, true);
+      }
+      &-end {
+        @include align(end, true);
       }
     }
   }

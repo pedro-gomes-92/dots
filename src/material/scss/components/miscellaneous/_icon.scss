@@ -58,7 +58,7 @@
       }
     }
 
-    @each $name in $icons {
+    @each $name, $value in $icons {
       &-#{$name} {
         @include icon($name);
       }

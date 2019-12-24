@@ -6,7 +6,7 @@ exports[`Given <ModalHeader /> When initializes And uses onClose Then should mat
     class="card-header modal-header"
   >
     <div
-      class="layout is-2 columns is-mobile"
+      class="layout is-2 is-mobile columns"
     >
       <div
         class="layout-item column"
@@ -41,7 +41,7 @@ exports[`Given <ModalHeader /> When initializes Then should match the snapshot 1
     class="card-header modal-header"
   >
     <div
-      class="layout is-2 columns is-mobile"
+      class="layout is-2 is-mobile columns"
     >
       <div
         class="layout-item column"

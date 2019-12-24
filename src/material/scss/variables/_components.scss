@@ -11,7 +11,6 @@
  *    - Card
  * - Dialog
  *    - Modal
- * - Layout
  * - Miscellaneous
  *    - NavBar
  *    - Overlay
@@ -53,9 +52,6 @@ $modal-padding: $modal-gap !default;
 $modal-header-padding: 0 0 $modal-gap 0 !default;
 $modal-content-padding: $modal-gap 0 $modal-gap 0 !default;
 $modal-footer-padding: $modal-gap 0 0 0 !default;
-
-// Layout
-$layout-flex-active-device: 'tablet' !default;
 
 // Miscellaneous
 

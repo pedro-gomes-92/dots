@@ -9,7 +9,7 @@ exports[`Given <BaseTextList /> When initializes Then should match the snapshot 
       class="list-item"
     >
       <div
-        class="layout is-2 columns has-alignment-center is-mobile"
+        class="layout is-2 is-mobile columns has-alignment-center"
       >
         <div
           class="layout-item column"
