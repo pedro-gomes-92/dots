@@ -2,4 +2,5 @@
 !README.md
 !package.json
 !dist/**/*
+!src/material/**/*
 dist/dots.tar.gz

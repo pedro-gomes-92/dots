@@ -28,7 +28,7 @@
     "build:dev": "npx cross-env NODE_ENV=dev npm run build -- --colors --progress",
     "build:types": "npx tsc",
     "postbuild:hook": "npm run pack && npm run build:types",
-    "pack": "node ./internals/npm/pack.js --src . --target dist",
+    "pack": "node ./internals/npm/pack.js --src . --target ./dist",
     "start": "npx webpack-dev-server --config ./internals/webpack/webpack.serve.js --colors --progress",
     "start:docs": "npx docsify serve ./docs",
     "version:branch": "node ./internals/git/version.js --branch",

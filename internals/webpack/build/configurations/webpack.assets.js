@@ -2,7 +2,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(eot|otf|ttf|woff2?)$/,
+        test: /\.(eot|otf|ttf|woff2?|svg)$/,
         loader: 'file-loader',
         include: /fonts/,
         options: {
@@ -10,18 +10,8 @@ module.exports = {
           outputPath: `dist/fonts`,
         },
       },
-
       {
-        test: /\.svg$/,
-        loader: 'file-loader',
-        include: /icons/,
-        options: {
-          name: `[name].[ext]`,
-          outputPath: `dist/icons`,
-        },
-      },
-      {
-        test: /\.(jpe?g|png|gif|svg)$/,
+        test: /\.(jpe?g|png|gif)$/,
         loader: 'file-loader',
         include: /images/,
         options: {
