@@ -23,6 +23,10 @@
 
 // Color
 @function color-intensity($color, $type, $intensity) {
+  @if ($color-theme == 'dark') {
+    $type: if($type == darken, lighten, darken);
+  }
+
   @return call($type, $color, $intensity * $color-intensity-factor);
 }
 
