@@ -9,6 +9,7 @@
  * - Container
  *    - Size
  *    - Card
+ *    - Header
  * - Dialog
  *    - Modal
  * - Miscellaneous
@@ -43,6 +44,9 @@ $card-gap: 0.75em !default;
 $card-padding: $card-gap !default;
 $card-header-padding: 0 0 $card-gap 0 !default;
 $card-footer-padding: $card-gap 0 0 0 !default;
+
+// Header
+$header-background-color: darken($color-background, 5%) !default;
 
 // Dialog
 

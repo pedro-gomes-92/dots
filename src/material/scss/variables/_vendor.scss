@@ -13,12 +13,14 @@
  *    - Table
  *    - Pagination
  *    - Section
+ *    - Box
  *    - Card
  *    - Modal
  *    - Notification
  *    - NavBar
  *    - Layout
  *    - List
+ *    - Title
  * - Bulma Calendar
  *    - Colors
  *    - Borders
@@ -42,6 +44,7 @@ $warning: $color-warning;
 $warning-inverted: $color-warning-inverted;
 $danger: $color-danger;
 $danger-inverted: $color-danger-inverted;
+$text: $color-background-inverted;
 
 $colors: mergeColorMaps(
   $colors,
@@ -113,6 +116,9 @@ $pagination-ellipsis-color: $color-background-inverted !default;
 // Section
 $section-padding: 3rem $containers-padding-horizontal !default;
 
+// Box
+$box-background-color: darken($color-background, 5%) !default;
+
 // Card
 $card-header-shadow: none !default;
 $card-content-padding: $card-gap 0 $card-gap 0 !default;
@@ -125,6 +131,10 @@ $notification-padding: 1.25rem !default;
 
 // NavBar
 $navbar-z: 'auto';
+$navbar-background-color: initial !default;
+
+// Footer
+$footer-background-color: darken($color-background, 5%) !default;
 
 // Layout
 $gap: 8px;
@@ -135,6 +145,9 @@ $list-background-color: transparent !default;
 $list-item-border: none !default;
 $list-shadow: none !default;
 $list-radius: 0 !default;
+
+// Title
+$title-color: $color-background-inverted !default;
 
 // Bulma Calendar
 

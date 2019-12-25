@@ -91,6 +91,12 @@ declare interface Animations {
 }
 
 /**
+ * Color
+ */
+
+declare type Color = 'primary' | 'secondary' | 'background' | 'info' | 'danger' | 'warning' | 'success';
+
+/**
  * States
  */
 

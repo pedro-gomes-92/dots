@@ -9,7 +9,7 @@ exports[`Given <Loader /> When initializes Then should match the snapshot 1`] = 
       class="is-animated is-animated-rotateRight is-animated-slow is-animated-infinite icon is-loader is-relative"
     >
       <i
-        class="icon-font icon-font-loader-outline"
+        class="icon-font icon-font-loader"
       />
     </span>
   </div>

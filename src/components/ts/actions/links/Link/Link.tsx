@@ -15,12 +15,13 @@ export const Link: FunctionComponent<LinkProps> = ({
   icon,
   iconAlign,
   size,
+  color,
   ...rest
 }: LinkProps): JSX.Element => {
-  const textComponent = text ? <Text text={text} size={size} /> : <></>;
+  const textComponent = text ? <Text text={text} size={size} color={color} /> : <></>;
   let content = textComponent;
   if (icon) {
-    const iconComponent = <Icon name={icon} size={size} />;
+    const iconComponent = <Icon name={icon} size={size} color={color} />;
     content = (
       <>
         {iconComponent}

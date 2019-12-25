@@ -13,6 +13,7 @@ export interface BaseProps {
   children?: ReactNode;
   isVisible?: boolean;
   isEnabled?: boolean;
+  color?: Color;
   tag?: string;
 }
 
@@ -26,6 +27,7 @@ export const Base: FunctionComponent<BaseProps> = ({
   className,
   attribute,
   reference,
+  color,
   ...rest
 }: BaseProps): JSX.Element => {
   const Tag = tag;
@@ -44,6 +46,7 @@ export const Base: FunctionComponent<BaseProps> = ({
       className={classnames(
         { 'is-hidden': !isVisible },
         size ? `is-${size}` : '',
+        color ? `is-${color}` : '',
         { 'is-disabled': !isEnabled },
         { 'is-animated': Object.keys(animations).length > 0 },
         ...getAnimationClassNames(),
