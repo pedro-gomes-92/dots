@@ -1,16 +1,16 @@
 /**
  * colors.scss
  *
- * All available colors as variables.
+ * All available color utilities.
  *
  * Index
  * - Base
  * - Theme
+ * - Intensity
  * - States
  */
 
 // Base
-
 $color-flamingo: #fc6053 !default;
 $color-jelly: #18a3a5 !default;
 $color-shark: #364047 !default;
@@ -22,13 +22,24 @@ $color-cherry: #e42d1e !default;
 
 // Theme
 $color-theme: 'light' !default;
+
 $color-primary: $color-flamingo !default;
 $color-primary-inverted: $color-pampa !default;
 $color-secondary: $color-jelly !default;
 $color-secondary-inverted: $color-pampa !default;
 $color-background: $color-pampa !default;
 $color-background-inverted: $color-shark !default;
+
+// Intensity
 $color-intensity-factor: 2% !default;
+
+@function color-intensity($color, $type, $intensity) {
+  @if ($color-theme == 'dark') {
+    $type: if($type == darken, lighten, darken);
+  }
+
+  @return call($type, $color, $intensity * $color-intensity-factor);
+}
 
 // States
 $color-info: $cyan !default;

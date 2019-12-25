@@ -1,0 +1,65 @@
+/**
+ * devices.scss
+ *
+ * All available device utilities.
+ *
+ * Index
+ * - Breakpoints
+ * - Media
+ * - Responsive
+ */
+
+// Breakpoints
+$device-breakpoint-mobile: 480px !default;
+$device-breakpoint-tablet: 768px !default;
+$device-breakpoint-desktop: 960px !default;
+$device-breakpoint-widescreen: 1152px !default;
+$device-breakpoint-fullhd: 1344px !default;
+
+$device-breakpoints: (
+  'mobile': $device-breakpoint-mobile,
+  'tablet': $device-breakpoint-tablet,
+  'desktop': $device-breakpoint-desktop,
+  'widescreen': $device-breakpoint-widescreen,
+  'fullhd': $device-breakpoint-fullhd,
+);
+
+// Media
+@mixin media($size: $device-breakpoint-mobile, $isMax: false) {
+  @if ($isMax) {
+    @media screen and (max-width: $size) {
+      @content;
+    }
+  } @else {
+    @media screen and (min-width: $size+1) {
+      @content;
+    }
+  }
+}
+
+@mixin screen($device: 'mobile', $isMax: false) {
+  @include media(map-get($device-breakpoints, $device), $isMax) {
+    @content;
+  }
+}
+
+@mixin gap-screen($horizontal, $vertical, $device, $wrapping: false) {
+  @include screen($device) {
+    @include gap($horizontal, $vertical, $wrapping);
+  }
+}
+
+// Responsive
+$device-responsive-active: 'tablet' !default;
+
+@mixin layout-activate {
+  &.is-mobile {
+    @content;
+  }
+
+  &:not(.is-mobile) {
+    @include screen($device-responsive-active) {
+      @content;
+    }
+  }
+}

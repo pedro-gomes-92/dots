@@ -87,10 +87,10 @@ $size-7: $text-size-7;
 $speed: $animation-duration-normal;
 
 // Breakpoint
-$tablet: $breakpoint-tablet;
-$desktop: $breakpoint-desktop;
-$widescreen: $breakpoint-widescreen;
-$fullhd: $breakpoint-fullhd;
+$tablet: $device-breakpoint-tablet;
+$desktop: $device-breakpoint-desktop;
+$widescreen: $device-breakpoint-widescreen;
+$fullhd: $device-breakpoint-fullhd;
 
 // Icon
 $icon-dimensions: $size-normal;
@@ -102,8 +102,8 @@ $icon-dimensions-large: $size-large;
 $table-background-color: transparent !default;
 $table-cell-padding: 1rem !default;
 $table-head-cell-border-width: 0 !default;
-$table-body-background-color: lighten($color-background, 2 * $color-intensity-factor) !default;
-$table-row-hover-background-color: lighten($color-background, $color-intensity-factor) !default;
+$table-body-background-color: lcolor-intensity($color-background, lighten, 2) !default;
+$table-row-hover-background-color: color-intensity($color-background, lighten, 1) !default;
 
 // Pagination
 $pagination-margin: -0.5em !default;
@@ -117,7 +117,7 @@ $pagination-ellipsis-color: $color-background-inverted !default;
 $section-padding: 3rem $containers-padding-horizontal !default;
 
 // Box
-$box-background-color: darken($color-background, 5%) !default;
+$box-background-color: color-intensity($color-background, darken, 2) !default;
 
 // Card
 $card-header-shadow: none !default;
@@ -134,7 +134,7 @@ $navbar-z: 'auto';
 $navbar-background-color: initial !default;
 
 // Footer
-$footer-background-color: darken($color-background, 5%) !default;
+$footer-background-color: color-intensity($color-background, darken, 2) !default;
 
 // Layout
 $gap: 8px;
@@ -148,6 +148,7 @@ $list-radius: 0 !default;
 
 // Title
 $title-color: $color-background-inverted !default;
+$title-weight: normal !default;
 
 // Bulma Calendar
 

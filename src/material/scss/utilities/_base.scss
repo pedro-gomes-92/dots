@@ -1,44 +1,19 @@
-/*
- * mixins.scss
+/**
+ * base.scss
  *
- * All available mixins and functions to use.
+ * All available base utilities.
  *
  * Index
  * - Calculation
- * - Color
- * - Iconography
- * - Animation
  * - Position
- * - Layout
- * - Device
- * - Gap
  * - Alignment
+ * - Gap
  */
 
 // Calculation
 @function factor($value, $percent) {
   $number: $percent / 100%;
   @return $value + ($value * $number);
-}
-
-// Color
-@function color-intensity($color, $type, $intensity) {
-  @if ($color-theme == 'dark') {
-    $type: if($type == darken, lighten, darken);
-  }
-
-  @return call($type, $color, $intensity * $color-intensity-factor);
-}
-
-// Iconograpy
-@mixin icon($name) {
-  $value: map-get($icons, $name);
-  @extend .#{$icon-family}-#{$value};
-}
-
-// Animation
-@mixin animation($name) {
-  animation-name: unquote($name);
 }
 
 // Position
@@ -99,91 +74,7 @@
   }
 }
 
-// Layout
-@mixin layout-activate {
-  &.is-mobile {
-    @content;
-  }
-
-  &:not(.is-mobile) {
-    @include screen($device-responsive-active) {
-      @content;
-    }
-  }
-}
-
-@mixin flex-remaining {
-  @include flex-min-size(0%);
-}
-
-@mixin flex-full {
-  @include flex-size(100%);
-}
-
-@mixin flex-size($args) {
-  flex: 0 0 $args;
-}
-
-@mixin flex-min-size($args: auto) {
-  flex: 1 0 $args;
-}
-
-@mixin flex-max-size($args: 100%) {
-  flex: 0 1 $args;
-}
-
-@mixin flex-auto {
-  @include flex-max-size(auto);
-}
-
-// Device
-@mixin media($size: $breakpoint-mobile, $isMax: false) {
-  @if ($isMax) {
-    @media screen and (max-width: $size) {
-      @content;
-    }
-  } @else {
-    @media screen and (min-width: $size+1) {
-      @content;
-    }
-  }
-}
-
-@mixin screen($device: 'mobile', $isMax: false) {
-  @include media(map-get($breakpoints, $device), $isMax) {
-    @content;
-  }
-}
-
-// Gap
-@mixin gap($horizontal, $vertical, $wrapping: false) {
-  $gap-vertical: $vertical * $gap;
-  $gap-horizontal: $horizontal * $gap;
-
-  @if ($wrapping) {
-    $gap-vertical: $gap-vertical/2;
-    $gap-horizontal: $gap-horizontal/2;
-    margin: (-$gap-vertical) (-$gap-horizontal);
-
-    > * {
-      padding: $gap-vertical $gap-horizontal;
-    }
-  } @else {
-    > :not(:last-child) {
-      margin-right: $gap-horizontal;
-      margin-bottom: $gap-vertical;
-    }
-  }
-}
-
-@mixin gap-screen($horizontal, $vertical, $device, $wrapping: false) {
-  @include screen($device) {
-    @include gap($horizontal, $vertical, $wrapping);
-  }
-}
-
 // Alignment
-
 @mixin align-text($alignment) {
   @if ($alignment== 'start') {
     text-align: left;
@@ -209,5 +100,26 @@
     @include align-text($alignment);
   } @else {
     @include align-container($alignment);
+  }
+}
+
+// Gap
+@mixin gap($horizontal, $vertical, $wrapping: false) {
+  $gap-vertical: $vertical * $gap;
+  $gap-horizontal: $horizontal * $gap;
+
+  @if ($wrapping) {
+    $gap-vertical: $gap-vertical/2;
+    $gap-horizontal: $gap-horizontal/2;
+    margin: (-$gap-vertical) (-$gap-horizontal);
+
+    > * {
+      padding: $gap-vertical $gap-horizontal;
+    }
+  } @else {
+    > :not(:last-child) {
+      margin-right: $gap-horizontal;
+      margin-bottom: $gap-vertical;
+    }
   }
 }

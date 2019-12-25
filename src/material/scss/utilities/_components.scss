@@ -1,7 +1,7 @@
 /**
  * components.scss
  *
- * These are the variables for all components.
+ * All available component utilities.
  *
  * Index
  * - Tooltip
@@ -46,7 +46,7 @@ $card-header-padding: 0 0 $card-gap 0 !default;
 $card-footer-padding: $card-gap 0 0 0 !default;
 
 // Header
-$header-background-color: darken($color-background, 5%) !default;
+$header-background-color: color-intensity($color-background, darken, 2) !default;
 
 // Dialog
 
@@ -63,7 +63,7 @@ $modal-footer-padding: $modal-gap 0 0 0 !default;
 $navbar-padding: 0 $containers-padding-horizontal !default;
 
 // Overlay
-$overlay-color-background: darken($color-background, 75%) !default;
+$overlay-color-background: color-intensity($color-background, darken, 15) !default;
 $overlay-opacity: 0.25 !default;
 
 // Data

@@ -1,10 +1,11 @@
 @import '../vendor/utilities/all';
 
+@import 'base';
 @import 'colors';
 @import 'typography';
 @import 'iconography';
 @import 'animations';
-@import 'breakpoints';
+@import 'devices';
 @import 'miscellaneous';
 @import 'components';
 @import 'vendor';

@@ -1,0 +1,35 @@
+/**
+ * miscellaneous.scss
+ *
+ * All available other utilities.
+ *
+ * Index
+ * - Responsive
+ */
+
+// Responsive
+$containers-padding-horizontal: 1.5rem !default;
+
+@mixin flex-remaining {
+  @include flex-min-size(0%);
+}
+
+@mixin flex-full {
+  @include flex-size(100%);
+}
+
+@mixin flex-size($args) {
+  flex: 0 0 $args;
+}
+
+@mixin flex-min-size($args: auto) {
+  flex: 1 0 $args;
+}
+
+@mixin flex-max-size($args: 100%) {
+  flex: 0 1 $args;
+}
+
+@mixin flex-auto {
+  @include flex-max-size(auto);
+}

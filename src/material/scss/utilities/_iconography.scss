@@ -1,7 +1,7 @@
 /**
  * iconography.scss
  *
- * These are the variables for iconography.
+ * All available iconography utilities.
  *
  * Index
  * - Family
@@ -64,3 +64,8 @@ $icons: map-merge(
   ),
   $icon-list-custom
 );
+
+@mixin icon($name) {
+  $value: map-get($icons, $name);
+  @extend .#{$icon-family}-#{$value};
+}
