@@ -45,6 +45,7 @@ $warning-inverted: $color-warning-inverted;
 $danger: $color-danger;
 $danger-inverted: $color-danger-inverted;
 $text: $color-background-inverted;
+$link: $text;
 
 $colors: mergeColorMaps(
   $colors,
@@ -212,4 +213,4 @@ $ct-series-colors: (
 );
 
 // Eva Icons
-$eva-icons-font-path: '~eva-icons/style/fonts';
+$eva-icons-font-path: '#{$path-dots}/node_modules/eva-icons/style/fonts';

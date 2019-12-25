@@ -8,6 +8,7 @@
  * - Position
  * - Alignment
  * - Gap
+ * - Path
  */
 
 // Calculation
@@ -123,3 +124,6 @@
     }
   }
 }
+
+// Path
+$path-dots: '../..' !default;
