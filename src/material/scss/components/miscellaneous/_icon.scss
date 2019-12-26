@@ -19,6 +19,8 @@
   height: auto;
   vertical-align: top;
 
+  color: $icon-color;
+
   &.is {
     @each $name, $pair in $colors {
       // Color

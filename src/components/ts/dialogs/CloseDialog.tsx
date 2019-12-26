@@ -11,5 +11,5 @@ export const CloseDialog: FunctionComponent<CloseDialogProps> = ({
 }: CloseDialogProps): JSX.Element => <TextButton className={classnames('dialog-close', className)} {...rest} />;
 
 CloseDialog.defaultProps = {
-  icon: 'close-outline',
+  icon: 'close',
 };

@@ -14,15 +14,11 @@
 
   // List
   &-list {
-    background-color: transparent;
-    box-shadow: none;
     border: none;
-    border-radius: 0;
 
     @include flex-auto;
 
     > .list-item {
-      border: none;
       padding: 0;
     }
   }

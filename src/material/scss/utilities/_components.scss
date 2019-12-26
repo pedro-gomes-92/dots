@@ -15,6 +15,7 @@
  * - Miscellaneous
  *    - NavBar
  *    - Overlay
+ *    - Icon
  * - Data
  *    - List
  */
@@ -44,6 +45,7 @@ $card-gap: 0.75em !default;
 $card-padding: $card-gap !default;
 $card-header-padding: 0 0 $card-gap 0 !default;
 $card-footer-padding: $card-gap 0 0 0 !default;
+$card-radius: $shape-radius !default;
 
 // Header
 $header-background-color: color-intensity($color-background, darken, 2) !default;
@@ -65,6 +67,9 @@ $navbar-padding: 0 $containers-padding-horizontal !default;
 // Overlay
 $overlay-color-background: color-intensity($color-background, darken, 15) !default;
 $overlay-opacity: 0.25 !default;
+
+// Icon
+$icon-color: $color-background-inverted !default;
 
 // Data
 

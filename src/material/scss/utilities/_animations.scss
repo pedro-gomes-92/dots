@@ -12,6 +12,8 @@
  *    - Fade Out
  *    - Rotate Right
  *    - Rotate Left
+ *    - Zoom In
+ *    - Zoom Out
  */
 
 // Duration
@@ -24,7 +26,7 @@ $animation-duration-slow: 1s !default;
 $animation-timing: linear !default;
 
 // List
-$animations: 'fadeIn' 'fadeOut' 'rotateLeft' 'rotateRight' !default;
+$animations: 'fadeIn' 'fadeOut' 'rotateLeft' 'rotateRight' 'zoomIn' 'zoomOut' !default;
 
 @mixin animation($name) {
   animation-name: unquote($name);
@@ -68,5 +70,25 @@ $animations: 'fadeIn' 'fadeOut' 'rotateLeft' 'rotateRight' !default;
 
   to {
     transform: rotate(-359deg);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes zoomOut {
+  from {
+    transform: scale(1.2);
+  }
+
+  to {
+    transform: scale(1);
   }
 }

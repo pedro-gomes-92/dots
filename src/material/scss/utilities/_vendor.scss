@@ -8,6 +8,7 @@
  *    - Colors
  *    - Typography
  *    - Animation
+ *    - Radius
  *    - Breakpoint
  *    - Icon
  *    - Table
@@ -87,6 +88,11 @@ $size-7: $text-size-7;
 // Animation
 $speed: $animation-duration-normal;
 
+// Radius
+$radius-small: $shape-radius;
+$radius: $shape-radius;
+$radius-large: $shape-radius;
+
 // Breakpoint
 $tablet: $device-breakpoint-tablet;
 $desktop: $device-breakpoint-desktop;
@@ -103,7 +109,7 @@ $icon-dimensions-large: $size-large;
 $table-background-color: transparent !default;
 $table-cell-padding: 1rem !default;
 $table-head-cell-border-width: 0 !default;
-$table-body-background-color: lcolor-intensity($color-background, lighten, 2) !default;
+$table-body-background-color: color-intensity($color-background, lighten, 2) !default;
 $table-row-hover-background-color: color-intensity($color-background, lighten, 1) !default;
 
 // Pagination
@@ -121,6 +127,7 @@ $section-padding: 3rem $containers-padding-horizontal !default;
 $box-background-color: color-intensity($color-background, darken, 2) !default;
 
 // Card
+$card-background-color: $color-background !default;
 $card-header-shadow: none !default;
 $card-content-padding: $card-gap 0 $card-gap 0 !default;
 
