@@ -1,6 +1,6 @@
 const PACKAGES_PATH = {
-  components: '<rootDir>/src/components/ts',
-  core: '<rootDir>/src/core/ts',
+  components: '<rootDir>/src/components',
+  core: '<rootDir>/src/core',
 };
 
 const JS = '{js,jsx,ts,tsx}';

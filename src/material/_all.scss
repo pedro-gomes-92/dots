@@ -1,2 +1,19 @@
-@charset 'utf-8';
-@import 'scss/all';
+// Utilities
+// ----------
+@import 'utilities/all';
+
+// Vendor
+// ----------
+@import 'vendor/all';
+
+// Base
+// ----------
+@import 'base/all';
+
+// Components
+// ----------
+@import 'components/all';
+
+// Helpers
+// ----------
+@import 'helpers/all';

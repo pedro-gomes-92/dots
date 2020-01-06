@@ -1,5 +1,5 @@
-import './scss/_all.scss';
-import { plugins } from './ts';
+import './_all.scss';
+import { plugins } from './plugins';
 
 Object.values(plugins).forEach((plugin): void => {
   plugin();
