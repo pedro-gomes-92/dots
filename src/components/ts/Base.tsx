@@ -4,12 +4,12 @@ import { ObjectUtils } from '@dots/core';
 
 export interface BaseProps {
   className?: string;
-  animations?: Animations;
+  animations?: AnimationConfig[];
   size?: Size | ColumnSize | AspectRatioSize | FontSize;
   style?: CSSProperties;
   attribute?: AllHTMLAttributes<HTMLElement>;
   data?: Data;
-  reference?: RefObject<HTMLElement>;
+  reference?: ((element: HTMLElement) => void) | RefObject<HTMLElement>;
   children?: ReactNode;
   isVisible?: boolean;
   isEnabled?: boolean;
@@ -35,8 +35,7 @@ export const Base: FunctionComponent<BaseProps> = ({
 
   const getAnimationClassNames = useCallback((): string[] => {
     const prefix = 'is-animated';
-    return Object.keys(animations).map((name): string => {
-      const { duration = 'normal', isInfinite = false } = animations[name];
+    return animations.map(({ name, isInfinite = false, duration = 'normal' }): string => {
       return classnames(`${prefix}-${name}`, `${prefix}-${duration}`, isInfinite ? `${prefix}-infinite` : '');
     });
   }, [animations]);
@@ -61,7 +60,7 @@ export const Base: FunctionComponent<BaseProps> = ({
 
 Base.defaultProps = {
   className: '',
-  animations: {},
+  animations: [],
   isEnabled: true,
   isVisible: true,
   style: {},

@@ -8,6 +8,7 @@
  * - Theme
  * - Intensity
  * - States
+ * - Actions
  */
 
 // Base
@@ -50,6 +51,19 @@ $color-warning: $yellow !default;
 $color-warning-inverted: findColorInvert($color-warning) !default;
 $color-danger: $red !default;
 $color-danger-inverted: findColorInvert($color-danger) !default;
+
+// Actions
+$color-intensity-hover: 5 !default;
+
+@function color-hover($color) {
+  @return color-intensity($color, darken, $color-intensity-hover);
+}
+
+$color-intensity-active: 2 * $color-intensity-hover !default;
+
+@function color-active($color) {
+  @return color-intensity($color, darken, $color-intensity-active);
+}
 
 $custom-colors: (
   'secondary': (

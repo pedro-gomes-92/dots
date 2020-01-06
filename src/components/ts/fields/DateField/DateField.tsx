@@ -26,7 +26,7 @@ export const DateField: FunctionComponent<DateFieldProps> = ({
 }: DateFieldProps): JSX.Element => {
   const [isPickerVisible, setPickerVisible] = useState(false);
   const [currentValue, setValue] = useState(value);
-  const dateFieldRef = useRef<HTMLElement>();
+  const dateFieldRef = useRef<HTMLElement>(null);
 
   const handleChange = (event: FormEvent): void => {
     setValue((event.target as HTMLInputElement).value);

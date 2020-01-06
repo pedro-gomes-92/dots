@@ -10,12 +10,12 @@
 .navbar {
   display: block;
   margin: 0;
-  min-height: auto;
   height: $navbar-height;
+  min-height: auto;
   padding: $navbar-padding;
   border: none;
 
-  > .columns {
-    height: 100%;
+  > .container {
+    min-height: 100%;
   }
 }

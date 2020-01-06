@@ -25,7 +25,7 @@ export const AreaLoader: FunctionComponent<AreaLoaderProps> = ({
   const [visible, setVisible] = useState(isVisible);
 
   let handleOutsideClick;
-  if (hasOverlay) {
+  if (hasOverlay && onOutsideClick) {
     handleOutsideClick = (event: React.MouseEvent<HTMLElement, MouseEvent>): void => {
       setVisible(false);
       onOutsideClick(event);
@@ -56,5 +56,4 @@ export const AreaLoader: FunctionComponent<AreaLoaderProps> = ({
 AreaLoader.defaultProps = {
   text: 'Loading',
   hasOverlay: false,
-  onOutsideClick: (): void => {},
 };

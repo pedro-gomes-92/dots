@@ -17,9 +17,12 @@ export const BaseDialog: FunctionComponent<BaseDialogProps> = ({
   onClose,
   onOutsideClick,
   isVisible,
+  animations,
   ...rest
 }: BaseDialogProps): JSX.Element => {
   const [visible, setVisible] = useState(isVisible);
+
+  const [showAnimation, hideAnimation] = animations;
 
   let handleClose;
   if (onClose) {
@@ -38,7 +41,11 @@ export const BaseDialog: FunctionComponent<BaseDialogProps> = ({
   }
 
   return (
-    <Base className={classnames('dialog', className)} isVisible={visible} {...rest}>
+    <Base
+      className={classnames('dialog', className)}
+      animations={visible ? [showAnimation] : [hideAnimation]}
+      {...rest}
+    >
       <CenterLayout>
         <Overlay onClick={handleOutsideClick} />
         {children}
@@ -50,4 +57,6 @@ export const BaseDialog: FunctionComponent<BaseDialogProps> = ({
 
 BaseDialog.defaultProps = {
   onClose: (): void => {},
+  isVisible: true,
+  animations: [{ name: 'fadeIn', duration: 'fast' }, { name: 'fadeOut', duration: 'fast' }],
 };

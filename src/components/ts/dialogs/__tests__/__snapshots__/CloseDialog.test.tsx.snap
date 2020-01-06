@@ -9,7 +9,7 @@ exports[`Given <CloseDialog /> When initializes Then should match the snapshot 1
       class="icon"
     >
       <i
-        class="icon-font icon-font-close-outline"
+        class="icon-font icon-font-close"
       />
     </span>
   </button>

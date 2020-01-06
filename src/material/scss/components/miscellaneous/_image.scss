@@ -1,0 +1,30 @@
+/*
+ * image.scss
+ *
+ * All styling applied to the image component
+ *
+ * Index
+ * - Image
+ *    - Size
+ */
+
+.image {
+  &.is {
+    // Size
+    &-small {
+      width: $image-size-small;
+    }
+
+    &-normal {
+      width: $image-size-normal;
+    }
+
+    &-medium {
+      width: $image-size-medium;
+    }
+
+    &-large {
+      width: $image-size-large;
+    }
+  }
+}

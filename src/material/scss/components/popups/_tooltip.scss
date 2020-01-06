@@ -12,7 +12,7 @@
 .tooltip {
   // Content
   &-content {
-    background-color: $tooltip-background-color;
+    background-color: $tooltip-color-background;
     color: $tooltip-color;
     padding: 0.2em 0.8em;
     font-size: 1rem;
@@ -45,7 +45,7 @@
           left: 100%;
           transform: translate(0, -50%);
           margin-left: -1px;
-          border-color: transparent $tooltip-background-color transparent transparent;
+          border-color: transparent $tooltip-color-background transparent transparent;
         }
       }
 
@@ -69,7 +69,7 @@
           left: 50%;
           transform: translate(-50%, 0);
           margin-top: -1px;
-          border-color: $tooltip-background-color transparent transparent transparent;
+          border-color: $tooltip-color-background transparent transparent transparent;
         }
       }
 
@@ -81,7 +81,7 @@
           left: 50%;
           transform: translate(-50%, 0);
           margin-top: 1px;
-          border-color: transparent transparent $tooltip-background-color transparent;
+          border-color: transparent transparent $tooltip-color-background transparent;
         }
       }
     }
@@ -104,7 +104,7 @@
           left: 0;
           transform: translate(0, -50%);
           margin-left: 1px;
-          border-color: transparent transparent transparent $tooltip-background-color;
+          border-color: transparent transparent transparent $tooltip-color-background;
         }
       }
 

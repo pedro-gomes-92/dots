@@ -5,6 +5,7 @@
  *
  * Index
  * - Overlay
+ *    - Clickable
  */
 
 .overlay {
@@ -16,4 +17,10 @@
 
   background-color: $overlay-color-background;
   opacity: $overlay-opacity;
+  cursor: not-allowed;
+
+  &.is-clickable {
+    // Clickable
+    cursor: pointer;
+  }
 }

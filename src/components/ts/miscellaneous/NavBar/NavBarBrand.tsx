@@ -3,6 +3,7 @@ import classnames from 'classnames';
 import { ImageLink, ImageLinkProps } from '../../actions';
 import { Base } from '../../Base';
 import { BaseProps } from '../../Base';
+import { NavBarItem } from './NavBarItem';
 
 export interface NavBarBrandProps extends BaseProps {
   source: ImageLinkProps['source'];
@@ -16,7 +17,9 @@ export const NavBarBrand: FunctionComponent<NavBarBrandProps> = ({
   ...rest
 }: NavBarBrandProps): JSX.Element => (
   <Base className={classnames('navbar-brand', className)} {...rest}>
-    <ImageLink source={source} to={to} />
+    <NavBarItem>
+      <ImageLink source={source} to={to} />
+    </NavBarItem>
   </Base>
 );
 

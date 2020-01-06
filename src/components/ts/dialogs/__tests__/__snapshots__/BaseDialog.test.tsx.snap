@@ -3,7 +3,7 @@
 exports[`Given <BaseDialog /> When initializes And uses onClose Then should match the snapshot 1`] = `
 <div>
   <div
-    class="is-hidden dialog"
+    class="is-animated is-animated-fadeOut is-animated-fast dialog"
   >
     <div
       class="layout is-0 layout-center"
@@ -12,7 +12,7 @@ exports[`Given <BaseDialog /> When initializes And uses onClose Then should matc
         class="layout-item"
       >
         <div
-          class="overlay"
+          class="overlay is-clickable"
         />
       </div>
     </div>
@@ -23,7 +23,7 @@ exports[`Given <BaseDialog /> When initializes And uses onClose Then should matc
         class="icon"
       >
         <i
-          class="is-large icon-font icon-font-close-outline"
+          class="is-large icon-font icon-font-close"
         />
       </span>
     </button>
@@ -34,7 +34,7 @@ exports[`Given <BaseDialog /> When initializes And uses onClose Then should matc
 exports[`Given <BaseDialog /> When initializes Then should match the snapshot 1`] = `
 <div>
   <div
-    class="dialog"
+    class="is-animated is-animated-fadeIn is-animated-fast dialog"
   >
     <div
       class="layout is-0 layout-center"
@@ -43,7 +43,7 @@ exports[`Given <BaseDialog /> When initializes Then should match the snapshot 1`
         class="layout-item"
       >
         <div
-          class="overlay"
+          class="overlay is-clickable"
         />
       </div>
     </div>
@@ -54,7 +54,7 @@ exports[`Given <BaseDialog /> When initializes Then should match the snapshot 1`
         class="icon"
       >
         <i
-          class="is-large icon-font icon-font-close-outline"
+          class="is-large icon-font icon-font-close"
         />
       </span>
     </button>

@@ -17,5 +17,11 @@ export const Overlay: FunctionComponent<OverlayProps> = ({
     attributes = { onClick, ...attributes };
   }
 
-  return <Base className={classnames('overlay', className)} attribute={attributes} {...rest} />;
+  return (
+    <Base
+      className={classnames('overlay', { 'is-clickable': onClick !== undefined }, className)}
+      attribute={attributes}
+      {...rest}
+    />
+  );
 };

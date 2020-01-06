@@ -105,9 +105,12 @@
 }
 
 // Gap
+
+$gap-elements: 8px !default;
+
 @mixin gap($horizontal, $vertical, $wrapping: false) {
-  $gap-vertical: $vertical * $gap;
-  $gap-horizontal: $horizontal * $gap;
+  $gap-vertical: $vertical * $gap-elements;
+  $gap-horizontal: $horizontal * $gap-elements;
 
   @if ($wrapping) {
     $gap-vertical: $gap-vertical/2;

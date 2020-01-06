@@ -82,12 +82,13 @@ declare type Duration = 'slow' | 'normal' | 'medium' | 'fast';
  */
 
 declare interface AnimationConfig {
+  name: string;
   isInfinite?: boolean;
   duration?: Duration;
 }
 
 declare interface Animations {
-  [name: string]: AnimationConfig;
+  [idx: number]: AnimationConfig;
 }
 
 /**

@@ -4,35 +4,56 @@
  * All available component utilities.
  *
  * Index
- * - Tooltip
- * - Toast
+  * - Miscellaneous
+ *    - NavBar
+ *    - Overlay
+ *    - Icon
+ *    - Tooltip
+ *    - Toast
  * - Container
  *    - Size
  *    - Card
  *    - Header
  * - Dialog
  *    - Modal
- * - Miscellaneous
- *    - NavBar
- *    - Overlay
- *    - Icon
  * - Data
  *    - List
+ *    - Table
+ * - Action
+ *    - Link
  */
+
+// Miscellaneous
+
+// NavBar
+$navbar-container-height: 3.25rem !default;
+$navbar-padding: 0 $containers-padding-horizontal !default;
+$navbar-color-background: color-intensity($color-background, darken, 2) !default;
+$navbar-color: $color-background-inverted !default;
+
+// Overlay
+$overlay-color-background: color-intensity($color-background, darken, 15) !default;
+$overlay-opacity: 0.25 !default;
+
+// Icon
+$icon-color: $color-background-inverted !default;
+
+// Image
+$image-size-small: 2rem !default;
+$image-size-normal: 5rem !default;
+$image-size-medium: 10rem !default;
+$image-size-large: 20rem !default;
 
 // Tooltip
 $tooltip-offset: 0.5em !default;
-$tooltip-background-color: $color-background-inverted !default;
+$tooltip-color-background: $color-background-inverted !default;
 $tooltip-color: $color-background !default;
 
 // Toast
 $toast-offset: 0.5em !default;
 $toast-lifetime: 2s !default;
 
-// Table
-$table-cell-spacing: 0 0.6em !default;
-
-// Containers
+// Container
 
 // Size
 $container-size-small: 15rem !default;
@@ -48,7 +69,8 @@ $card-footer-padding: $card-gap 0 0 0 !default;
 $card-radius: $shape-radius !default;
 
 // Header
-$header-background-color: color-intensity($color-background, darken, 2) !default;
+$header-color-background: $navbar-color-background !default;
+$header-color: $navbar-color !default;
 
 // Dialog
 
@@ -59,19 +81,17 @@ $modal-header-padding: 0 0 $modal-gap 0 !default;
 $modal-content-padding: $modal-gap 0 $modal-gap 0 !default;
 $modal-footer-padding: $modal-gap 0 0 0 !default;
 
-// Miscellaneous
-
-// NavBar
-$navbar-padding: 0 $containers-padding-horizontal !default;
-
-// Overlay
-$overlay-color-background: color-intensity($color-background, darken, 15) !default;
-$overlay-opacity: 0.25 !default;
-
-// Icon
-$icon-color: $color-background-inverted !default;
-
 // Data
 
 // List
 $list-item-padding: 0.5em 0 !default;
+
+// Table
+$table-cell-spacing: 0 0.6em !default;
+
+// Action
+
+// Link
+$link-color: $color-background-inverted !default;
+$link-color-active: $color-primary !default;
+$link-color-hover: color-hover($color-primary) !default;

@@ -22,6 +22,7 @@
  *    - Layout
  *    - List
  *    - Title
+ *    - Tag
  * - Bulma Calendar
  *    - Colors
  *    - Borders
@@ -36,6 +37,7 @@
 // Colors
 $primary: $color-primary;
 $primary-inverted: $color-primary-inverted;
+$background: $color-background;
 
 $info: $color-info;
 $info-inverted: $color-info-inverted;
@@ -138,14 +140,17 @@ $modal-background-background-color: $overlay-color-background !default;
 $notification-padding: 1.25rem !default;
 
 // NavBar
-$navbar-z: 'auto';
-$navbar-background-color: initial !default;
+$navbar-z: auto;
+$navbar-height: $navbar-container-height;
+$navbar-background-color: $navbar-color-background !default;
+$navbar-item-color: inherit !default;
 
 // Footer
-$footer-background-color: color-intensity($color-background, darken, 2) !default;
+$footer-color: $navbar-color !default;
+$footer-background-color: $navbar-color-background !default;
 
 // Layout
-$gap: 8px;
+$gap: $gap-elements;
 $column-gap: 0;
 
 // List
@@ -157,6 +162,10 @@ $list-radius: 0 !default;
 // Title
 $title-color: $color-background-inverted !default;
 $title-weight: normal !default;
+
+// Tag
+$tag-background-color: $color-background-inverted !default;
+$tag-color: $color-background !default;
 
 // Bulma Calendar
 

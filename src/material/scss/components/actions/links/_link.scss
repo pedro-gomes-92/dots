@@ -5,16 +5,50 @@
  *
  * Index
  * - Link
+ *    - Color
+ *    - Icon
+ *    - Text
  */
 
 .link {
   display: inline-block;
+  color: $link-color;
 
   &:hover {
     text-decoration: none;
+    color: $link-color-hover;
+  }
+
+  &:active {
+    color: $link-color-active;
+  }
+
+  &.is {
+    @each $name, $pair in $colors {
+      // Color
+      $color: nth($pair, 1);
+      &-#{$name} {
+        color: $color;
+
+        &:hover {
+          color: color-hover($color);
+        }
+
+        &:active {
+          color: color-active($color);
+        }
+      }
+    }
+  }
+
+  .icon {
+    // Icon
+    color: inherit;
   }
 
   .text {
+    // Text
+    color: inherit;
     &:hover {
       text-decoration: underline;
     }

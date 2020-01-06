@@ -27,7 +27,7 @@ export const Helper: FunctionComponent<HelperProps> = ({
     setTooltipVisibility(false);
   };
 
-  const { fadeIn, fadeOut } = animations;
+  const [showAnimation, hideAnimation] = animations;
 
   return (
     <Icon
@@ -38,7 +38,7 @@ export const Helper: FunctionComponent<HelperProps> = ({
     >
       <Tooltip
         position={{ x: 'center', y: 'top' }}
-        animations={tooltipVisibility !== null ? (tooltipVisibility ? { fadeIn } : { fadeOut }) : undefined}
+        animations={tooltipVisibility !== null ? (tooltipVisibility ? [showAnimation] : [hideAnimation]) : undefined}
         text={text}
       />
     </Icon>
@@ -47,5 +47,5 @@ export const Helper: FunctionComponent<HelperProps> = ({
 
 Helper.defaultProps = {
   icon: 'helper',
-  animations: { fadeIn: { duration: 'fast' }, fadeOut: { duration: 'fast' } },
+  animations: [{ name: 'fadeIn', duration: 'fast' }, { name: 'fadeOut', duration: 'fast' }],
 };

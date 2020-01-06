@@ -22,4 +22,5 @@ export const BaseText: FunctionComponent<BaseTextProps> = ({
 
 BaseText.defaultProps = {
   isBold: false,
+  tag: 'span',
 };
