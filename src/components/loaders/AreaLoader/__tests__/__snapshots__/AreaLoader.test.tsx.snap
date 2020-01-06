@@ -21,7 +21,7 @@ exports[`Given <AreaLoader /> When initializes And uses hasOverlay Then should m
             class="layout-item has-text-alignment-center stack"
           >
             <span
-              class="is-animated is-animated-rotateRight is-animated-slow is-animated-infinite icon is-loader is-relative"
+              class="icon is-loader is-relative"
             >
               <i
                 class="icon-font icon-font-loader"
@@ -62,7 +62,7 @@ exports[`Given <AreaLoader /> When initializes Then should match the snapshot 1`
             class="layout-item has-text-alignment-center stack"
           >
             <span
-              class="is-animated is-animated-rotateRight is-animated-slow is-animated-infinite icon is-loader is-relative"
+              class="icon is-loader is-relative"
             >
               <i
                 class="icon-font icon-font-loader"

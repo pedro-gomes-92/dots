@@ -12,7 +12,6 @@ export interface HelperProps extends BaseProps {
 
 export const Helper: FunctionComponent<HelperProps> = ({
   text,
-  animations,
   icon,
   className,
   attribute,
@@ -27,8 +26,6 @@ export const Helper: FunctionComponent<HelperProps> = ({
     setTooltipVisibility(false);
   };
 
-  const [showAnimation, hideAnimation] = animations;
-
   return (
     <Icon
       name={icon}
@@ -36,16 +33,11 @@ export const Helper: FunctionComponent<HelperProps> = ({
       attribute={{ onMouseOver, onMouseLeave, ...attribute }}
       {...rest}
     >
-      <Tooltip
-        position={{ x: 'center', y: 'top' }}
-        animations={tooltipVisibility !== null ? (tooltipVisibility ? [showAnimation] : [hideAnimation]) : undefined}
-        text={text}
-      />
+      <Tooltip position={{ x: 'center', y: 'top' }} text={text} isVisible={tooltipVisibility} />
     </Icon>
   );
 };
 
 Helper.defaultProps = {
   icon: 'helper',
-  animations: [{ name: 'fadeIn', duration: 'fast' }, { name: 'fadeOut', duration: 'fast' }],
 };

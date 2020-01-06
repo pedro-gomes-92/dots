@@ -3,7 +3,7 @@
 exports[`Given <BaseDialog /> When initializes And uses onClose Then should match the snapshot 1`] = `
 <div>
   <div
-    class="is-animated is-animated-fadeOut is-animated-fast dialog"
+    class="is-hidden dialog"
   >
     <div
       class="layout is-0 layout-center"
@@ -34,7 +34,7 @@ exports[`Given <BaseDialog /> When initializes And uses onClose Then should matc
 exports[`Given <BaseDialog /> When initializes Then should match the snapshot 1`] = `
 <div>
   <div
-    class="is-animated is-animated-fadeIn is-animated-fast dialog"
+    class="dialog"
   >
     <div
       class="layout is-0 layout-center"

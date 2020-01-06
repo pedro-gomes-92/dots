@@ -32,7 +32,7 @@ describe('Given <BaseDialog />', (): void => {
       });
 
       it('And should hide the dialog', (): void => {
-        expect(container.querySelector('.dialog').classList).toContainEqual('is-animated-fadeOut');
+        expect(container.querySelector('.dialog').classList).toContainEqual('is-hidden');
       });
 
       it('And should trigger onClose', (): void => {
@@ -53,7 +53,7 @@ describe('Given <BaseDialog />', (): void => {
       });
 
       it('Then should hide the dialog', (): void => {
-        expect(container.querySelector('.dialog').classList).toContainEqual('is-animated-fadeOut');
+        expect(container.querySelector('.dialog').classList).toContainEqual('is-hidden');
       });
 
       it('And should trigger onOutsideClick', (): void => {

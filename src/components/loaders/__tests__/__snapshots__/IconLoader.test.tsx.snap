@@ -3,7 +3,7 @@
 exports[`Given <IconLoader /> When initializes Then should match the snapshot 1`] = `
 <div>
   <span
-    class="is-animated is-animated-rotateRight is-animated-slow is-animated-infinite icon is-loader is-relative"
+    class="icon is-loader is-relative"
   >
     <i
       class="icon-font icon-font-loader"
