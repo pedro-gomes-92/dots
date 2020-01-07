@@ -1,8 +1,6 @@
 import React from 'react';
 import { render, fireEvent } from '@testing-library/react';
 
-import '../__mocks__';
-
 import { FormatDate } from '@dots/core';
 import { DateTimePicker } from '../DateTimePicker';
 

@@ -1,7 +1,6 @@
 import React from 'react';
 import { render, fireEvent, getAllByText } from '@testing-library/react';
 
-import '../../../pickers/DateTimePicker/__mocks__';
 import { NumberUtils, FormatDate } from '@dots/core';
 import { DateField } from '../DateField';
 
