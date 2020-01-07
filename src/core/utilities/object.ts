@@ -1,4 +1,4 @@
-import { merge, mapKeys, isPlainObject, isEqual, mapValues, isObjectLike, pickBy } from 'lodash';
+import { merge, mapKeys, isPlainObject, isEqual, mapValues, isObjectLike, pickBy, isEmpty } from 'lodash';
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
@@ -21,6 +21,10 @@ export class ObjectUtils {
 
   public static isEqual(obj1: object, obj2: object): boolean {
     return isEqual(obj1, obj2);
+  }
+
+  public static isEmpty(obj: object): boolean {
+    return isEmpty(obj);
   }
 
   public static map(obj: object, mapperFn: (value, key: string) => any, type: 'keys' | 'values' = 'values'): object {
