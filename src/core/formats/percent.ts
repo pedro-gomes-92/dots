@@ -1,17 +1,15 @@
-import { Format } from './format';
+import { FormatNumber } from './number';
 
-export class FormatPercent extends Format {
-  protected static formatter: Intl.NumberFormat;
-
+export class FormatPercent extends FormatNumber {
   protected static initialize(): void {
     if (!FormatPercent.isInitialized) {
-      FormatPercent.formatter = new Intl.NumberFormat(navigator.language, { style: 'percent' });
-      FormatPercent.isInitialized = true;
+      this.formatter = new Intl.NumberFormat(navigator.language, { style: 'percent' });
+      this.isInitialized = true;
     }
   }
 
   public static format(number: FormNumberValue): string {
-    FormatPercent.initialize();
-    return FormatPercent.formatter.format(number);
+    this.initialize();
+    return super.format(number);
   }
 }

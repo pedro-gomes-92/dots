@@ -2,14 +2,18 @@ import { FormatDuration } from '../duration';
 
 describe('Given FormatDuration', (): void => {
   describe('When uses format', (): void => {
-    it('Then should format duration according to the navigator localization', (): void => {
+    it('Then should format value', (): void => {
       const formattedValue = FormatDuration.format(120);
 
       expect(formattedValue).toEqual('120');
     });
 
+    it('And should reproduce a positive zero value', (): void => {
+      expect(FormatDuration.format(-0)).toBe(FormatDuration.format(0));
+    });
+
     describe('And uses minute format', (): void => {
-      it('Then should format duration in minutes according to the navigator localization', (): void => {
+      it('Then should format value in minutes', (): void => {
         const formattedValue = FormatDuration.format(120, 'minute');
 
         expect(formattedValue).toEqual('2');
@@ -17,7 +21,7 @@ describe('Given FormatDuration', (): void => {
     });
 
     describe('And uses hour format', (): void => {
-      it('Then should format duration in hours according to the navigator localization', (): void => {
+      it('Then should format value in hours', (): void => {
         const formattedValue = FormatDuration.format(4950, 'hour');
 
         expect(formattedValue).toEqual('1.375');
@@ -25,7 +29,7 @@ describe('Given FormatDuration', (): void => {
     });
 
     describe('And uses day format', (): void => {
-      it('Then should format duration in days according to the navigator localization', (): void => {
+      it('Then should format value in days', (): void => {
         const formattedValue = FormatDuration.format(55503, 'day');
 
         expect(formattedValue).toEqual('0.642');
@@ -33,7 +37,7 @@ describe('Given FormatDuration', (): void => {
     });
 
     describe('And uses week format', (): void => {
-      it('Then should format duration in weeks according to the navigator localization', (): void => {
+      it('Then should format value in weeks', (): void => {
         const formattedValue = FormatDuration.format(213331, 'week');
 
         expect(formattedValue).toEqual('0.353');
@@ -41,7 +45,7 @@ describe('Given FormatDuration', (): void => {
     });
 
     describe('And uses month format', (): void => {
-      it('Then should format duration in months according to the navigator localization', (): void => {
+      it('Then should format value in months', (): void => {
         const formattedValue = FormatDuration.format(323139, 'month');
 
         expect(formattedValue).toEqual('0.123');
@@ -49,7 +53,7 @@ describe('Given FormatDuration', (): void => {
     });
 
     describe('And uses year format', (): void => {
-      it('Then should format duration in years according to the navigator localization', (): void => {
+      it('Then should format value in years', (): void => {
         const formattedValue = FormatDuration.format(3000000, 'year');
 
         expect(formattedValue).toEqual('0.095');

@@ -7,14 +7,14 @@ export class FormatDate extends Format {
 
   protected static initialize(): void {
     if (!FormatDate.isInitialized) {
-      FormatDate.formatter = new Intl.DateTimeFormat(navigator.language);
-      FormatDate.isInitialized = true;
-      FormatDate.rangeSeparator = ' - ';
+      this.formatter = new Intl.DateTimeFormat(navigator.language);
+      this.isInitialized = true;
+      this.rangeSeparator = ' - ';
     }
   }
 
   public static format(value: DateValue): string {
-    FormatDate.initialize();
+    this.initialize();
 
     if (ObjectUtils.isObject(value)) {
       const { start, end } = value as DateRangeValue;
@@ -23,21 +23,21 @@ export class FormatDate extends Format {
         throw new Error('Start date is bigger than end date');
       }
 
-      return `${FormatDate.format(start)}${FormatDate.rangeSeparator}${FormatDate.format(end)}`;
+      return `${this.format(start)}${this.rangeSeparator}${this.format(end)}`;
     }
 
     const simpleDate = value as DateSimpleValue;
-    return FormatDate.formatter.format(simpleDate);
+    return this.formatter.format(simpleDate);
   }
 
   public static unformat(value: string): DateValue {
-    FormatDate.initialize();
+    this.initialize();
 
-    if (value.indexOf(FormatDate.rangeSeparator) !== -1) {
-      const [start, end] = value.split(FormatDate.rangeSeparator);
+    if (value.indexOf(this.rangeSeparator) !== -1) {
+      const [start, end] = value.split(this.rangeSeparator);
       const rangeDate: DateRangeValue = {
-        start: FormatDate.unformat(start) as DateSimpleValue,
-        end: FormatDate.unformat(end) as DateSimpleValue,
+        start: this.unformat(start) as DateSimpleValue,
+        end: this.unformat(end) as DateSimpleValue,
       };
 
       if (DateUtils.compare(rangeDate.start, rangeDate.end) === 1) {

@@ -2,14 +2,14 @@ import { FormatDate } from '../date';
 
 describe('Given FormatDate', (): void => {
   describe('When uses format', (): void => {
-    it('Then should format date according to the navigator localization', (): void => {
+    it('Then should format value', (): void => {
       const formattedValue = FormatDate.format(new Date(1992, 11, 29));
 
       expect(formattedValue).toEqual('12/29/1992');
     });
 
     describe('And uses ranged value', (): void => {
-      it('Then should format date according to the navigator localization', (): void => {
+      it('Then should format value', (): void => {
         const formattedValue = FormatDate.format({ start: new Date(1992, 11, 29), end: new Date(2010, 11, 30) });
 
         expect(formattedValue).toEqual('12/29/1992 - 12/30/2010');
@@ -25,14 +25,14 @@ describe('Given FormatDate', (): void => {
   });
 
   describe('When uses unformat', (): void => {
-    it('Then should unformat date according to the navigator localization', (): void => {
+    it('Then should unformat value', (): void => {
       const formattedValue = FormatDate.unformat('12/29/1992');
 
       expect(formattedValue).toEqual(new Date(1992, 11, 29));
     });
 
     describe('And uses ranged value', (): void => {
-      it('Then should unformat date according to the navigator localization', (): void => {
+      it('Then should unformat value', (): void => {
         const formattedValue = FormatDate.unformat('12/29/1992 - 12/30/2010');
 
         expect(formattedValue).toEqual({ start: new Date(1992, 11, 29), end: new Date(2010, 11, 30) });

@@ -1,17 +1,16 @@
 import { CurrencyUtils } from '../utilities';
-import { Format } from './format';
+import { FormatNumber } from './number';
 
-export class FormatCurrency extends Format {
+export class FormatCurrency extends FormatNumber {
   protected static options: Intl.NumberFormatOptions = { currency: 'EUR' };
-  protected static formatter: Intl.NumberFormat;
 
   protected static initialize(): void {
-    if (!FormatCurrency.isInitialized) {
-      FormatCurrency.formatter = new Intl.NumberFormat(navigator.language, {
+    if (!this.isInitialized) {
+      this.formatter = new Intl.NumberFormat(navigator.language, {
         style: 'currency',
-        ...FormatCurrency.options,
+        ...this.options,
       });
-      FormatCurrency.isInitialized = true;
+      this.isInitialized = true;
     }
   }
 
@@ -20,13 +19,13 @@ export class FormatCurrency extends Format {
   }
 
   public static format(value: FormNumberValue, unit: UnitCurrency = 'standard'): string {
-    FormatCurrency.initialize();
+    this.initialize();
 
     let newValue = value;
     if (unit === 'centesimal') {
       newValue = CurrencyUtils.centesimalToStandard(value);
     }
 
-    return FormatCurrency.formatter.format(newValue);
+    return super.format(newValue);
   }
 }

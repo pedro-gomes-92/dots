@@ -12,8 +12,12 @@ describe('Given FormatCurrency', (): void => {
       expect(FormatCurrency.format(value)).toBe('€10.12');
     });
 
-    it('And should reproduce the same value without change', (): void => {
+    it('And should reproduce the same value', (): void => {
       expect(FormatCurrency.format(value)).toBe(FormatCurrency.format(value));
+    });
+
+    it('And should reproduce a positive zero value', (): void => {
+      expect(FormatCurrency.format(-0)).toBe(FormatCurrency.format(0));
     });
 
     describe('And uses a different unit', (): void => {
