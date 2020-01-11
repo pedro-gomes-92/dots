@@ -5,8 +5,18 @@
  *
  * Index
  * - Button
+ *    - Icon
+ *    - Text
  */
 
 .button {
-  // EMPTY
+  .icon {
+    // Icon
+    color: inherit;
+  }
+
+  .text {
+    // Text
+    color: inherit;
+  }
 }
