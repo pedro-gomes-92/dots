@@ -9,12 +9,17 @@
 
 .button.is-text {
   text-decoration: none;
-  &:hover,
-  &:active,
-  &:focus {
+  color: $button-text-color;
+
+  @include hover {
+    text-decoration: none;
+    color: $button-text-color-hover;
     background-color: transparent;
   }
-  &:focus {
+
+  @include active {
+    color: $button-text-color-active;
+    background-color: transparent;
     box-shadow: none;
   }
 }

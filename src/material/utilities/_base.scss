@@ -4,12 +4,31 @@
  * All available base utilities.
  *
  * Index
+ * - Selectors
  * - Calculation
  * - Position
  * - Alignment
  * - Gap
  * - Path
  */
+
+// Selectors
+
+@mixin hover {
+  &:hover,
+  &.is-hovered {
+    @content;
+  }
+}
+
+@mixin active {
+  &:active,
+  &.is-active,
+  &:focus,
+  &.is-focused {
+    @content;
+  }
+}
 
 // Calculation
 @function factor($value, $percent) {

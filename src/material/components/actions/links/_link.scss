@@ -14,12 +14,12 @@
   display: inline-block;
   color: $link-color;
 
-  &:hover {
+  @include hover {
     text-decoration: none;
     color: $link-color-hover;
   }
 
-  &:active {
+  @include active {
     color: $link-color-active;
   }
 
@@ -30,11 +30,11 @@
       &-#{$name} {
         color: $color;
 
-        &:hover {
+        @include hover {
           color: color-hover($color);
         }
 
-        &:active {
+        @include active {
           color: color-active($color);
         }
       }
@@ -49,7 +49,7 @@
   .text {
     // Text
     color: inherit;
-    &:hover {
+    @include hover {
       text-decoration: underline;
     }
   }

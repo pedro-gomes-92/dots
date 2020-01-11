@@ -27,15 +27,13 @@
   &-link {
     &.is-current {
       font-weight: bold;
-      &:hover,
-      &:active,
-      &:focus {
+      @include hover {
         color: $pagination-current-color;
-      }
-      &:hover {
         border-color: $pagination-hover-border-color;
       }
-      &:focus {
+
+      @include active {
+        color: $pagination-current-color;
         border-color: $pagination-focus-border-color;
       }
     }

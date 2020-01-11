@@ -21,6 +21,7 @@
  *    - Table
  * - Action
  *    - Link
+ *    - Button Text
  */
 
 // Miscellaneous
@@ -95,3 +96,8 @@ $table-cell-spacing: 0 0.6em !default;
 $link-color: $color-background-inverted !default;
 $link-color-active: $color-primary !default;
 $link-color-hover: color-hover($color-primary) !default;
+
+// Button Text
+$button-text-color: $link-color !default;
+$button-text-color-active: $link-color-active !default;
+$button-text-color-hover: $link-color-hover !default;
