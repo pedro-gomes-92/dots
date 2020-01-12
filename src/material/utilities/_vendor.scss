@@ -108,64 +108,64 @@ $icon-dimensions-medium: $size-medium;
 $icon-dimensions-large: $size-large;
 
 // Table
-$table-background-color: transparent !default;
-$table-cell-padding: 1rem !default;
-$table-head-cell-border-width: 0 !default;
-$table-body-background-color: color-intensity($color-background, lighten, 2) !default;
-$table-row-hover-background-color: color-intensity($color-background, lighten, 1) !default;
+$table-background-color: transparent;
+$table-cell-padding: 1rem;
+$table-head-cell-border-width: 0;
+$table-body-background-color: color-intensity($color-background, lighten, 2);
+$table-row-hover-background-color: color-intensity($color-background, lighten, 1);
 
 // Pagination
-$pagination-margin: -0.5em !default;
-$pagination-item-margin: 0.5em !default;
-$pagination-current-background-color: transparent !default;
-$pagination-current-border-color: transparent !default;
-$pagination-current-color: $color-primary !default;
-$pagination-ellipsis-color: $color-background-inverted !default;
+$pagination-margin: -0.5em;
+$pagination-item-margin: 0.5em;
+$pagination-current-background-color: transparent;
+$pagination-current-border-color: transparent;
+$pagination-current-color: $color-primary;
+$pagination-ellipsis-color: $color-background-inverted;
 
 // Section
-$section-padding: 3rem $containers-padding-horizontal !default;
+$section-padding: 3rem $containers-offset;
 
 // Box
-$box-background-color: color-intensity($color-background, darken, 2) !default;
+$box-background-color: color-intensity($color-background, darken, 2);
 
 // Card
-$card-background-color: $color-background !default;
-$card-header-shadow: none !default;
-$card-content-padding: $card-gap 0 $card-gap 0 !default;
+$card-background-color: $color-background;
+$card-header-shadow: none;
+$card-content-padding: $card-gap 0 $card-gap 0;
 
 // Modal
-$modal-background-background-color: $overlay-color-background !default;
+$modal-background-background-color: $overlay-color-background;
 
 // Notification
-$notification-padding: 1.25rem !default;
+$notification-padding: 1.25rem;
 
 // NavBar
 $navbar-z: auto;
 $navbar-height: $navbar-container-height;
-$navbar-background-color: $navbar-color-background !default;
-$navbar-item-color: inherit !default;
+$navbar-background-color: transparent;
+$navbar-item-color: inherit;
 
 // Footer
-$footer-color: $navbar-color !default;
-$footer-background-color: $navbar-color-background !default;
+$footer-background-color: $footer-color-background;
+$footer-padding: 0.75rem $containers-offset;
 
 // Layout
 $gap: $gap-elements;
 $column-gap: 0;
 
 // List
-$list-background-color: transparent !default;
-$list-item-border: none !default;
-$list-shadow: none !default;
-$list-radius: 0 !default;
+$list-background-color: transparent;
+$list-item-border: none;
+$list-shadow: none;
+$list-radius: 0;
 
 // Title
-$title-color: $color-background-inverted !default;
-$title-weight: normal !default;
+$title-color: $color-background-inverted;
+$title-weight: normal;
 
 // Tag
-$tag-background-color: $color-background-inverted !default;
-$tag-color: $color-background !default;
+$tag-background-color: $color-background-inverted;
+$tag-color: $color-background;
 
 // Bulma Calendar
 

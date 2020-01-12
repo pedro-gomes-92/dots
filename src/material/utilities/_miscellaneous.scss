@@ -8,7 +8,7 @@
  */
 
 // Responsive
-$containers-padding-horizontal: 1.5rem !default;
+$containers-offset: 1.5rem !default;
 
 @mixin flex-remaining {
   @include flex-min-size(0%);
