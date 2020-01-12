@@ -17,7 +17,7 @@ export const BasePopup: FunctionComponent<BasePopupProps> = ({
 }: BasePopupProps): JSX.Element => (
   <BaseContainer
     className={classnames(
-      'popup',
+      'popup-container',
       position.isInner ? 'is-inner-position' : '',
       `has-position-${position.x}-${position.y}`,
       className,

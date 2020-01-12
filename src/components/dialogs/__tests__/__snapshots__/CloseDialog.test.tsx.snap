@@ -3,7 +3,7 @@
 exports[`Given <CloseDialog /> When initializes Then should match the snapshot 1`] = `
 <div>
   <button
-    class="button is-text dialog-close"
+    class="button is-text close dialog-close"
   >
     <span
       class="icon"

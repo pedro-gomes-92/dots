@@ -53,6 +53,9 @@ $tooltip-color: $color-background !default;
 // Toast
 $toast-offset: 0.5em !default;
 $toast-lifetime: 2s !default;
+$toast-color-background: $color-background !default;
+$toast-color: $color-background-inverted !default;
+$toast-color-border: $toast-color !default;
 
 // Container
 

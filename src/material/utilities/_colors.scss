@@ -39,7 +39,12 @@ $color-intensity-factor: 2% !default;
     $type: if($type == darken, lighten, darken);
   }
 
-  @return call($type, $color, $intensity * $color-intensity-factor);
+  $color-intensity-value: $intensity * $color-intensity-factor;
+  @if ($type == lighten) {
+    @return lighten($color, $color-intensity-value);
+  }
+
+  @return darken($color, $color-intensity-value);
 }
 
 // States

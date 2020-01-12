@@ -20,12 +20,8 @@ export const ToastContainer: FunctionComponent<ToastContainerProps> = ({
       <StackLayout gap={1}>
         {React.Children.map(
           children,
-          ({ props }): JSX.Element => {
-            return (
-              <StackItem>
-                <Toast {...props} />
-              </StackItem>
-            );
+          (child): JSX.Element => {
+            return <StackItem>{child}</StackItem>;
           },
         )}
       </StackLayout>

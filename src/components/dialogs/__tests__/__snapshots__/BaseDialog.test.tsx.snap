@@ -17,7 +17,7 @@ exports[`Given <BaseDialog /> When initializes And uses onClose Then should matc
       </div>
     </div>
     <button
-      class="is-large button is-text dialog-close"
+      class="is-large button is-text close dialog-close"
     >
       <span
         class="icon"
@@ -48,7 +48,7 @@ exports[`Given <BaseDialog /> When initializes Then should match the snapshot 1`
       </div>
     </div>
     <button
-      class="is-large button is-text dialog-close"
+      class="is-large button is-text close dialog-close"
     >
       <span
         class="icon"

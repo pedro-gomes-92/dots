@@ -2,8 +2,10 @@ import React, { FunctionComponent } from 'react';
 import classnames from 'classnames';
 import { BasePopupProps, BasePopup } from '../BasePopup';
 import { BasePopupContentProps, BasePopupContent } from '../BasePopupContent';
+import { Text } from '../../text';
 
 export interface TooltipProps extends Omit<BasePopupProps, 'children'>, BasePopupContentProps {
+  text: string;
   coordinates?: { x: number; y: number };
 }
 
@@ -22,7 +24,9 @@ export const Tooltip: FunctionComponent<TooltipProps> = ({
       position={{ isInner: false, ...position }}
       {...rest}
     >
-      <BasePopupContent text={text} className="tooltip-content" />
+      <BasePopupContent className="tooltip-content">
+        <Text text={text} />
+      </BasePopupContent>
     </BasePopup>
   );
 };
