@@ -18,7 +18,7 @@ describe('Given <BaseDialog />', (): void => {
       beforeEach((): void => {
         handleClose = jest.fn();
         container = render(<BaseDialog onClose={handleClose} />).container;
-        close = container.querySelector('.dialog-close');
+        close = container.querySelector('.close');
 
         fireEvent.click(close);
       });

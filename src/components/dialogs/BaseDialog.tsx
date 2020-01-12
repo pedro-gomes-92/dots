@@ -2,9 +2,8 @@ import React, { FunctionComponent, useState } from 'react';
 import classnames from 'classnames';
 
 import { BaseProps, Base } from '../Base';
-import { OverlayProps, Overlay } from '../miscellaneous';
+import { OverlayProps, Overlay, Close } from '../miscellaneous';
 import { CenterLayout } from '../layouts';
-import { CloseDialog } from './CloseDialog';
 
 export interface BaseDialogProps extends BaseProps {
   onClose?: OverlayProps['onClick'];
@@ -43,7 +42,7 @@ export const BaseDialog: FunctionComponent<BaseDialogProps> = ({
         <Overlay onClick={handleOutsideClick} />
         {children}
       </CenterLayout>
-      {onClose && <CloseDialog size="large" onClick={handleClose} />}
+      {onClose && <Close size="large" onClick={handleClose} />}
     </Base>
   );
 };

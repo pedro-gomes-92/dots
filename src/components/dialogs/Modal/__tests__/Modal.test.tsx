@@ -47,7 +47,7 @@ describe('Given <Modal />', (): void => {
             <Text text="Testing" />
           </Modal>,
         ).container;
-        close = container.querySelector('.modal-header .dialog-close');
+        close = container.querySelector('.modal-header .close');
 
         fireEvent.click(close);
       });

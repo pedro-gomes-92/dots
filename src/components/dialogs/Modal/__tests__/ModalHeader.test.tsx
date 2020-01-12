@@ -19,7 +19,7 @@ describe('Given <ModalHeader />', (): void => {
       beforeEach((): void => {
         handleClose = jest.fn();
         container = render(<ModalHeader onClose={handleClose} />).container;
-        close = container.querySelector('.dialog-close');
+        close = container.querySelector('.close');
 
         fireEvent.click(close);
       });

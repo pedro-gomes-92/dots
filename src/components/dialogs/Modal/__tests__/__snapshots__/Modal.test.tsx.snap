@@ -110,7 +110,7 @@ exports[`Given <Modal /> When initializes And uses onClose Then should match the
                     class="is-auto layout-item column"
                   >
                     <button
-                      class="button is-text close dialog-close"
+                      class="button is-text close"
                     >
                       <span
                         class="icon"
@@ -187,7 +187,7 @@ exports[`Given <Modal /> When initializes And uses title Then should match the s
                     class="is-auto layout-item column"
                   >
                     <button
-                      class="button is-text close dialog-close"
+                      class="button is-text close"
                     >
                       <span
                         class="icon"
