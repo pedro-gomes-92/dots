@@ -16,29 +16,32 @@ export const Image: FunctionComponent<ImageProps> = ({
   onLoad,
   ...rest
 }: ImageProps): JSX.Element => {
-  const [loading, setLoading] = useState(true);
+  const hasLoading = onLoad !== undefined;
+  const [loading, setLoading] = useState(hasLoading);
+
+  let attributes = {
+    ...attribute,
+    src: source,
+  };
+
+  if (hasLoading) {
+    attributes = {
+      ...attributes,
+      onLoad: (event): void => {
+        setLoading(false);
+        onLoad(event);
+      },
+    };
+  }
 
   return (
     <>
       {loading && <AreaLoader className="is-image" />}
-      <Base
-        className={classnames('image', className)}
-        attribute={{
-          ...attribute,
-          src: source,
-          onLoad: (event): void => {
-            setLoading(false);
-            onLoad(event);
-          },
-        }}
-        isVisible={!loading}
-        {...rest}
-      />
+      <Base className={classnames('image', className)} attribute={attributes} isVisible={!loading} {...rest} />
     </>
   );
 };
 
 Image.defaultProps = {
   tag: 'img',
-  onLoad: (): void => {},
 };
