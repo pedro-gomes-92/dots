@@ -22,21 +22,7 @@ export const Toast: FunctionComponent<ToastProps> = ({
   size,
   ...rest
 }: ToastProps): JSX.Element => {
-  let iconName = icon;
-
-  if (!iconName) {
-    switch (state) {
-      case 'danger':
-        iconName = 'close-circle-outline';
-      case 'info':
-        iconName = 'info-outline';
-      case 'success':
-        iconName = 'checkmark-circle-2-outline';
-      case 'warning':
-        iconName = 'alert-circle-outline';
-    }
-  }
-
+  let iconName = icon || state;
   return (
     <BasePopup className={classnames('toast', className)} size={size} {...rest}>
       <ColumnLayout align="center" gap={1} isMobileActive>
