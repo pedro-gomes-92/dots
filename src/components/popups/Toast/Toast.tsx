@@ -1,11 +1,11 @@
 import React, { FunctionComponent } from 'react';
 import classnames from 'classnames';
-import { BasePopupContent, BasePopupContentProps } from '../BasePopupContent';
+import { BasePopup, BasePopupProps } from '../BasePopup';
 import { Text, TextProps } from '../../text';
 import { IconProps, Icon, Close, CloseProps } from '../../miscellaneous';
 import { ColumnLayout, ColumnItem } from '../../layouts';
 
-export interface ToastProps extends Omit<BasePopupContentProps, 'children'> {
+export interface ToastProps extends Omit<BasePopupProps, 'children'> {
   text: TextProps['text'];
   icon?: IconProps['name'];
   onClose?: CloseProps['onClick'];
@@ -38,7 +38,7 @@ export const Toast: FunctionComponent<ToastProps> = ({
   }
 
   return (
-    <BasePopupContent className={classnames('toast', className)} size={size} {...rest}>
+    <BasePopup className={classnames('toast', className)} size={size} {...rest}>
       <ColumnLayout align="center" gap={1} isMobileActive>
         {iconName && (
           <ColumnItem size="auto">
@@ -54,6 +54,6 @@ export const Toast: FunctionComponent<ToastProps> = ({
           </ColumnItem>
         )}
       </ColumnLayout>
-    </BasePopupContent>
+    </BasePopup>
   );
 };

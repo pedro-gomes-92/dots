@@ -2,10 +2,10 @@ import React, { FunctionComponent } from 'react';
 import classnames from 'classnames';
 import { Children } from '../../typings';
 import { StackLayout, StackItem } from '../../layouts';
-import { BasePopupProps, BasePopup } from '../BasePopup';
+import { BasePopupContainerProps, BasePopupContainer } from '../BasePopupContainer';
 import { Toast } from './Toast';
 
-export interface ToastContainerProps extends BasePopupProps {
+export interface ToastContainerProps extends BasePopupContainerProps {
   children: Children<typeof Toast>;
 }
 
@@ -16,7 +16,11 @@ export const ToastContainer: FunctionComponent<ToastContainerProps> = ({
   ...rest
 }: ToastContainerProps): JSX.Element => {
   return (
-    <BasePopup className={classnames('toast-container', className)} position={{ isInner: true, ...position }} {...rest}>
+    <BasePopupContainer
+      className={classnames('toast-container', className)}
+      position={{ isInner: true, ...position }}
+      {...rest}
+    >
       <StackLayout gap={1}>
         {React.Children.map(
           children,
@@ -25,7 +29,7 @@ export const ToastContainer: FunctionComponent<ToastContainerProps> = ({
           },
         )}
       </StackLayout>
-    </BasePopup>
+    </BasePopupContainer>
   );
 };
 

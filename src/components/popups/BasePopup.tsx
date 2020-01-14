@@ -1,33 +1,15 @@
 import React, { FunctionComponent } from 'react';
 import classnames from 'classnames';
-import { Children } from '../typings';
-import { BaseContainerProps, BaseContainer } from '../containers/BaseContainer';
-import { BasePopupContent } from './BasePopupContent';
+import { Box, BoxProps } from '../containers';
 
-export interface BasePopupProps extends BaseContainerProps {
-  position?: PositionXY;
-  children: Children<typeof BasePopupContent>;
-}
+export interface BasePopupProps extends BoxProps {}
 
 export const BasePopup: FunctionComponent<BasePopupProps> = ({
   className,
-  position,
   children,
   ...rest
 }: BasePopupProps): JSX.Element => (
-  <BaseContainer
-    className={classnames(
-      'popup-container',
-      position.isInner ? 'is-inner-position' : '',
-      `has-position-${position.x}-${position.y}`,
-      className,
-    )}
-    {...rest}
-  >
+  <Box className={classnames('popup', 'notification', className)} {...rest}>
     {children}
-  </BaseContainer>
+  </Box>
 );
-
-BasePopup.defaultProps = {
-  position: { x: 'center', y: 'top' },
-};
