@@ -9,6 +9,7 @@ export interface ColumnLayoutProps extends BaseLayoutProps {
   align?: Align;
   isWrapping?: boolean;
   isReverted?: boolean;
+  isMobileActive?: boolean;
 }
 
 export const ColumnLayout: FunctionComponent<ColumnLayoutProps> = ({
@@ -17,6 +18,7 @@ export const ColumnLayout: FunctionComponent<ColumnLayoutProps> = ({
   align,
   isWrapping,
   isReverted,
+  isMobileActive,
   ...rest
 }: ColumnLayoutProps): JSX.Element => (
   <BaseLayout
@@ -25,6 +27,7 @@ export const ColumnLayout: FunctionComponent<ColumnLayoutProps> = ({
       align ? `has-alignment-${align}` : '',
       { 'is-multiline': isWrapping },
       { 'is-reverted': isReverted },
+      { 'is-mobile': isMobileActive },
       className,
     )}
     {...rest}
@@ -36,4 +39,5 @@ export const ColumnLayout: FunctionComponent<ColumnLayoutProps> = ({
 ColumnLayout.defaultProps = {
   isWrapping: false,
   isReverted: false,
+  isMobileActive: false,
 };

@@ -5,7 +5,10 @@
  *
  * Index
  * - NavBar
- *    - Menu
+ * - NavBar Menu
+ *    - Trigger
+ *    - Opened
+ * - NavBar Brand
  */
 
 .navbar {
@@ -18,4 +21,33 @@
   > .container {
     min-height: 100%;
   }
+}
+
+.navbar-menu {
+  &-trigger {
+    @include screen($navbar-device-inline-active) {
+      display: none;
+    }
+  }
+
+  &.is {
+    // Opened
+    &-opened {
+      @extend .is-active;
+
+      .navbar-item > .button {
+        width: 100%;
+      }
+
+      @include screen($navbar-device-inline-active) {
+        .navbar-item > .button {
+          width: auto;
+        }
+      }
+    }
+  }
+}
+
+.navbar-brand {
+  justify-content: space-between;
 }

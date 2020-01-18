@@ -7,14 +7,16 @@ import { NavBarItem } from './NavBarItem';
 
 export interface NavBarMenuProps extends BaseProps {
   children: Children<typeof Link>;
+  isOpened?: boolean;
 }
 
 export const NavBarMenu: FunctionComponent<NavBarMenuProps> = ({
   className,
   children,
+  isOpened,
   ...rest
 }: NavBarMenuProps): JSX.Element => (
-  <Base className={classnames('navbar-menu', className)} {...rest}>
+  <Base className={classnames('navbar-menu', { 'is-opened': isOpened }, className)} {...rest}>
     <Base className="navbar-end">
       {React.Children.map(
         children,
@@ -25,3 +27,7 @@ export const NavBarMenu: FunctionComponent<NavBarMenuProps> = ({
     </Base>
   </Base>
 );
+
+NavBarMenu.defaultProps = {
+  isOpened: false,
+};

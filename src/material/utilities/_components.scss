@@ -30,6 +30,7 @@
 // NavBar
 $navbar-container-height: 3.25rem !default;
 $navbar-padding: 0 !default;
+$navbar-device-inline-active: $device-responsive-active !default;
 
 // Overlay
 $overlay-color-background: color-intensity($color-background, darken, 15) !default;

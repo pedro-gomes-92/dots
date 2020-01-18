@@ -142,8 +142,9 @@ $notification-padding: 1.25rem;
 // NavBar
 $navbar-z: auto;
 $navbar-height: $navbar-container-height;
-$navbar-background-color: transparent;
+$navbar-background-color: inherit;
 $navbar-item-color: inherit;
+$navbar-breakpoint: map-get($device-breakpoints, $navbar-device-inline-active);
 
 // Footer
 $footer-background-color: $footer-color-background;
