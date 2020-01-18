@@ -1,5 +1,6 @@
 const { BannerPlugin } = require('webpack');
 const merge = require('webpack-merge');
+const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
 
 const { assets, babel, react, sass } = require('./configurations');
 const { commandSync } = require('../../utils/command');
@@ -57,6 +58,7 @@ const common = {
       raw: true,
       entryOnly: true,
     }),
+    new FriendlyErrorsWebpackPlugin(),
   ],
 };
 

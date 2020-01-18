@@ -8,5 +8,6 @@ module.exports = merge(build, {
     port: 8000,
     contentBase: 'dist/',
     writeToDisk: true,
+    quiet: true,
   },
 });
