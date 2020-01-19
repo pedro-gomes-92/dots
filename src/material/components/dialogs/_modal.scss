@@ -6,6 +6,7 @@
  * Index
  * - Modal
  *    - Header
+ *      - Title
  *      - Close
  *    - Content
  *    - Footer
@@ -15,12 +16,19 @@
   display: block;
 
   &-card {
+    margin: 0;
     padding: $modal-padding;
+    overflow: auto;
   }
 
   // Header
   &-header {
     padding: $modal-header-padding;
+
+    // Title
+    .title {
+      text-align: left;
+    }
 
     // Close
     .close {
@@ -32,6 +40,7 @@
 
   // Content
   .card-content {
+    margin: 0;
     padding: $modal-content-padding;
   }
 

@@ -17,11 +17,13 @@ $text-family: BlinkMacSystemFont, -apple-system, 'Segoe UI', 'Roboto', 'Oxygen',
 // Sizes
 
 // Base
-$text-size: 10px !default;
+$text-size-mobile: 16px !default;
+$text-size-tablet: 16px !default;
+$text-size-desktop: 16px !default;
+$text-size-widescreen: 16px !default;
+$text-size-fullhd: 16px !default;
 
 // Variants
-$text-size-factor: 10% !default;
-
 $text-size-1: 3rem !default;
 $text-size-2: 2.5rem !default;
 $text-size-3: 2rem !default;
@@ -47,4 +49,12 @@ $text-sizes: (
   'normal': $text-size-normal,
   'medium': $text-size-medium,
   'large': $text-size-large,
+);
+
+$text-device-sizes: (
+  'mobile': $text-size-mobile,
+  'tablet': $text-size-tablet,
+  'desktop': $text-size-desktop,
+  'widescreen': $text-size-widescreen,
+  'fullhd': $text-size-fullhd,
 );

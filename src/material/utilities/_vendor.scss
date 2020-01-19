@@ -145,6 +145,7 @@ $navbar-height: $navbar-container-height;
 $navbar-background-color: inherit;
 $navbar-item-color: inherit;
 $navbar-breakpoint: map-get($device-breakpoints, $navbar-device-inline-active);
+$navbar-item-img-max-height: $navbar-height - 1.5rem;
 
 // Footer
 $footer-background-color: $footer-color-background;

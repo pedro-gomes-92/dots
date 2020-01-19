@@ -23,13 +23,12 @@
 html {
   overflow: hidden;
   min-height: 100%;
-  font-size: $text-size;
   font-family: $text-family;
-  @include screen('tablet') {
-    font-size: factor($text-size, $text-size-factor);
-  }
-  @include screen('desktop') {
-    font-size: factor($text-size, 2 * $text-size-factor);
+
+  @each $name, $size in $text-device-sizes {
+    @include screen($name) {
+      font-size: $size;
+    }
   }
 }
 
