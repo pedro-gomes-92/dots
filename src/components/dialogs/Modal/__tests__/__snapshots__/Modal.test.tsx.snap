@@ -97,7 +97,7 @@ exports[`Given <Modal /> When initializes And uses onClose Then should match the
                 class="card-header modal-header"
               >
                 <div
-                  class="layout is-2 is-mobile columns"
+                  class="layout is-2 columns is-mobile"
                 >
                   <div
                     class="layout-item column"
@@ -172,7 +172,7 @@ exports[`Given <Modal /> When initializes And uses title Then should match the s
                 class="card-header modal-header"
               >
                 <div
-                  class="layout is-2 is-mobile columns"
+                  class="layout is-2 columns is-mobile"
                 >
                   <div
                     class="layout-item column"
