@@ -1,11 +1,13 @@
-![Coveralls github](https://img.shields.io/coveralls/github/pedro-gomes-92/dots)
+![GitHub package.json version](https://img.shields.io/github/package-json/v/pedro-gomes-92/dots)
 ![GitHub repo size](https://img.shields.io/github/repo-size/pedro-gomes-92/dots)
 ![GitHub Release Date](https://img.shields.io/github/release-date/pedro-gomes-92/dots)
 ![GitHub All Releases](https://img.shields.io/github/downloads/pedro-gomes-92/dots/total)
 
+![Coveralls github](https://img.shields.io/coveralls/github/pedro-gomes-92/dots)
+
 # Dots
 
-Easy to use front end library to create the foundations for any project.
+Dots is a front end library, ready to be used in any front end web application. Includes all types of components (e.g. layouts, containers, actions, texts, charts), formats (e.g. date, currency, number), themes (e.g. colors, shapes, typography, iconography) and much more.
 
 ## Getting Started
 
