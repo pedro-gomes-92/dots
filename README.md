@@ -44,6 +44,12 @@ npm start
 To start the project unit tests, just run the command
 
 ```
+npm test
+```
+
+You can also start the `jest` runner (bypasses the linter tests), by running the command
+
+```
 npm run test:watch
 ```
 
