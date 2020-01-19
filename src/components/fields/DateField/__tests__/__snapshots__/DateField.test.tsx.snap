@@ -289,7 +289,7 @@ exports[`Given <DateField /> When initializes Then should match the snapshot 1`]
                               >
                                 <div
                                   class="datepicker-date"
-                                  data-date="Mon Sep 30 2019 00:00:00 GMT+0200 (Central European Summer Time)"
+                                  data-date="9/30/2019, 00:00:00"
                                 >
                                   
       
@@ -304,7 +304,7 @@ exports[`Given <DateField /> When initializes Then should match the snapshot 1`]
                                 </div>
                                 <div
                                   class="datepicker-date is-current-month"
-                                  data-date="Tue Oct 01 2019 00:00:00 GMT+0200 (Central European Summer Time)"
+                                  data-date="10/1/2019, 00:00:00"
                                 >
                                   
       
@@ -319,7 +319,7 @@ exports[`Given <DateField /> When initializes Then should match the snapshot 1`]
                                 </div>
                                 <div
                                   class="datepicker-date is-current-month"
-                                  data-date="Wed Oct 02 2019 00:00:00 GMT+0200 (Central European Summer Time)"
+                                  data-date="10/2/2019, 00:00:00"
                                 >
                                   
       
@@ -334,7 +334,7 @@ exports[`Given <DateField /> When initializes Then should match the snapshot 1`]
                                 </div>
                                 <div
                                   class="datepicker-date is-current-month"
-                                  data-date="Thu Oct 03 2019 00:00:00 GMT+0200 (Central European Summer Time)"
+                                  data-date="10/3/2019, 00:00:00"
                                 >
                                   
       
@@ -349,7 +349,7 @@ exports[`Given <DateField /> When initializes Then should match the snapshot 1`]
                                 </div>
                                 <div
                                   class="datepicker-date is-current-month"
-                                  data-date="Fri Oct 04 2019 00:00:00 GMT+0200 (Central European Summer Time)"
+                                  data-date="10/4/2019, 00:00:00"
                                 >
                                   
       
@@ -364,7 +364,7 @@ exports[`Given <DateField /> When initializes Then should match the snapshot 1`]
                                 </div>
                                 <div
                                   class="datepicker-date is-current-month"
-                                  data-date="Sat Oct 05 2019 00:00:00 GMT+0200 (Central European Summer Time)"
+                                  data-date="10/5/2019, 00:00:00"
                                 >
                                   
       
@@ -379,7 +379,7 @@ exports[`Given <DateField /> When initializes Then should match the snapshot 1`]
                                 </div>
                                 <div
                                   class="datepicker-date is-current-month"
-                                  data-date="Sun Oct 06 2019 00:00:00 GMT+0200 (Central European Summer Time)"
+                                  data-date="10/6/2019, 00:00:00"
                                 >
                                   
       
@@ -394,7 +394,7 @@ exports[`Given <DateField /> When initializes Then should match the snapshot 1`]
                                 </div>
                                 <div
                                   class="datepicker-date is-current-month"
-                                  data-date="Mon Oct 07 2019 00:00:00 GMT+0200 (Central European Summer Time)"
+                                  data-date="10/7/2019, 00:00:00"
                                 >
                                   
       
@@ -409,7 +409,7 @@ exports[`Given <DateField /> When initializes Then should match the snapshot 1`]
                                 </div>
                                 <div
                                   class="datepicker-date is-current-month"
-                                  data-date="Tue Oct 08 2019 00:00:00 GMT+0200 (Central European Summer Time)"
+                                  data-date="10/8/2019, 00:00:00"
                                 >
                                   
       
@@ -424,7 +424,7 @@ exports[`Given <DateField /> When initializes Then should match the snapshot 1`]
                                 </div>
                                 <div
                                   class="datepicker-date is-current-month"
-                                  data-date="Wed Oct 09 2019 00:00:00 GMT+0200 (Central European Summer Time)"
+                                  data-date="10/9/2019, 00:00:00"
                                 >
                                   
       
@@ -439,7 +439,7 @@ exports[`Given <DateField /> When initializes Then should match the snapshot 1`]
                                 </div>
                                 <div
                                   class="datepicker-date is-current-month"
-                                  data-date="Thu Oct 10 2019 00:00:00 GMT+0200 (Central European Summer Time)"
+                                  data-date="10/10/2019, 00:00:00"
                                 >
                                   
       
@@ -454,7 +454,7 @@ exports[`Given <DateField /> When initializes Then should match the snapshot 1`]
                                 </div>
                                 <div
                                   class="datepicker-date is-current-month"
-                                  data-date="Fri Oct 11 2019 00:00:00 GMT+0200 (Central European Summer Time)"
+                                  data-date="10/11/2019, 00:00:00"
                                 >
                                   
       
@@ -469,7 +469,7 @@ exports[`Given <DateField /> When initializes Then should match the snapshot 1`]
                                 </div>
                                 <div
                                   class="datepicker-date is-current-month"
-                                  data-date="Sat Oct 12 2019 00:00:00 GMT+0200 (Central European Summer Time)"
+                                  data-date="10/12/2019, 00:00:00"
                                 >
                                   
       
@@ -484,7 +484,7 @@ exports[`Given <DateField /> When initializes Then should match the snapshot 1`]
                                 </div>
                                 <div
                                   class="datepicker-date is-current-month"
-                                  data-date="Sun Oct 13 2019 00:00:00 GMT+0200 (Central European Summer Time)"
+                                  data-date="10/13/2019, 00:00:00"
                                 >
                                   
       
@@ -499,7 +499,7 @@ exports[`Given <DateField /> When initializes Then should match the snapshot 1`]
                                 </div>
                                 <div
                                   class="datepicker-date is-current-month"
-                                  data-date="Mon Oct 14 2019 00:00:00 GMT+0200 (Central European Summer Time)"
+                                  data-date="10/14/2019, 00:00:00"
                                 >
                                   
       
@@ -514,7 +514,7 @@ exports[`Given <DateField /> When initializes Then should match the snapshot 1`]
                                 </div>
                                 <div
                                   class="datepicker-date is-current-month"
-                                  data-date="Tue Oct 15 2019 00:00:00 GMT+0200 (Central European Summer Time)"
+                                  data-date="10/15/2019, 00:00:00"
                                 >
                                   
       
@@ -529,7 +529,7 @@ exports[`Given <DateField /> When initializes Then should match the snapshot 1`]
                                 </div>
                                 <div
                                   class="datepicker-date is-current-month"
-                                  data-date="Wed Oct 16 2019 00:00:00 GMT+0200 (Central European Summer Time)"
+                                  data-date="10/16/2019, 00:00:00"
                                 >
                                   
       
@@ -544,7 +544,7 @@ exports[`Given <DateField /> When initializes Then should match the snapshot 1`]
                                 </div>
                                 <div
                                   class="datepicker-date is-current-month"
-                                  data-date="Thu Oct 17 2019 00:00:00 GMT+0200 (Central European Summer Time)"
+                                  data-date="10/17/2019, 00:00:00"
                                 >
                                   
       
@@ -559,7 +559,7 @@ exports[`Given <DateField /> When initializes Then should match the snapshot 1`]
                                 </div>
                                 <div
                                   class="datepicker-date is-current-month"
-                                  data-date="Fri Oct 18 2019 00:00:00 GMT+0200 (Central European Summer Time)"
+                                  data-date="10/18/2019, 00:00:00"
                                 >
                                   
       
@@ -574,7 +574,7 @@ exports[`Given <DateField /> When initializes Then should match the snapshot 1`]
                                 </div>
                                 <div
                                   class="datepicker-date is-current-month"
-                                  data-date="Sat Oct 19 2019 00:00:00 GMT+0200 (Central European Summer Time)"
+                                  data-date="10/19/2019, 00:00:00"
                                 >
                                   
       
@@ -589,7 +589,7 @@ exports[`Given <DateField /> When initializes Then should match the snapshot 1`]
                                 </div>
                                 <div
                                   class="datepicker-date is-current-month"
-                                  data-date="Sun Oct 20 2019 00:00:00 GMT+0200 (Central European Summer Time)"
+                                  data-date="10/20/2019, 00:00:00"
                                 >
                                   
       
@@ -604,7 +604,7 @@ exports[`Given <DateField /> When initializes Then should match the snapshot 1`]
                                 </div>
                                 <div
                                   class="datepicker-date is-current-month"
-                                  data-date="Mon Oct 21 2019 00:00:00 GMT+0200 (Central European Summer Time)"
+                                  data-date="10/21/2019, 00:00:00"
                                 >
                                   
       
@@ -619,7 +619,7 @@ exports[`Given <DateField /> When initializes Then should match the snapshot 1`]
                                 </div>
                                 <div
                                   class="datepicker-date is-current-month"
-                                  data-date="Tue Oct 22 2019 00:00:00 GMT+0200 (Central European Summer Time)"
+                                  data-date="10/22/2019, 00:00:00"
                                 >
                                   
       
@@ -634,7 +634,7 @@ exports[`Given <DateField /> When initializes Then should match the snapshot 1`]
                                 </div>
                                 <div
                                   class="datepicker-date is-current-month"
-                                  data-date="Wed Oct 23 2019 00:00:00 GMT+0200 (Central European Summer Time)"
+                                  data-date="10/23/2019, 00:00:00"
                                 >
                                   
       
@@ -649,7 +649,7 @@ exports[`Given <DateField /> When initializes Then should match the snapshot 1`]
                                 </div>
                                 <div
                                   class="datepicker-date is-current-month"
-                                  data-date="Thu Oct 24 2019 00:00:00 GMT+0200 (Central European Summer Time)"
+                                  data-date="10/24/2019, 00:00:00"
                                 >
                                   
       
@@ -664,7 +664,7 @@ exports[`Given <DateField /> When initializes Then should match the snapshot 1`]
                                 </div>
                                 <div
                                   class="datepicker-date is-current-month"
-                                  data-date="Fri Oct 25 2019 00:00:00 GMT+0200 (Central European Summer Time)"
+                                  data-date="10/25/2019, 00:00:00"
                                 >
                                   
       
@@ -679,7 +679,7 @@ exports[`Given <DateField /> When initializes Then should match the snapshot 1`]
                                 </div>
                                 <div
                                   class="datepicker-date is-current-month"
-                                  data-date="Sat Oct 26 2019 00:00:00 GMT+0200 (Central European Summer Time)"
+                                  data-date="10/26/2019, 00:00:00"
                                 >
                                   
       
@@ -694,7 +694,7 @@ exports[`Given <DateField /> When initializes Then should match the snapshot 1`]
                                 </div>
                                 <div
                                   class="datepicker-date is-current-month"
-                                  data-date="Sun Oct 27 2019 00:00:00 GMT+0200 (Central European Summer Time)"
+                                  data-date="10/27/2019, 00:00:00"
                                 >
                                   
       
@@ -709,7 +709,7 @@ exports[`Given <DateField /> When initializes Then should match the snapshot 1`]
                                 </div>
                                 <div
                                   class="datepicker-date is-current-month"
-                                  data-date="Mon Oct 28 2019 00:00:00 GMT+0100 (Central European Standard Time)"
+                                  data-date="10/28/2019, 00:00:00"
                                 >
                                   
       
@@ -724,7 +724,7 @@ exports[`Given <DateField /> When initializes Then should match the snapshot 1`]
                                 </div>
                                 <div
                                   class="datepicker-date is-current-month datepicker-range-start"
-                                  data-date="Tue Oct 29 2019 00:00:00 GMT+0100 (Central European Standard Time)"
+                                  data-date="10/29/2019, 00:00:00"
                                 >
                                   
       
@@ -739,7 +739,7 @@ exports[`Given <DateField /> When initializes Then should match the snapshot 1`]
                                 </div>
                                 <div
                                   class="datepicker-date is-current-month"
-                                  data-date="Wed Oct 30 2019 00:00:00 GMT+0100 (Central European Standard Time)"
+                                  data-date="10/30/2019, 00:00:00"
                                 >
                                   
       
@@ -754,7 +754,7 @@ exports[`Given <DateField /> When initializes Then should match the snapshot 1`]
                                 </div>
                                 <div
                                   class="datepicker-date is-current-month"
-                                  data-date="Thu Oct 31 2019 00:00:00 GMT+0100 (Central European Standard Time)"
+                                  data-date="10/31/2019, 00:00:00"
                                 >
                                   
       
@@ -769,7 +769,7 @@ exports[`Given <DateField /> When initializes Then should match the snapshot 1`]
                                 </div>
                                 <div
                                   class="datepicker-date"
-                                  data-date="Fri Nov 01 2019 00:00:00 GMT+0100 (Central European Standard Time)"
+                                  data-date="11/1/2019, 00:00:00"
                                 >
                                   
       
@@ -784,7 +784,7 @@ exports[`Given <DateField /> When initializes Then should match the snapshot 1`]
                                 </div>
                                 <div
                                   class="datepicker-date"
-                                  data-date="Sat Nov 02 2019 00:00:00 GMT+0100 (Central European Standard Time)"
+                                  data-date="11/2/2019, 00:00:00"
                                 >
                                   
       
@@ -799,7 +799,7 @@ exports[`Given <DateField /> When initializes Then should match the snapshot 1`]
                                 </div>
                                 <div
                                   class="datepicker-date"
-                                  data-date="Sun Nov 03 2019 00:00:00 GMT+0100 (Central European Standard Time)"
+                                  data-date="11/3/2019, 00:00:00"
                                 >
                                   
       
