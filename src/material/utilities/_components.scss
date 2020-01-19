@@ -75,7 +75,7 @@ $card-radius: $shape-radius !default;
 // Header
 $header-color-background: color-intensity($color-background, darken, 2) !default;
 $header-color: $color-background-inverted !default;
-$header-padding: 0 $containers-offset !default;
+$header-padding: 0 !default;
 
 // Footer
 $footer-color-background: $header-color-background !default;
