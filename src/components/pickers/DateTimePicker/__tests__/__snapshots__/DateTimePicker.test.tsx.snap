@@ -275,7 +275,7 @@ exports[`Given <DateTimePicker /> When initializes Then should match the snapsho
                         >
                           <div
                             class="datepicker-date"
-                            data-date="Mon Sep 30 2019 00:00:00 GMT+0000 (Greenwich Mean Time)"
+                            data-date="Mon Sep 30 2019 00:00:00 GMT+0200 (Central European Summer Time)"
                           >
                             
       
@@ -290,7 +290,7 @@ exports[`Given <DateTimePicker /> When initializes Then should match the snapsho
                           </div>
                           <div
                             class="datepicker-date is-current-month"
-                            data-date="Tue Oct 01 2019 00:00:00 GMT+0000 (Greenwich Mean Time)"
+                            data-date="Tue Oct 01 2019 00:00:00 GMT+0200 (Central European Summer Time)"
                           >
                             
       
@@ -305,7 +305,7 @@ exports[`Given <DateTimePicker /> When initializes Then should match the snapsho
                           </div>
                           <div
                             class="datepicker-date is-current-month"
-                            data-date="Wed Oct 02 2019 00:00:00 GMT+0000 (Greenwich Mean Time)"
+                            data-date="Wed Oct 02 2019 00:00:00 GMT+0200 (Central European Summer Time)"
                           >
                             
       
@@ -320,7 +320,7 @@ exports[`Given <DateTimePicker /> When initializes Then should match the snapsho
                           </div>
                           <div
                             class="datepicker-date is-current-month"
-                            data-date="Thu Oct 03 2019 00:00:00 GMT+0000 (Greenwich Mean Time)"
+                            data-date="Thu Oct 03 2019 00:00:00 GMT+0200 (Central European Summer Time)"
                           >
                             
       
@@ -335,7 +335,7 @@ exports[`Given <DateTimePicker /> When initializes Then should match the snapsho
                           </div>
                           <div
                             class="datepicker-date is-current-month"
-                            data-date="Fri Oct 04 2019 00:00:00 GMT+0000 (Greenwich Mean Time)"
+                            data-date="Fri Oct 04 2019 00:00:00 GMT+0200 (Central European Summer Time)"
                           >
                             
       
@@ -350,7 +350,7 @@ exports[`Given <DateTimePicker /> When initializes Then should match the snapsho
                           </div>
                           <div
                             class="datepicker-date is-current-month"
-                            data-date="Sat Oct 05 2019 00:00:00 GMT+0000 (Greenwich Mean Time)"
+                            data-date="Sat Oct 05 2019 00:00:00 GMT+0200 (Central European Summer Time)"
                           >
                             
       
@@ -365,7 +365,7 @@ exports[`Given <DateTimePicker /> When initializes Then should match the snapsho
                           </div>
                           <div
                             class="datepicker-date is-current-month"
-                            data-date="Sun Oct 06 2019 00:00:00 GMT+0000 (Greenwich Mean Time)"
+                            data-date="Sun Oct 06 2019 00:00:00 GMT+0200 (Central European Summer Time)"
                           >
                             
       
@@ -380,7 +380,7 @@ exports[`Given <DateTimePicker /> When initializes Then should match the snapsho
                           </div>
                           <div
                             class="datepicker-date is-current-month"
-                            data-date="Mon Oct 07 2019 00:00:00 GMT+0000 (Greenwich Mean Time)"
+                            data-date="Mon Oct 07 2019 00:00:00 GMT+0200 (Central European Summer Time)"
                           >
                             
       
@@ -395,7 +395,7 @@ exports[`Given <DateTimePicker /> When initializes Then should match the snapsho
                           </div>
                           <div
                             class="datepicker-date is-current-month"
-                            data-date="Tue Oct 08 2019 00:00:00 GMT+0000 (Greenwich Mean Time)"
+                            data-date="Tue Oct 08 2019 00:00:00 GMT+0200 (Central European Summer Time)"
                           >
                             
       
@@ -410,7 +410,7 @@ exports[`Given <DateTimePicker /> When initializes Then should match the snapsho
                           </div>
                           <div
                             class="datepicker-date is-current-month"
-                            data-date="Wed Oct 09 2019 00:00:00 GMT+0000 (Greenwich Mean Time)"
+                            data-date="Wed Oct 09 2019 00:00:00 GMT+0200 (Central European Summer Time)"
                           >
                             
       
@@ -425,7 +425,7 @@ exports[`Given <DateTimePicker /> When initializes Then should match the snapsho
                           </div>
                           <div
                             class="datepicker-date is-current-month"
-                            data-date="Thu Oct 10 2019 00:00:00 GMT+0000 (Greenwich Mean Time)"
+                            data-date="Thu Oct 10 2019 00:00:00 GMT+0200 (Central European Summer Time)"
                           >
                             
       
@@ -440,7 +440,7 @@ exports[`Given <DateTimePicker /> When initializes Then should match the snapsho
                           </div>
                           <div
                             class="datepicker-date is-current-month"
-                            data-date="Fri Oct 11 2019 00:00:00 GMT+0000 (Greenwich Mean Time)"
+                            data-date="Fri Oct 11 2019 00:00:00 GMT+0200 (Central European Summer Time)"
                           >
                             
       
@@ -455,7 +455,7 @@ exports[`Given <DateTimePicker /> When initializes Then should match the snapsho
                           </div>
                           <div
                             class="datepicker-date is-current-month"
-                            data-date="Sat Oct 12 2019 00:00:00 GMT+0000 (Greenwich Mean Time)"
+                            data-date="Sat Oct 12 2019 00:00:00 GMT+0200 (Central European Summer Time)"
                           >
                             
       
@@ -470,7 +470,7 @@ exports[`Given <DateTimePicker /> When initializes Then should match the snapsho
                           </div>
                           <div
                             class="datepicker-date is-current-month"
-                            data-date="Sun Oct 13 2019 00:00:00 GMT+0000 (Greenwich Mean Time)"
+                            data-date="Sun Oct 13 2019 00:00:00 GMT+0200 (Central European Summer Time)"
                           >
                             
       
@@ -485,7 +485,7 @@ exports[`Given <DateTimePicker /> When initializes Then should match the snapsho
                           </div>
                           <div
                             class="datepicker-date is-current-month"
-                            data-date="Mon Oct 14 2019 00:00:00 GMT+0000 (Greenwich Mean Time)"
+                            data-date="Mon Oct 14 2019 00:00:00 GMT+0200 (Central European Summer Time)"
                           >
                             
       
@@ -500,7 +500,7 @@ exports[`Given <DateTimePicker /> When initializes Then should match the snapsho
                           </div>
                           <div
                             class="datepicker-date is-current-month"
-                            data-date="Tue Oct 15 2019 00:00:00 GMT+0000 (Greenwich Mean Time)"
+                            data-date="Tue Oct 15 2019 00:00:00 GMT+0200 (Central European Summer Time)"
                           >
                             
       
@@ -515,7 +515,7 @@ exports[`Given <DateTimePicker /> When initializes Then should match the snapsho
                           </div>
                           <div
                             class="datepicker-date is-current-month"
-                            data-date="Wed Oct 16 2019 00:00:00 GMT+0000 (Greenwich Mean Time)"
+                            data-date="Wed Oct 16 2019 00:00:00 GMT+0200 (Central European Summer Time)"
                           >
                             
       
@@ -530,7 +530,7 @@ exports[`Given <DateTimePicker /> When initializes Then should match the snapsho
                           </div>
                           <div
                             class="datepicker-date is-current-month"
-                            data-date="Thu Oct 17 2019 00:00:00 GMT+0000 (Greenwich Mean Time)"
+                            data-date="Thu Oct 17 2019 00:00:00 GMT+0200 (Central European Summer Time)"
                           >
                             
       
@@ -545,7 +545,7 @@ exports[`Given <DateTimePicker /> When initializes Then should match the snapsho
                           </div>
                           <div
                             class="datepicker-date is-current-month"
-                            data-date="Fri Oct 18 2019 00:00:00 GMT+0000 (Greenwich Mean Time)"
+                            data-date="Fri Oct 18 2019 00:00:00 GMT+0200 (Central European Summer Time)"
                           >
                             
       
@@ -560,7 +560,7 @@ exports[`Given <DateTimePicker /> When initializes Then should match the snapsho
                           </div>
                           <div
                             class="datepicker-date is-current-month"
-                            data-date="Sat Oct 19 2019 00:00:00 GMT+0000 (Greenwich Mean Time)"
+                            data-date="Sat Oct 19 2019 00:00:00 GMT+0200 (Central European Summer Time)"
                           >
                             
       
@@ -575,7 +575,7 @@ exports[`Given <DateTimePicker /> When initializes Then should match the snapsho
                           </div>
                           <div
                             class="datepicker-date is-current-month"
-                            data-date="Sun Oct 20 2019 00:00:00 GMT+0000 (Greenwich Mean Time)"
+                            data-date="Sun Oct 20 2019 00:00:00 GMT+0200 (Central European Summer Time)"
                           >
                             
       
@@ -590,7 +590,7 @@ exports[`Given <DateTimePicker /> When initializes Then should match the snapsho
                           </div>
                           <div
                             class="datepicker-date is-current-month"
-                            data-date="Mon Oct 21 2019 00:00:00 GMT+0000 (Greenwich Mean Time)"
+                            data-date="Mon Oct 21 2019 00:00:00 GMT+0200 (Central European Summer Time)"
                           >
                             
       
@@ -605,7 +605,7 @@ exports[`Given <DateTimePicker /> When initializes Then should match the snapsho
                           </div>
                           <div
                             class="datepicker-date is-current-month"
-                            data-date="Tue Oct 22 2019 00:00:00 GMT+0000 (Greenwich Mean Time)"
+                            data-date="Tue Oct 22 2019 00:00:00 GMT+0200 (Central European Summer Time)"
                           >
                             
       
@@ -620,7 +620,7 @@ exports[`Given <DateTimePicker /> When initializes Then should match the snapsho
                           </div>
                           <div
                             class="datepicker-date is-current-month"
-                            data-date="Wed Oct 23 2019 00:00:00 GMT+0000 (Greenwich Mean Time)"
+                            data-date="Wed Oct 23 2019 00:00:00 GMT+0200 (Central European Summer Time)"
                           >
                             
       
@@ -635,7 +635,7 @@ exports[`Given <DateTimePicker /> When initializes Then should match the snapsho
                           </div>
                           <div
                             class="datepicker-date is-current-month"
-                            data-date="Thu Oct 24 2019 00:00:00 GMT+0000 (Greenwich Mean Time)"
+                            data-date="Thu Oct 24 2019 00:00:00 GMT+0200 (Central European Summer Time)"
                           >
                             
       
@@ -650,7 +650,7 @@ exports[`Given <DateTimePicker /> When initializes Then should match the snapsho
                           </div>
                           <div
                             class="datepicker-date is-current-month"
-                            data-date="Fri Oct 25 2019 00:00:00 GMT+0000 (Greenwich Mean Time)"
+                            data-date="Fri Oct 25 2019 00:00:00 GMT+0200 (Central European Summer Time)"
                           >
                             
       
@@ -665,7 +665,7 @@ exports[`Given <DateTimePicker /> When initializes Then should match the snapsho
                           </div>
                           <div
                             class="datepicker-date is-current-month"
-                            data-date="Sat Oct 26 2019 00:00:00 GMT+0000 (Greenwich Mean Time)"
+                            data-date="Sat Oct 26 2019 00:00:00 GMT+0200 (Central European Summer Time)"
                           >
                             
       
@@ -680,7 +680,7 @@ exports[`Given <DateTimePicker /> When initializes Then should match the snapsho
                           </div>
                           <div
                             class="datepicker-date is-current-month"
-                            data-date="Sun Oct 27 2019 00:00:00 GMT+0000 (Greenwich Mean Time)"
+                            data-date="Sun Oct 27 2019 00:00:00 GMT+0200 (Central European Summer Time)"
                           >
                             
       
@@ -695,7 +695,7 @@ exports[`Given <DateTimePicker /> When initializes Then should match the snapsho
                           </div>
                           <div
                             class="datepicker-date is-current-month"
-                            data-date="Mon Oct 28 2019 00:00:00 GMT+0000 (Greenwich Mean Time)"
+                            data-date="Mon Oct 28 2019 00:00:00 GMT+0100 (Central European Standard Time)"
                           >
                             
       
@@ -710,7 +710,7 @@ exports[`Given <DateTimePicker /> When initializes Then should match the snapsho
                           </div>
                           <div
                             class="datepicker-date is-current-month datepicker-range-start"
-                            data-date="Tue Oct 29 2019 00:00:00 GMT+0000 (Greenwich Mean Time)"
+                            data-date="Tue Oct 29 2019 00:00:00 GMT+0100 (Central European Standard Time)"
                           >
                             
       
@@ -725,7 +725,7 @@ exports[`Given <DateTimePicker /> When initializes Then should match the snapsho
                           </div>
                           <div
                             class="datepicker-date is-current-month"
-                            data-date="Wed Oct 30 2019 00:00:00 GMT+0000 (Greenwich Mean Time)"
+                            data-date="Wed Oct 30 2019 00:00:00 GMT+0100 (Central European Standard Time)"
                           >
                             
       
@@ -740,7 +740,7 @@ exports[`Given <DateTimePicker /> When initializes Then should match the snapsho
                           </div>
                           <div
                             class="datepicker-date is-current-month"
-                            data-date="Thu Oct 31 2019 00:00:00 GMT+0000 (Greenwich Mean Time)"
+                            data-date="Thu Oct 31 2019 00:00:00 GMT+0100 (Central European Standard Time)"
                           >
                             
       
@@ -755,7 +755,7 @@ exports[`Given <DateTimePicker /> When initializes Then should match the snapsho
                           </div>
                           <div
                             class="datepicker-date"
-                            data-date="Fri Nov 01 2019 00:00:00 GMT+0000 (Greenwich Mean Time)"
+                            data-date="Fri Nov 01 2019 00:00:00 GMT+0100 (Central European Standard Time)"
                           >
                             
       
@@ -770,7 +770,7 @@ exports[`Given <DateTimePicker /> When initializes Then should match the snapsho
                           </div>
                           <div
                             class="datepicker-date"
-                            data-date="Sat Nov 02 2019 00:00:00 GMT+0000 (Greenwich Mean Time)"
+                            data-date="Sat Nov 02 2019 00:00:00 GMT+0100 (Central European Standard Time)"
                           >
                             
       
@@ -785,7 +785,7 @@ exports[`Given <DateTimePicker /> When initializes Then should match the snapsho
                           </div>
                           <div
                             class="datepicker-date"
-                            data-date="Sun Nov 03 2019 00:00:00 GMT+0000 (Greenwich Mean Time)"
+                            data-date="Sun Nov 03 2019 00:00:00 GMT+0100 (Central European Standard Time)"
                           >
                             
       
