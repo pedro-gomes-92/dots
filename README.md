@@ -1,3 +1,8 @@
+https://img.shields.io/coveralls/github/pedro-gomes-92/dots
+https://img.shields.io/github/repo-size/pedro-gomes-92/dots
+https://img.shields.io/github/release-date/pedro-gomes-92/dots
+https://img.shields.io/github/downloads/pedro-gomes-92/dots/total
+
 # Dots
 
 Easy to use front end library to create the foundations for any project.
