@@ -1,7 +1,7 @@
-https://img.shields.io/coveralls/github/pedro-gomes-92/dots
-https://img.shields.io/github/repo-size/pedro-gomes-92/dots
-https://img.shields.io/github/release-date/pedro-gomes-92/dots
-https://img.shields.io/github/downloads/pedro-gomes-92/dots/total
+![Coveralls github](https://img.shields.io/coveralls/github/pedro-gomes-92/dots)
+![GitHub repo size](https://img.shields.io/github/repo-size/pedro-gomes-92/dots)
+![GitHub Release Date](https://img.shields.io/github/release-date/pedro-gomes-92/dots)
+![GitHub All Releases](https://img.shields.io/github/downloads/pedro-gomes-92/dots/total)
 
 # Dots
 
