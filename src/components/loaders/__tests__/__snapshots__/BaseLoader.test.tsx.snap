@@ -4,6 +4,14 @@ exports[`Given <BaseLoader /> When initializes Then should match the snapshot 1`
 <div>
   <div
     class="loaders"
-  />
+  >
+    <span
+      class="icon is-loader is-relative"
+    >
+      <i
+        class="icon-font icon-font-loader"
+      />
+    </span>
+  </div>
 </div>
 `;

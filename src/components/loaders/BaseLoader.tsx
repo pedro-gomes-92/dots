@@ -1,23 +1,24 @@
 import React, { FunctionComponent } from 'react';
 import classnames from 'classnames';
 import { BaseProps, Base } from '../Base';
-import { IconProps } from '../miscellaneous/Icon';
+import { IconLoader } from './IconLoader';
 
-export interface BaseLoaderProps extends BaseProps {}
-
-export interface BaseLoaderTypeProps extends BaseLoaderProps {
-  sizeIcon?: IconProps['size'];
-  icon?: IconProps['name'];
+export interface BaseLoaderProps extends BaseProps {
+  loader?: JSX.Element;
 }
 
 export const BaseLoader: FunctionComponent<BaseLoaderProps> = ({
   className,
-  children,
+  loader,
   ...rest
 }: BaseLoaderProps): JSX.Element => {
   return (
     <Base className={classnames('loaders', className)} {...rest}>
-      {children}
+      {loader}
     </Base>
   );
+};
+
+BaseLoader.defaultProps = {
+  loader: <IconLoader />,
 };

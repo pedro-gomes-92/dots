@@ -1,12 +1,12 @@
 import React, { FunctionComponent, useState } from 'react';
 import classnames from 'classnames';
-import { BaseLoader, BaseLoaderTypeProps } from '../BaseLoader';
+import { BaseLoader, BaseLoaderProps } from '../BaseLoader';
 import { Text } from '../../text';
 import { CenterLayout, StackLayout, StackItem } from '../../layouts';
 import { IconLoader } from '../IconLoader';
 import { Overlay, OverlayProps } from '../../miscellaneous';
 
-export interface AreaLoaderProps extends BaseLoaderTypeProps {
+export interface AreaLoaderProps extends BaseLoaderProps {
   text?: string;
   hasOverlay?: boolean;
   onOutsideClick?: OverlayProps['onClick'];
@@ -14,46 +14,49 @@ export interface AreaLoaderProps extends BaseLoaderTypeProps {
 
 export const AreaLoader: FunctionComponent<AreaLoaderProps> = ({
   className,
-  sizeIcon,
-  icon,
+  loader,
   isVisible,
   hasOverlay,
   onOutsideClick,
-  text,
   ...rest
 }: AreaLoaderProps): JSX.Element => {
   const [visible, setVisible] = useState(isVisible);
 
-  let handleOutsideClick;
+  let handleOutsideClick: (event: React.MouseEvent<HTMLElement, MouseEvent>) => void;
   if (hasOverlay && onOutsideClick) {
-    handleOutsideClick = (event: React.MouseEvent<HTMLElement, MouseEvent>): void => {
+    handleOutsideClick = (event): void => {
       setVisible(false);
       onOutsideClick(event);
     };
   }
 
+  const loaderComponent = (
+    <CenterLayout>
+      {hasOverlay && <Overlay onClick={handleOutsideClick} />}
+      {loader}
+    </CenterLayout>
+  );
+
   return (
     <BaseLoader
       className={classnames('is-area', { 'has-overlay': hasOverlay }, className)}
       isVisible={visible}
+      loader={loaderComponent}
       {...rest}
-    >
-      <CenterLayout>
-        {hasOverlay && <Overlay onClick={handleOutsideClick} />}
-        <StackLayout>
-          <StackItem alignText="center">
-            <IconLoader name={icon} size={sizeIcon} />
-          </StackItem>
-          <StackItem>
-            <Text text={text} />
-          </StackItem>
-        </StackLayout>
-      </CenterLayout>
-    </BaseLoader>
+    ></BaseLoader>
   );
 };
 
 AreaLoader.defaultProps = {
-  text: 'Loading',
   hasOverlay: false,
+  loader: (
+    <StackLayout>
+      <StackItem alignText="center">
+        <IconLoader />
+      </StackItem>
+      <StackItem>
+        <Text text="Loading" />
+      </StackItem>
+    </StackLayout>
+  ),
 };
