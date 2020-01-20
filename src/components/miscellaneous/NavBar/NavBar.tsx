@@ -1,20 +1,17 @@
 import React, { FunctionComponent, useState } from 'react';
 import classnames from 'classnames';
-import { NavBarBrand } from './NavBarBrand';
+import { NavBarBrand, NavBarBrandProps } from './NavBarBrand';
 import { NavBarMenu, NavBarMenuProps } from './NavBarMenu';
 import { BaseProps, Base } from '../../Base';
-import { ImageLinkProps } from '../../actions';
 
 export interface NavBarProps extends BaseProps {
   children: NavBarMenuProps['children'];
-  brand: ImageLinkProps['source'];
-  brandTo?: ImageLinkProps['to'];
+  logo?: NavBarBrandProps['logo'];
 }
 
 export const NavBar: FunctionComponent<NavBarProps> = ({
   className,
-  brand,
-  brandTo,
+  logo,
   children,
   ...rest
 }: NavBarProps): JSX.Element => {
@@ -22,8 +19,7 @@ export const NavBar: FunctionComponent<NavBarProps> = ({
   return (
     <Base className={classnames('navbar', className)} {...rest}>
       <NavBarBrand
-        source={brand}
-        to={brandTo}
+        logo={logo}
         onMenuClick={(): void => {
           setOpenMenu(!openMenu);
         }}
