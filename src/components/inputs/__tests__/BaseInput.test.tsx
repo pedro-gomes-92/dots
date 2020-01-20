@@ -21,7 +21,7 @@ describe('Given <BaseInput />', (): void => {
       });
 
       it('And should update model', (): void => {
-        expect(getByDisplayValue(container, 'Testing')).toBeDefined();
+        expect(getByDisplayValue(container, 'Testing')).toBeTruthy();
       });
     });
 
@@ -65,7 +65,7 @@ describe('Given <BaseInput />', (): void => {
       });
 
       it('And should have a placeholder', (): void => {
-        expect(getByPlaceholderText(container, 'Testing')).toBeDefined();
+        expect(getByPlaceholderText(container, 'Testing')).toBeTruthy();
       });
     });
 

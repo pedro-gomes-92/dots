@@ -57,7 +57,7 @@ describe('Given <Modal />', (): void => {
       });
 
       it('And should render close button on ModalHeader', (): void => {
-        expect(close).toBeDefined();
+        expect(close).toBeTruthy();
       });
 
       it('And should trigger onClose', (): void => {

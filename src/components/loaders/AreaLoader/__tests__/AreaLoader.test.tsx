@@ -23,7 +23,7 @@ describe('Given <AreaLoader />', (): void => {
       });
 
       it('And should render an overlay', (): void => {
-        expect(overlay).toBeDefined();
+        expect(overlay).toBeTruthy();
       });
 
       describe('And uses onOutsideClick', (): void => {

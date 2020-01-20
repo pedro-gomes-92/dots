@@ -28,7 +28,7 @@ describe('Given <BaseDialog />', (): void => {
       });
 
       it('And should render close button', (): void => {
-        expect(close).toBeDefined();
+        expect(close).toBeTruthy();
       });
 
       it('And should hide the dialog', (): void => {

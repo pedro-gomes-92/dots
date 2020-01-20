@@ -1,5 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Given <BaseLoader /> When initializes And uses loader Then should match the snapshot 1`] = `
+<div>
+  <div
+    class="loaders"
+  >
+    <span
+      class="icon"
+    >
+      <i
+        class="icon-font icon-font-menu"
+      />
+    </span>
+  </div>
+</div>
+`;
+
 exports[`Given <BaseLoader /> When initializes Then should match the snapshot 1`] = `
 <div>
   <div

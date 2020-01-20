@@ -22,7 +22,7 @@ describe('Given <PaginationItem />', (): void => {
     describe('And uses isCurrent', (): void => {
       it('Then should mark the item as active', (): void => {
         container = render(<PaginationItem text="2" isCurrent onClick={(): void => {}} />).container;
-        expect(container.querySelector('.is-current')).toBeDefined();
+        expect(container.querySelector('.is-current')).toBeTruthy();
       });
     });
   });

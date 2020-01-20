@@ -29,7 +29,7 @@ describe('Given <ModalHeader />', (): void => {
       });
 
       it('And should render close button', (): void => {
-        expect(close).toBeDefined();
+        expect(close).toBeTruthy();
       });
 
       it('And should trigger onClose', (): void => {
