@@ -31,7 +31,7 @@ $device-breakpoints: (
       @content;
     }
   } @else {
-    @media screen and (min-width: $size+1) {
+    @media screen and (min-width: $size) {
       @content;
     }
   }
