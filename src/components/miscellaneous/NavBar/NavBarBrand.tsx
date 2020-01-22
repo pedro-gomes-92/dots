@@ -17,7 +17,7 @@ export const NavBarBrand: FunctionComponent<NavBarBrandProps> = ({
   ...rest
 }: NavBarBrandProps): JSX.Element => (
   <Base className={classnames('navbar-brand', className)} {...rest}>
-    {logo && <NavBarItem>{logo}</NavBarItem>}
+    {logo && <NavBarItem className="is-logo-item">{logo}</NavBarItem>}
     <NavBarItem>
       <NavBarMenuTrigger onClick={onMenuClick} />
     </NavBarItem>

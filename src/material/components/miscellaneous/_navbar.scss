@@ -53,7 +53,7 @@
   justify-content: space-between;
 
   // Logo
-  .navbar-item:first-child > * {
+  .is-logo-item > * {
     width: $navbar-container-height - 2rem;
     height: $navbar-container-height - 2rem;
   }
