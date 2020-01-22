@@ -1,5 +1,5 @@
 {
-  "name": "dots-js",
+  "name": "@pedro.gomes/dots",
   "version": "0.0.1",
   "description": "Dots is an easy to use front end library",
   "main": "dist/dots.js",
