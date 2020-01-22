@@ -134,10 +134,10 @@ $gap-elements: 8px !default;
   @if ($wrapping) {
     $gap-vertical: $gap-vertical/2;
     $gap-horizontal: $gap-horizontal/2;
-    margin: (-$gap-vertical) (-$gap-horizontal);
+    margin: 0 (-$gap-vertical) (-$gap-horizontal) 0;
 
     > * {
-      padding: $gap-vertical $gap-horizontal;
+      padding: 0 $gap-vertical $gap-horizontal 0;
     }
   } @else {
     > :not(:last-child) {
