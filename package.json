@@ -1,6 +1,6 @@
 {
   "name": "dots.js",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Dots is an easy to use front end library",
   "main": "dist/dots.js",
   "style": "dist/dots.css",
@@ -27,7 +27,7 @@
     "build:prod": "npx cross-env NODE_ENV=prod npm run build",
     "build:dev": "npx cross-env NODE_ENV=dev npm run build -- --colors --progress",
     "build:types": "npx tsc",
-    "postbuild:hook": "npm run pack && npm run build:types",
+    "postbuild:hook": "npm run build:types && npm run pack",
     "pack": "node ./internals/npm/pack.js --src . --target ./dist",
     "start": "npx webpack-dev-server --config ./internals/webpack/webpack.serve.js --colors --progress",
     "start:docs": "npx docsify serve ./docs",
