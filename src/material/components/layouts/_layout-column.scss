@@ -6,6 +6,7 @@
  * Index
  * - Layout Column
  *    - Reverted
+ *    - Gap
  *    - Alignment
  * - Column
  *    - Size
@@ -19,22 +20,34 @@
 
     @include layout-activate {
       display: flex;
-      &.is {
-        @for $i from 1 through 12 {
-          &-#{$i} {
-            @include gap($i, $i, true);
-            > * {
-              margin: 0;
-            }
-          }
-        }
-      }
     }
 
     &.is {
       // Reverted
       &-reverted {
         flex-direction: row-reverse;
+      }
+
+      // Gap
+      @for $i from 1 through 12 {
+        &-#{$i} {
+          @include layout-activate {
+            @include gap($i, 0);
+
+            &.is {
+              &-multiline {
+                @include gap($i, $i, true);
+                > * {
+                  margin: 0;
+                }
+              }
+
+              &-reverted {
+                @include gap($i, 0, false, true);
+              }
+            }
+          }
+        }
       }
     }
 

@@ -127,22 +127,26 @@
 
 $gap-elements: 8px !default;
 
-@mixin gap($horizontal, $vertical, $wrapping: false) {
+@mixin gap($horizontal, $vertical, $isWrapping: false, $isReverted: false) {
   $gap-vertical: $vertical * $gap-elements;
   $gap-horizontal: $horizontal * $gap-elements;
 
-  @if ($wrapping) {
+  @if ($isWrapping) {
     $gap-vertical: $gap-vertical/2;
     $gap-horizontal: $gap-horizontal/2;
-    margin: 0 (-$gap-vertical) (-$gap-horizontal) 0;
+    margin: (-$gap-vertical) (-$gap-horizontal);
 
     > * {
-      padding: 0 $gap-vertical $gap-horizontal 0;
+      padding: $gap-vertical $gap-horizontal;
     }
   } @else {
+    $gap: 0 $gap-horizontal $gap-vertical 0;
+    @if ($isReverted) {
+      $gap: $gap-vertical 0 0 $gap-horizontal;
+    }
+
     > :not(:last-child) {
-      margin-right: $gap-horizontal;
-      margin-bottom: $gap-vertical;
+      margin: $gap;
     }
   }
 }

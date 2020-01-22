@@ -43,9 +43,9 @@ $device-breakpoints: (
   }
 }
 
-@mixin gap-screen($horizontal, $vertical, $device, $wrapping: false) {
+@mixin gap-screen($horizontal, $vertical, $device, $isWrapping: false) {
   @include screen($device) {
-    @include gap($horizontal, $vertical, $wrapping);
+    @include gap($horizontal, $vertical, $isWrapping);
   }
 }
 
