@@ -1,5 +1,5 @@
 {
-  "name": "dots",
+  "name": "dots-js",
   "version": "0.0.1",
   "description": "Dots is an easy to use front end library",
   "main": "dist/dots.js",
@@ -36,7 +36,8 @@
     "version:prod": "npx cross-env NODE_ENV=prod npm run version:commit",
     "version:minor": "npm version minor --yes -m 'Updated to %s'",
     "version:major": "npm version major --yes -m 'Updated to %s'",
-    "version:patch": "npm version patch --yes -m 'Updated to %s'"
+    "version:patch": "npm version patch --yes -m 'Updated to %s'",
+    "publish": "npm publish ./dist/dots.tar.gz --access public"
   },
   "repository": {
     "type": "git",
