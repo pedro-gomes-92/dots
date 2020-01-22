@@ -37,7 +37,8 @@
     "version:minor": "npm version minor --yes -m 'Updated to %s'",
     "version:major": "npm version major --yes -m 'Updated to %s'",
     "version:patch": "npm version patch --yes -m 'Updated to %s'",
-    "publish": "npm publish ./dist/dots.tar.gz --access public"
+    "prepublishOnly": "npm run build:prod",
+    "publish": "npm run prepublishOnly && npm publish ./dist/dots.tar.gz --access public"
   },
   "repository": {
     "type": "git",
