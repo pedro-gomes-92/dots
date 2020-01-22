@@ -1,6 +1,5 @@
 import React, { FunctionComponent } from 'react';
 import classnames from 'classnames';
-import { ImageLink } from '../../actions';
 import { Base } from '../../Base';
 import { BaseProps } from '../../Base';
 import { NavBarItem } from './NavBarItem';
@@ -18,7 +17,7 @@ export const NavBarBrand: FunctionComponent<NavBarBrandProps> = ({
   ...rest
 }: NavBarBrandProps): JSX.Element => (
   <Base className={classnames('navbar-brand', className)} {...rest}>
-    <NavBarItem>{logo}</NavBarItem>
+    {logo && <NavBarItem>{logo}</NavBarItem>}
     <NavBarItem>
       <NavBarMenuTrigger onClick={onMenuClick} />
     </NavBarItem>
@@ -26,6 +25,5 @@ export const NavBarBrand: FunctionComponent<NavBarBrandProps> = ({
 );
 
 NavBarBrand.defaultProps = {
-  logo: <ImageLink source="" to="/" />,
   onMenuClick: (): void => {},
 };
