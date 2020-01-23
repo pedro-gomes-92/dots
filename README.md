@@ -9,6 +9,29 @@
 
 Dots is a front end library, ready to be used in any front end web application. Includes all types of components (e.g. layouts, containers, actions, texts, charts), formats (e.g. date, currency, number), themes (e.g. colors, shapes, typography, iconography) and much more.
 
+## Usage
+
+Since Dots is a npm dependency, you can integrate Dots into your application, by running the command
+
+```
+npm install --save dots.js
+```
+
+### Customization
+
+Dots lets you customize its SCSS variables and use its utilities (i.e. mixins and functions) to help you create the perfect application.
+To be able to do this, create a `.scss` file, with the following content
+
+```
+$path-dots-fonts: '~dots.js/dist/fonts';
+
+// Your SCSS variables customization
+
+@import '~dots.js/src/material/_all';
+
+// Your code
+```
+
 ## Getting Started
 
 Follow these instructions to run Dots locally.
