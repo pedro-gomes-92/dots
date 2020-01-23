@@ -1,3 +1,5 @@
+process.env.TZ = 'UTC';
+
 const PACKAGES_PATH = {
   components: '<rootDir>/src/components',
   core: '<rootDir>/src/core',
