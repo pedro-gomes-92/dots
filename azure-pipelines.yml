@@ -21,3 +21,9 @@ steps:
   - script: |
       npm run build:prod
     displayName: 'Build Project'
+
+  - task: PublishBuildArtifacts@1
+    inputs:
+      PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+      ArtifactName: 'dots'
+      publishLocation: 'Container'
