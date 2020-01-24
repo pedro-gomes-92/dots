@@ -18,6 +18,27 @@ steps:
       npm test
     displayName: 'Test Project'
 
+  - task: PublishCodeCoverageResults@1
+    inputs:
+      codeCoverageTool: Cobertura
+      summaryFileLocation: '$(System.DefaultWorkingDirectory)/coverage/coverage-final.json'
+      reportDirectory: '$(System.DefaultWorkingDirectory)/coverage'
+
   - script: |
       npm run build:prod
     displayName: 'Build Project'
+
+  - task: CopyFiles@2
+    inputs:
+      SourceFolder: '$(System.DefaultWorkingDirectory)/dist'
+      Contents: |
+        *
+        **/*
+      TargetFolder: '$(Build.ArtifactStagingDirectory)'
+
+  - task: PublishBuildArtifacts@1
+    inputs:
+      PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+      ArtifactName: 'dots'
+      publishLocation: 'Container'
+    displayName: Publish Artifacts
