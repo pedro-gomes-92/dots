@@ -56,4 +56,5 @@ module.exports = {
   preset: 'ts-jest/presets/js-with-babel',
   testRegex: '(__)?tests(__)?/.*\\.test\\.[jt]sx?$',
   setupFiles: ['<rootDir>/src/components/__mocks__/globals/index.js'],
+  reporters: ['default', ['jest-junit', { outputDirectory: './coverage', outputName: 'coverage-junit.xml' }]],
 };

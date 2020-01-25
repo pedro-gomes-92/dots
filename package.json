@@ -27,7 +27,7 @@
     "build:prod": "npx cross-env NODE_ENV=prod npm run build",
     "build:dev": "npx cross-env NODE_ENV=dev npm run build -- --colors --progress",
     "build:types": "npx tsc",
-    "postbuild:hook": "npm run build:types",
+    "postbuild:hook": "npm run build:types && npm run pack",
     "pack": "node ./internals/npm/pack.js --src . --target ./dist",
     "start": "npx webpack-dev-server --config ./internals/webpack/webpack.serve.js --colors --progress",
     "start:docs": "npx docsify serve ./docs",
@@ -37,7 +37,7 @@
     "version:minor": "npm version minor --yes -m 'Updated to %s'",
     "version:major": "npm version major --yes -m 'Updated to %s'",
     "version:patch": "npm version patch --yes -m 'Updated to %s'",
-    "prepublishOnly": "npm run build:prod && npm run pack",
+    "prepublishOnly": "npm run build:prod",
     "publish": "npm run prepublishOnly && npm publish ./dist/dots.tar.gz --access public"
   },
   "repository": {
@@ -86,6 +86,7 @@
     "jest": "^24.9.0",
     "jest-cli": "^24.9.0",
     "jest-dom": "^4.0.0",
+    "jest-junit": "^10.0.0",
     "mime-types": "^2.1.24",
     "mini-css-extract-plugin": "^0.7.0",
     "mockdate": "^2.0.5",
