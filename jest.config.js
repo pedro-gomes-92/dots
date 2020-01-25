@@ -43,6 +43,7 @@ module.exports = {
       lines: 75,
     },
   },
+  coverageReporters: ['text', 'cobertura'],
   moduleDirectories: ['node_modules', 'src'],
   moduleNameMapper: {
     '^@dots/core$': PACKAGES_PATH.core,
@@ -56,5 +57,5 @@ module.exports = {
   preset: 'ts-jest/presets/js-with-babel',
   testRegex: '(__)?tests(__)?/.*\\.test\\.[jt]sx?$',
   setupFiles: ['<rootDir>/src/components/__mocks__/globals/index.js'],
-  reporters: ['default', ['jest-junit', { outputDirectory: './coverage', outputName: 'coverage-junit.xml' }]],
+  reporters: ['default', ['jest-junit', { outputDirectory: './reports', outputName: 'tests.xml' }]],
 };

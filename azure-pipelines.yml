@@ -22,9 +22,14 @@ steps:
     condition: succeededOrFailed()
     inputs:
       testResultsFormat: 'JUnit'
-      testResultsFiles: 'coverage-junit.xml'
-      searchFolder: '$(System.DefaultWorkingDirectory)/coverage'
-      failTaskOnFailedTests: true
+      testResultsFiles: 'tests.xml'
+      searchFolder: '$(System.DefaultWorkingDirectory)/reports'
+    displayName: Publish Tests
+
+  - task: PublishCodeCoverageResults@1
+    inputs:
+      codeCoverageTool: 'Cobertura'
+      summaryFileLocation: '$(System.DefaultWorkingDirectory)/coverage/cobertura-coverage.xml'
     displayName: Publish Coverage
 
   - script: |
