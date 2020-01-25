@@ -18,11 +18,13 @@ steps:
       npm test
     displayName: 'Test Project'
 
-  - task: PublishCodeCoverageResults@1
+  - task: PublishTestResults@2
+    condition: succeededOrFailed()
     inputs:
-      codeCoverageTool: 'Cobertura'
-      summaryFileLocation: '$(System.DefaultWorkingDirectory)/coverage/clover.xml'
-      reportDirectory: '$(System.DefaultWorkingDirectory)/coverage'
+      testResultsFormat: 'JUnit'
+      testResultsFiles: 'coverage-junit.xml'
+      searchFolder: '$(System.DefaultWorkingDirectory)/coverage'
+      failTaskOnFailedTests: true
     displayName: Publish Coverage
 
   - script: |
