@@ -9,6 +9,10 @@ steps:
     inputs:
       version: '10.x'
     displayName: 'Install Node.js'
+  - task: npmAuthenticate@0
+    inputs:
+      workingFile: '$(System.DefaultWorkingDirectory)/.npmrc'
+      customEndpoint: 'dots'
 
   - script: |
       npm install
