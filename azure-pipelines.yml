@@ -43,6 +43,7 @@ steps:
         dist/*
         dist/**/*
         package.json
+        .npmrc
       TargetFolder: '$(Build.ArtifactStagingDirectory)'
 
   - task: PublishBuildArtifacts@1
