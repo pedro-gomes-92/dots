@@ -14,7 +14,7 @@ steps:
       workingFile: '$(System.DefaultWorkingDirectory)/.npmrc'
 
   - script: |
-      npm install
+      npm ci
     displayName: 'Install dependencies'
 
   - script: |
