@@ -33,7 +33,8 @@ steps:
     inputs:
       SourceFolder: '$(System.DefaultWorkingDirectory)'
       Contents: |
-        ./dist/**
+        dist/*
+        dist/**/*
         package.json
       TargetFolder: '$(Build.ArtifactStagingDirectory)'
 
