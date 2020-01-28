@@ -10,6 +10,11 @@ steps:
       version: '10.x'
     displayName: 'Install Node.js'
 
+  - task: npmAuthenticate@0
+    inputs:
+      workingFile: '$(System.DefaultWorkingDirectory)/.npmrc'
+    displayName: Authenticate to NPM
+
   - script: |
       npm ci
     displayName: 'Install dependencies'
