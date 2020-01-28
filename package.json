@@ -116,7 +116,6 @@
     "@babel/runtime": "^7.5.2",
     "@babel/runtime-corejs3": "^7.5.3",
     "@types/lodash": "^4.14.136",
-    "aws-sdk": "^2.482.0",
     "bulma": "^0.7.5",
     "bulma-calendar": "^6.0.7",
     "bulma-divider": "^0.2.0",
