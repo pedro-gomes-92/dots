@@ -1,10 +1,5 @@
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/pedro-gomes-92/dots)
 ![GitHub repo size](https://img.shields.io/github/repo-size/pedro-gomes-92/dots)
-![GitHub Release Date](https://img.shields.io/github/release-date/pedro-gomes-92/dots)
-
-![Azure DevOps builds](https://img.shields.io/azure-devops/build/pedro-gomes-92/b3cb0cc8-ae0e-4b77-ab3e-4f4a2ed7ceb8/1)
-![Azure DevOps tests](https://img.shields.io/azure-devops/tests/pedro-gomes-92/dots/1)
-![Azure DevOps coverage](https://img.shields.io/azure-devops/coverage/pedro-gomes-92/dots/1)
 
 # Dots
 
