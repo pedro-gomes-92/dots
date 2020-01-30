@@ -22,7 +22,7 @@ steps:
     displayName: 'Install dependencies'
 
   - script: |
-      npm audit
+      npm audit --registry=https://registry.npmjs.org/
     continueOnError: true
     displayName: 'Check vulnerabilities'
 
