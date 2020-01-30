@@ -1,6 +1,4 @@
-const {
-  command
-} = require('../utils/command');
+const { command } = require('../utils/command');
 const {
   getBranch,
   getBranchFromCommit,
@@ -10,10 +8,7 @@ const {
   pushTags,
   getCommitMessage,
 } = require('../utils/git');
-const {
-  branch,
-  commit: commitParam
-} = require('../utils/params');
+const { branch, commit: commitParam } = require('../utils/params');
 const commitId = commitParam === true ? undefined : commitParam;
 let branchName;
 if (commitParam) {
@@ -21,6 +16,8 @@ if (commitParam) {
 } else {
   branchName = branch || getBranch();
 }
+
+console.log(branchName);
 
 // Bump version according to the bump type
 const bumpVersion = bump => {
@@ -36,4 +33,4 @@ const bumpVersion = bump => {
   });
 };
 
-bumpVersion(getBump(branchName));
+// bumpVersion(getBump(branchName));

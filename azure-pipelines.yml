@@ -47,6 +47,8 @@ steps:
       Contents: |
         dist/*
         dist/**/*
+        internals/*
+        internals/**/*
         package.json
         .npmrc
       TargetFolder: '$(Build.ArtifactStagingDirectory)'
