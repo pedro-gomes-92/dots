@@ -1,6 +1,8 @@
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/pedro-gomes-92/dots)
 ![GitHub repo size](https://img.shields.io/github/repo-size/pedro-gomes-92/dots)
 
+[![Build Status](https://dev.azure.com/pedro-gomes-92/dots/_apis/build/status/pipeline.prod?branchName=master)](https://dev.azure.com/pedro-gomes-92/dots/_build/latest?definitionId=1&branchName=master)
+
 # Dots
 
 Dots is a front end library, ready to be used in any front end web application. Includes all types of components (e.g. layouts, containers, actions, texts, charts), formats (e.g. date, currency, number), themes (e.g. colors, shapes, typography, iconography) and much more.
