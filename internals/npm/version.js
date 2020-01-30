@@ -17,6 +17,8 @@ if (commitParam) {
   branchName = branch || getBranch();
 }
 
+console.log(branchName);
+
 // Bump version according to the bump type
 const bumpVersion = bump => {
   const commandBump = `npm run version:${bump}`;
