@@ -35,13 +35,13 @@ export const DateTimePicker: FunctionComponent<DateTimePickerProps> = ({
   }, [isRange]);
 
   // Mounting component
-  useEffect((): void => {
+  useEffect((): (() => void) => {
     const datePicker = datePickerElement.current.bulmaCalendar;
     if (!datePicker) {
       return;
     }
 
-    datePicker.on('hide', (bulmaCalendar: { data }): void => {
+    const applyOnClose = (bulmaCalendar: { data }): void => {
       let rangedDate = bulmaCalendar.data.date;
       if (!rangedDate.end) {
         rangedDate = FormatDate.format(rangedDate.start);
@@ -50,7 +50,13 @@ export const DateTimePicker: FunctionComponent<DateTimePickerProps> = ({
       }
 
       onValue(rangedDate);
-    });
+    };
+
+    datePicker.on('hide', applyOnClose);
+
+    return (): void => {
+      datePicker.removeListeners('hide', applyOnClose);
+    };
   }, [onValue]);
 
   // Set value
