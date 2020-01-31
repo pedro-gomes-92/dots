@@ -14,10 +14,6 @@ steps:
     displayName: 'Install Node.js'
 
   - script: |
-      npm login
-    displayName: 'Authenticate to NPM'
-
-  - script: |
       npm ci
     displayName: 'Install dependencies'
 
