@@ -1,6 +1,6 @@
 {
   "name": "dots.js",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Dots is an easy to use front end library",
   "main": "dist/dots.js",
   "style": "dist/dots.css",
