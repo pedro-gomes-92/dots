@@ -13,8 +13,7 @@
     "maintained node versions"
   ],
   "scripts": {
-    "install:peers": "npx install-peers-cli",
-    "prepare": "npm run install:peers",
+    "prepare": "npx install-peers-cli",
     "lint": "npm run lint:js && npm run lint:css",
     "lint:css": "npx stylelint \"**/*.scss\" --color",
     "lint:js": "npx eslint . --ext .jsx,.js,.ts,.tsx --color",
