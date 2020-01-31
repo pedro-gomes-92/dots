@@ -1,6 +1,8 @@
 language: node_js
-install:
-  - npm ci
 cache:
   directories:
     - '$HOME/.npm'
+before_install:
+  - printf "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" >> ~/.npmrc
+install:
+  - npm ci
