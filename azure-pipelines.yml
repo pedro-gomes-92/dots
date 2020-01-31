@@ -22,6 +22,11 @@ steps:
     displayName: 'Install dependencies'
 
   - script: |
+      npm audit --registry=https://registry.npmjs.org/
+    continueOnError: true
+    displayName: 'Check vulnerabilities'
+
+  - script: |
       npm test
     displayName: 'Test Project'
 
