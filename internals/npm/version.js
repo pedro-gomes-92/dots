@@ -33,4 +33,4 @@ const bumpVersion = bump => {
   });
 };
 
-// bumpVersion(getBump(branchName));
+bumpVersion(getBump(branchName));
