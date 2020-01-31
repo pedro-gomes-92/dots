@@ -1,13 +1,5 @@
 const { command } = require('../utils/command');
-const {
-  getBranch,
-  getBranchFromCommit,
-  getBump,
-  synchronize,
-  commit,
-  pushTags,
-  getCommitMessage,
-} = require('../utils/git');
+const { getBranch, getBranchFromCommit, synchronize, commit, pushTags, getCommitMessage } = require('../utils/git');
 const { branch, commit: commitParam } = require('../utils/params');
 const commitId = commitParam === true ? undefined : commitParam;
 let branchName;
