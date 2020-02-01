@@ -14,14 +14,14 @@ jobs:
         - npm test
 
     - stage: version
-      if: branch = master and TRAVIS_EVENT_TYPE = pull_request
+      if: branch = master and type = pull_request
       name: 'Bump new NPM version'
       install: skip
       script:
         - npm run version:branch $TRAVIS_PULL_REQUEST_BRANCH
 
     - stage: deploy
-      if: branch = master and TRAVIS_EVENT_TYPE = pull_request
+      if: branch = master and type = pull_request
       name: 'Deploy package'
       before_deploy:
         - npm run build:prod
