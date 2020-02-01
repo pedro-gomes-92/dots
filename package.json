@@ -45,6 +45,9 @@
     "type": "git",
     "url": "git@github.com:pedro-gomes-92/dots.git"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "keywords": [
     "frontend",
     "css",
