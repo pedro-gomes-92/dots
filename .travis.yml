@@ -3,29 +3,32 @@ cache:
   directories:
     - '$HOME/.npm'
 
+script:
+  - npm install
+
 jobs:
   include:
-    - stage: install
-      script:
-        - npm install
-
     - stage: test
+      name: 'Test solution'
       script:
         - npm audit
-        - npm run test
+        - npm test
 
     - stage: version
-      if: branch = master
+      if: branch = master and $TRAVIS_EVENT_TYPE = pull_request
+      name: 'Bump new NPM version'
+      install: skip
       script:
-        - npm run version:branch ${TRAVIS_PULL_REQUEST_BRANCH}
+        - npm run version:branch $TRAVIS_PULL_REQUEST_BRANCH
 
     - stage: deploy
-      if: branch = master
+      if: branch = master and $TRAVIS_EVENT_TYPE = pull_request
+      name: 'Deploy package'
       before_deploy:
         - npm run build:prod
       deploy:
         edge: true
         provider: npm
-        email: '${NPM_EMAIL}'
-        api_key: '${NPM_TOKEN}'
+        email: '$NPM_EMAIL'
+        api_key: '$NPM_TOKEN'
         cleanup: true
