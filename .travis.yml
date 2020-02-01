@@ -27,7 +27,6 @@ jobs:
       before_deploy:
         - npm run build:prod
       deploy:
-        edge: true
         provider: npm
         email: '$NPM_EMAIL'
         api_key: '$NPM_TOKEN'
