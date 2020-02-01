@@ -3,7 +3,7 @@ cache:
   directories:
     - '$HOME/.npm'
 
-script:
+install:
   - npm install
 
 jobs:
