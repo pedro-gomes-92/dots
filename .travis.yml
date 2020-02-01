@@ -13,8 +13,6 @@ install:
   - npm install
 
 deploy:
-  script:
-    - npm run publish
   skip_cleanup: true
   provider: npm
   email: ${NPM_EMAIL}
