@@ -7,17 +7,14 @@ cache:
   directories:
     - '$HOME/.npm'
 
-audit:
-  script:
-    - npm audit
-  allow_failures: true
-
 before_install:
   - printf "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" >> ~/.npmrc
 install:
   - npm install
 
 deploy:
+  script:
+    - npm run publish
   skip_cleanup: true
   provider: npm
   email: ${NPM_EMAIL}
