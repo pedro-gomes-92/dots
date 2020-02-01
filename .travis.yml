@@ -15,11 +15,12 @@ jobs:
         - npm run test
 
     - stage: version
+      if: branch = master
       script:
         - npm run version:branch ${TRAVIS_PULL_REQUEST_BRANCH}
 
     - stage: deploy
-      if: branch = master AND commit_message =~ /^[0-9]*\.[0-9]*\.[0-9]*$/
+      if: branch = master
       before_deploy:
         - npm run build:prod
       deploy:
