@@ -7,6 +7,8 @@ before_install:
   - git lfs pull
   - git config --global user.name "$GIT_NAME"
   - git config --global user.email "$GIT_EMAIL"
+  - git checkout master
+  - git pull -X theirs
 install:
   - npm install
 
