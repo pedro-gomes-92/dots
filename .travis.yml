@@ -2,6 +2,8 @@ language: node_js
 cache:
   directories:
     - '$HOME/.npm'
+git.checkout:
+  - git clone --depth=50 https://pedro-gomes-92:$GIT_TOKEN@github.com/dots.git
 install:
   - npm install
 
