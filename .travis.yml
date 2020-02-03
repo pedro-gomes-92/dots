@@ -5,6 +5,8 @@ cache:
 before_install:
   - echo -e "machine github.com\n  login $GIT_TOKEN" > ~/.netrc
   - git lfs pull
+  - git config --global user.name="$GIT_NAME"
+  - git config --global user.email="$GIT_EMAIL"
 install:
   - npm install
 
@@ -19,8 +21,6 @@ jobs:
     - stage: version
       if: branch = master and type = pull_request
       name: 'Bump new NPM version'
-      before_script:
-        - npm run git:ci --username $GIT_NAME --email $GIT_EMAIL --token $GIT_TOKEN
       script:
         - npm run version:branch $TRAVIS_PULL_REQUEST_BRANCH
 

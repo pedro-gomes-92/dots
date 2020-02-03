@@ -49,7 +49,6 @@
     "pack": "node ./internals/npm/pack.js --src . --target ./dist",
     "start": "npx webpack-dev-server --config ./internals/webpack/webpack.serve.js --colors --progress",
     "start:docs": "npx docsify serve ./docs",
-    "git:ci": "node ./internals/travis/git.js",
     "version:branch": "node ./internals/npm/version.js --branch",
     "version:commit": "node ./internals/npm/version.js --commit",
     "version:minor": "npm version minor --yes -m 'Updated to %s'",
