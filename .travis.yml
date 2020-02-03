@@ -2,8 +2,9 @@ language: node_js
 cache:
   directories:
     - '$HOME/.npm'
-git.checkout:
-  - git clone --depth=50 https://pedro-gomes-92:$GIT_TOKEN@github.com/dots.git
+before_install:
+  - echo -e "machine github.com\n  login $GIT_TOKEN" > ~/.netrc
+  - git lfs pull
 install:
   - npm install
 
@@ -18,7 +19,6 @@ jobs:
     - stage: version
       if: branch = master and type = pull_request
       name: 'Bump new NPM version'
-      install: skip
       before_script:
         - npm run git:ci --username $GIT_NAME --email $GIT_EMAIL --token $GIT_TOKEN
       script:
