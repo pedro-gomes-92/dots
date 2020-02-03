@@ -18,6 +18,8 @@ jobs:
       name: 'Bump new NPM version'
       install: skip
       script:
+        - 'which ssh-agent || ( apt-get update -qy && apt-get install openssh-client -qqy )'
+        - mkdir -p ~/.ssh && eval $(ssh-agent -s) && ssh-add <(echo "$GIT_TOKEN")
         - npm run version:branch $TRAVIS_PULL_REQUEST_BRANCH
 
     - stage: deploy
