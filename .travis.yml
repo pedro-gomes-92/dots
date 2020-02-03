@@ -17,9 +17,9 @@ jobs:
       if: branch = master and type = pull_request
       name: 'Bump new NPM version'
       install: skip
+      before_script:
+        - npm run git:ci --username $GIT_NAME --email $GIT_EMAIL --token $GIT_TOKEN
       script:
-        - 'which ssh-agent || ( apt-get update -qy && apt-get install openssh-client -qqy )'
-        - mkdir -p ~/.ssh && eval $(ssh-agent -s) && ssh-add <(echo "$GIT_TOKEN")
         - npm run version:branch $TRAVIS_PULL_REQUEST_BRANCH
 
     - stage: deploy

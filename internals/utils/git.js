@@ -39,6 +39,16 @@ const getBump = branch => {
   return bump;
 };
 
+const register = (name, email, token) => {
+  const repoFolder = 'repo';
+  if (__dirname === repoFolder) {
+    return;
+  }
+
+  commandSync(`git config --global user.email: ${email} && git config --global user.name: ${name}`);
+  commandSync(`git clone https://pedro-gomes-92:${token}@github.com/dots.git ./${repoFolder} && cd ./${repoFolder}`);
+};
+
 const pull = branch => {
   const branchName = branch || getBranch();
   commandSync(`git pull origin ${branchName}`);
@@ -85,4 +95,5 @@ module.exports = {
   pushTags,
   createTag,
   deleteTag,
+  register,
 };

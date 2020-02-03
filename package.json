@@ -12,6 +12,23 @@
     "IE 10",
     "maintained node versions"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:pedro-gomes-92/dots.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "frontend",
+    "css",
+    "bulma",
+    "scss",
+    "typescript",
+    "react"
+  ],
+  "author": "Pedro Gomes",
+  "license": "MIT",
   "scripts": {
     "prepare": "npx install-peers-cli",
     "lint": "npm run lint:js && npm run lint:css",
@@ -32,6 +49,7 @@
     "pack": "node ./internals/npm/pack.js --src . --target ./dist",
     "start": "npx webpack-dev-server --config ./internals/webpack/webpack.serve.js --colors --progress",
     "start:docs": "npx docsify serve ./docs",
+    "git:ci": "node ./internals/travis/git.js",
     "version:branch": "node ./internals/npm/version.js --branch",
     "version:commit": "node ./internals/npm/version.js --commit",
     "version:minor": "npm version minor --yes -m 'Updated to %s'",
@@ -41,23 +59,6 @@
     "publish": "npm publish ./dist/dots.tar.gz --access public",
     "publish:dev": "npm run prepublishOnly && npm run publish"
   },
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:pedro-gomes-92/dots.git"
-  },
-  "publishConfig": {
-    "access": "public"
-  },
-  "keywords": [
-    "frontend",
-    "css",
-    "bulma",
-    "scss",
-    "typescript",
-    "react"
-  ],
-  "author": "Pedro Gomes",
-  "license": "MIT",
   "devDependencies": {
     "@babel/plugin-proposal-class-properties": "^7.5.0",
     "@babel/plugin-proposal-object-rest-spread": "^7.6.2",
