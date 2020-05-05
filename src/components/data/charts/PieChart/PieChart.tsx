@@ -13,17 +13,15 @@ const DEFAULT_OPTIONS = {
 };
 
 export const PieChart: FunctionComponent<PieChartProps> = ({ ...rest }: PieChartProps): JSX.Element => {
-  const options = ObjectUtils.merge(DEFAULT_OPTIONS, {});
+  const newOptions = ObjectUtils.merge(DEFAULT_OPTIONS, {});
 
   return (
     <BaseChart
       type="Pie"
       className="chart-piechart"
-      options={options}
-      tooltipTarget={`.${options['classNames'].slicePie}`}
+      options={newOptions}
+      tooltipTarget={`.${newOptions['classNames'].slicePie}`}
       {...rest}
     />
   );
 };
-
-PieChart.defaultProps = {};

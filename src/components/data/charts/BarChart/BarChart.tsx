@@ -1,10 +1,12 @@
 import React, { FunctionComponent } from 'react';
-import { BaseChart, CommonChartProps } from '../BaseChart';
 import { ObjectUtils } from '@dots/core';
 
+import { BaseChart, CommonChartProps } from '../BaseChart';
+
 export interface BarChartProps extends CommonChartProps {
-  orientation?: string;
+  orientation?: Orientation;
   stacked?: boolean;
+  distance?: number;
 }
 
 const DEFAULT_OPTIONS = {
@@ -17,19 +19,21 @@ const DEFAULT_OPTIONS = {
 export const BarChart: FunctionComponent<BarChartProps> = ({
   orientation,
   stacked,
+  distance,
   ...rest
 }: BarChartProps): JSX.Element => {
-  const options = ObjectUtils.merge(DEFAULT_OPTIONS, {
+  const newOptions = ObjectUtils.merge(DEFAULT_OPTIONS, {
     horizontalBars: orientation === 'horizontal',
     stackMode: stacked,
+    seriesBarDistance: distance,
   });
 
   return (
     <BaseChart
       type="Bar"
       className="chart-barchart"
-      options={options}
-      tooltipTarget={`.${options['classNames'].bar}`}
+      options={newOptions}
+      tooltipTarget={`.${newOptions['classNames'].bar}`}
       {...rest}
     />
   );

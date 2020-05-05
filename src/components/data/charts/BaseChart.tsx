@@ -9,18 +9,18 @@ import { Base, BaseProps } from '../../Base';
 export interface CommonChartProps extends BaseProps {
   labels: string[];
   values: number[] | number[][];
-  options?: object;
   tooltip?: boolean;
   tooltipTarget?: string;
-  tooltipPosition?: [string, string];
+  maxValue?: number;
+  minValue?: number;
 }
 
 interface BaseChartProps extends CommonChartProps {
   type: string;
+  options?: object;
 }
 
 const DEFAULT_OPTIONS = {
-  stretch: false,
   classNames: {
     chart: 'chart-container',
     label: 'chart-label',
@@ -52,6 +52,8 @@ export const BaseChart: FunctionComponent<BaseChartProps> = ({
   tooltip,
   tooltipTarget,
   className,
+  maxValue,
+  minValue,
   ...rest
 }: BaseChartProps): JSX.Element => {
   const [tooltipCoordinates, setTooltipCoordinates] = useState();
@@ -63,12 +65,15 @@ export const BaseChart: FunctionComponent<BaseChartProps> = ({
     series: values,
   };
 
-  const chartOptions = ObjectUtils.merge(DEFAULT_OPTIONS, options);
+  const newOptions = ObjectUtils.merge(options, {
+    high: maxValue,
+    low: minValue,
+  });
 
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  let onMouseOver = (event: MouseEvent): void => {};
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  let onMouseOut = (event: MouseEvent): void => {};
+  const chartOptions = ObjectUtils.merge(DEFAULT_OPTIONS, newOptions);
+
+  let onMouseOver: (event: MouseEvent) => void = (): void => {};
+  let onMouseOut: (event: MouseEvent) => void = (): void => {};
 
   if (tooltip) {
     onMouseOver = (event: MouseEvent): void => {

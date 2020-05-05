@@ -57,6 +57,10 @@ $colors: mergeColorMaps(
       $primary,
       $primary-inverted,
     ),
+    'background': (
+      $background,
+      $text,
+    ),
     'info': (
       $info,
       $info-inverted,
