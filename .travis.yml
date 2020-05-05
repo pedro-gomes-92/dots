@@ -2,6 +2,13 @@ language: node_js
 cache:
   directories:
     - '$HOME/.npm'
+before_install:
+  - echo -e "machine github.com\n  login $GIT_TOKEN" > ~/.netrc
+  - git lfs pull
+  - git config --global user.name "$GIT_NAME"
+  - git config --global user.email "$GIT_EMAIL"
+  - git checkout origin/master
+  - git pull -X theirs
 install:
   - npm install
 
@@ -14,14 +21,13 @@ jobs:
         - npm test
 
     - stage: version
-      if: branch = master and TRAVIS_EVENT_TYPE = pull_request
+      if: branch = master and type = pull_request
       name: 'Bump new NPM version'
-      install: skip
       script:
         - npm run version:branch $TRAVIS_PULL_REQUEST_BRANCH
 
     - stage: deploy
-      if: branch = master and TRAVIS_EVENT_TYPE = pull_request
+      if: branch = master and type = pull_request
       name: 'Deploy package'
       before_deploy:
         - npm run build:prod

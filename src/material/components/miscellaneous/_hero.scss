@@ -5,8 +5,24 @@
  *
  * Index
  * - Hero
+ *    - Color
  */
 
 .hero {
   height: 100%;
+
+  &.is {
+    @each $name, $pair in $colors {
+      // Color
+      &-#{$name} {
+        background-color: nth($pair, 1);
+        color: nth($pair, 2);
+
+        &-inverted {
+          background-color: nth($pair, 2);
+          color: nth($pair, 1);
+        }
+      }
+    }
+  }
 }

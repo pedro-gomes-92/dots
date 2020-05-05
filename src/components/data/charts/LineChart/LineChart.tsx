@@ -13,17 +13,15 @@ const DEFAULT_OPTIONS = {
 };
 
 export const LineChart: FunctionComponent<LineChartProps> = ({ ...rest }: LineChartProps): JSX.Element => {
-  const options = ObjectUtils.merge(DEFAULT_OPTIONS, {});
+  const newOptions = ObjectUtils.merge(DEFAULT_OPTIONS, {});
 
   return (
     <BaseChart
       type="Line"
       className="chart-linechart"
-      options={options}
-      tooltipTarget={`.${options['classNames'].point}`}
+      options={newOptions}
+      tooltipTarget={`.${newOptions['classNames'].point}`}
       {...rest}
     />
   );
 };
-
-LineChart.defaultProps = {};
